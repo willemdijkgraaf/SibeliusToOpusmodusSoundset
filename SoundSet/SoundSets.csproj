@@ -40,8 +40,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Opusmodus\OpusmodusArticulation.cs" />
+    <Compile Include="Opusmodus\OpusmodusSoundSet.cs" />
+    <Compile Include="Opusmodus\OpusmodusSoundSets.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="SibeliusSoundSet.cs" />
+    <Compile Include="Sibelius\SibeliusSoundSet.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

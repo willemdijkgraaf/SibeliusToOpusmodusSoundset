@@ -50,13 +50,9 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\SoundSet\OpusModusSoundSet\OpusModusSoundSet.csproj">
-      <Project>{B56B5398-FE07-4F58-90C5-5326752199F5}</Project>
-      <Name>OpusModusSoundSet</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\SoundSet\SibeliusSoundSet.csproj">
+    <ProjectReference Include="..\SoundSet\SoundSets.csproj">
       <Project>{d642040c-90f9-4d75-a990-269bdd1f8f25}</Project>
-      <Name>SibeliusSoundSet</Name>
+      <Name>SoundSets</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

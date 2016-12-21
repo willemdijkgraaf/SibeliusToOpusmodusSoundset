@@ -1,10 +1,12 @@
 ﻿using System.Collections.Generic;
 using System.IO;
 using System.Xml.Serialization;
+using SoundSet.Opusmodus;
+using SoundSet.Sibelius;
 
 namespace SibeliusSoundSet2OpusModusSoundSet
 {
-    class Program
+    static class Program
     {
         private static readonly Dictionary<string, string> SoundSetPaths = new Dictionary<string, string>()
         {
@@ -21,7 +23,7 @@ namespace SibeliusSoundSet2OpusModusSoundSet
             foreach (var soundSetPath in SoundSetPaths)
             {
                 var sibeliusSoundSet = GetSoundSet(soundSetPath.Key);
-                var opusModusSoundSets = new OpusModusSoundSet.OpusModusSoundSets(sibeliusSoundSet);
+                var opusModusSoundSets = new OpusmodusSoundSets(sibeliusSoundSet);
                 var result = opusModusSoundSets.ToString();
 
                 var path = soundSetPath.Value;
