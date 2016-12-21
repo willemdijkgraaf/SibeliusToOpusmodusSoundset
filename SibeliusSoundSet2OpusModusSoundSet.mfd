@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Edited with Altova MapForce 2016r2sp1 -->
+<mapping xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="22">
+	<resources/>
+	<component name="defaultmap1" uid="1" editable="1" blackbox="0">
+		<properties SelectedLanguage="builtin"/>
+		<structure>
+			<children>
+				<component name="SoundSet" library="xml" uid="2" kind="14">
+					<properties/>
+					<view rbx="299" rby="377"/>
+					<data>
+						<root scrollposition="1">
+							<header>
+								<namespaces>
+									<namespace/>
+									<namespace uid="http://www.altova.com/mapforce"/>
+								</namespaces>
+							</header>
+							<entry name="FileInstance" ns="1" expanded="1">
+								<entry name="document" ns="1" expanded="1" casttotargettypemode="cast-in-subtree">
+									<entry name="SoundSet" expanded="1">
+										<entry name="SwitchTypeList" expanded="1">
+											<entry name="SwitchTypeDefinition" expanded="1">
+												<entry name="Switch" expanded="1">
+													<entry name="KeySwitch" expanded="1"/>
+													<entry name="ControllerSwitch" expanded="1"/>
+												</entry>
+											</entry>
+										</entry>
+									</entry>
+								</entry>
+							</entry>
+						</root>
+						<document schema="SoundSet.xsd" inputinstance="VE Special Edition.xml" outputinstance="VE Special Edition.xml" instanceroot="{}SoundSet"/>
+						<wsdl/>
+					</data>
+				</component>
+			</children>
+			<graph directed="1">
+				<vertices/>
+			</graph>
+		</structure>
+	</component>
+</mapping>

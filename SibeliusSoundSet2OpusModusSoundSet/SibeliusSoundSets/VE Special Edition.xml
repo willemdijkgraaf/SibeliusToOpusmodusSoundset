@@ -1,0 +1,1354 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<SoundSet xmlns:ss="soundset.xsd">
+  <Header>
+    <FileVersion>50001</FileVersion>
+    <Name>VE Special Edition</Name>
+    <PatchLoadMechanism>Fixed</PatchLoadMechanism>
+    <NumLanes>16</NumLanes>
+    <DefaultSoundSet>false</DefaultSoundSet>
+    <ProgramsRelativeTo>1</ProgramsRelativeTo>
+    <SupportsPitchBendRange>false</SupportsPitchBendRange>
+  </Header>
+  <ControllerTypeList>
+    <ControllerTypeDefinition Name="Modulation" Number="1" Binary="false">
+      <ControllerDefault>0</ControllerDefault>
+    </ControllerTypeDefinition>
+    <ControllerTypeDefinition Name="Controller11" Number="11" Binary="false">
+      <ControllerDefault>64</ControllerDefault>
+    </ControllerTypeDefinition>
+    <ControllerTypeDefinition Name="Sustain" Number="64" Binary="true">
+      <ControllerOn>127</ControllerOn>
+      <ControllerOff>0</ControllerOff>
+      <ControllerDefault>0</ControllerDefault>
+    </ControllerTypeDefinition>
+  </ControllerTypeList>
+  <VolumeTypeList>
+    <VolumeTypeDefinition Name="NoteOnVelocity" Method="Default"/>
+    <VolumeTypeDefinition Name="Expression" Method="Controller">
+      <ControllerType>Controller11</ControllerType>
+    </VolumeTypeDefinition>
+  </VolumeTypeList>
+  <AttackTypeList>
+    <AttackTypeDefinition Name="NoteOnVelocity" Method="Default"/>
+  </AttackTypeList>
+  <SwitchTypeList>
+    <SwitchTypeDefinition Name="Controller11Reset">
+      <Switch SoundIDChange="[reset]">
+        <ControllerSwitch Name="Controller11" Value="100"/>
+      </Switch>
+      <Switch SoundIDChange="+reset">
+        <ControllerSwitch Name="Controller11" Value="100"/>
+      </Switch>
+    </SwitchTypeDefinition>
+    <SwitchTypeDefinition Name="Organ">
+      <Switch SoundIDChange="[reset]">
+        <KeySwitch Key="24"/>
+        <ControllerSwitch Name="Modulation" Value="127"/>
+      </Switch>
+      <Switch SoundIDChange="+full">
+        <KeySwitch Key="24"/>
+        <ControllerSwitch Name="Modulation" Value="127"/>
+      </Switch>
+      <Switch SoundIDChange="+flute">
+        <KeySwitch Key="25"/>
+        <ControllerSwitch Name="Modulation" Value="127"/>
+      </Switch>
+      <Switch SoundIDChange="+8'.flute">
+        <KeySwitch Key="25"/>
+        <ControllerSwitch Name="Modulation" Value="127"/>
+      </Switch>
+      <Switch SoundIDChange="+8'.full">
+        <KeySwitch Key="24"/>
+        <ControllerSwitch Name="Modulation" Value="127"/>
+      </Switch>
+    </SwitchTypeDefinition>
+    <SwitchTypeDefinition Name="Celesta">
+      <Switch SoundIDChange="[reset]">
+        <KeySwitch Key="24"/>
+        <ControllerSwitch Name="Controller11" Value="100"/>
+      </Switch>
+      <Switch SoundIDChange="+p">
+        <KeySwitch Key="25"/>
+        <ControllerSwitch Name="Controller11" Value="100"/>
+      </Switch>
+    </SwitchTypeDefinition>
+    <SwitchTypeDefinition Name="Vibraphone">
+      <Switch SoundIDChange="[reset]">
+        <KeySwitch Key="24"/>
+        <ControllerSwitch Name="Controller11" Value="100"/>
+      </Switch>
+      <Switch SoundIDChange="+motor on">
+        <KeySwitch Key="25"/>
+        <ControllerSwitch Name="Controller11" Value="100"/>
+      </Switch>
+    </SwitchTypeDefinition>
+    <SwitchTypeDefinition Name="Harp">
+      <Switch SoundIDChange="[reset]">
+        <ControllerSwitch Name="Modulation" Value="0"/>
+        <ControllerSwitch Name="Controller11" Value="100"/>
+      </Switch>
+      <Switch SoundIDChange="+harmonic">
+        <ControllerSwitch Name="Modulation" Value="127"/>
+        <ControllerSwitch Name="Controller11" Value="100"/>
+      </Switch>
+    </SwitchTypeDefinition>
+    <SwitchTypeDefinition Name="Timpani">
+      <Switch SoundIDChange="[reset]">
+        <KeySwitch Key="24"/>
+        <KeySwitch Key="23"/>
+      </Switch>
+      <Switch SoundIDChange="+mute">
+        <KeySwitch Key="25"/>
+        <KeySwitch Key="23"/>
+      </Switch>
+      <Switch SoundIDChange="+staccato">
+        <KeySwitch Key="25"/>
+        <KeySwitch Key="23"/>
+      </Switch>
+      <Switch SoundIDChange="+staccatissimo">
+        <KeySwitch Key="25"/>
+        <KeySwitch Key="23"/>
+      </Switch>
+      <Switch SoundIDChange="+damp">
+        <KeySwitch Key="25"/>
+        <KeySwitch Key="23"/>
+      </Switch>
+      <Switch SoundIDChange="+tremolo.unmeasured" IsMultipleNoteSample="true">
+        <KeySwitch Key="26"/>
+        <VolumeType>Expression</VolumeType>
+        <AttackType>NoteOnVelocity</AttackType>
+      </Switch>
+      <Switch SoundIDChange="+left">
+        <KeySwitch Key="24"/>
+        <KeySwitch Key="21"/>
+      </Switch>
+      <Switch SoundIDChange="+right">
+        <KeySwitch Key="24"/>
+        <KeySwitch Key="23"/>
+      </Switch>
+      <Switch SoundIDChange="+left.mute">
+        <KeySwitch Key="25"/>
+        <KeySwitch Key="21"/>
+      </Switch>
+      <Switch SoundIDChange="+right.mute">
+        <KeySwitch Key="25"/>
+        <KeySwitch Key="23"/>
+      </Switch>
+      <Switch SoundIDChange="+left.staccato">
+        <KeySwitch Key="25"/>
+        <KeySwitch Key="21"/>
+      </Switch>
+      <Switch SoundIDChange="+right.staccato">
+        <KeySwitch Key="25"/>
+        <KeySwitch Key="23"/>
+      </Switch>
+      <Switch SoundIDChange="+left.staccatissimo">
+        <KeySwitch Key="25"/>
+        <KeySwitch Key="21"/>
+      </Switch>
+      <Switch SoundIDChange="+right.staccatissimo">
+        <KeySwitch Key="25"/>
+        <KeySwitch Key="23"/>
+      </Switch>
+      <Switch SoundIDChange="+damp.left">
+        <KeySwitch Key="25"/>
+        <KeySwitch Key="21"/>
+      </Switch>
+      <Switch SoundIDChange="+damp.right">
+        <KeySwitch Key="25"/>
+        <KeySwitch Key="23"/>
+      </Switch>
+    </SwitchTypeDefinition>
+    <SwitchTypeDefinition Name="Winds">
+      <Switch SoundIDChange="[reset]">
+        <KeySwitch Key="25"/>
+        <ControllerSwitch Name="Modulation" Value="0"/>
+      </Switch>
+      <Switch SoundIDChange="+staccato">
+        <KeySwitch Key="24"/>
+        <ControllerSwitch Name="Modulation" Value="0"/>
+      </Switch>
+      <Switch SoundIDChange="+staccatissimo">
+        <KeySwitch Key="24"/>
+        <ControllerSwitch Name="Modulation" Value="0"/>
+      </Switch>
+      <Switch SoundIDChange="+sustain">
+        <KeySwitch Key="27"/>
+        <ControllerSwitch Name="Modulation" Value="127"/>
+      </Switch>
+      <Switch SoundIDChange="+accent">
+        <KeySwitch Key="25"/>
+        <ControllerSwitch Name="Modulation" Value="127"/>
+      </Switch>
+      <Switch SoundIDChange="+sforzato">
+        <KeySwitch Key="26"/>
+        <ControllerSwitch Name="Modulation" Value="0"/>
+      </Switch>
+      <Switch SoundIDChange="+legato">
+        <KeySwitch Key="27"/>
+        <ControllerSwitch Name="Modulation" Value="0"/>
+      </Switch>
+      <Switch SoundIDChange="+legato.sustain">
+        <KeySwitch Key="27"/>
+        <ControllerSwitch Name="Modulation" Value="127"/>
+      </Switch>
+      <Switch SoundIDChange="+sforzato.aggressive">
+        <KeySwitch Key="26"/>
+        <ControllerSwitch Name="Modulation" Value="0"/>
+      </Switch>
+    </SwitchTypeDefinition>
+    <SwitchTypeDefinition Name="Low Winds">
+      <Switch SoundIDChange="[reset]">
+        <KeySwitch Key="85"/>
+        <ControllerSwitch Name="Modulation" Value="0"/>
+      </Switch>
+      <Switch SoundIDChange="+staccato">
+        <KeySwitch Key="84"/>
+        <ControllerSwitch Name="Modulation" Value="0"/>
+      </Switch>
+      <Switch SoundIDChange="+staccatissimo">
+        <KeySwitch Key="84"/>
+        <ControllerSwitch Name="Modulation" Value="0"/>
+      </Switch>
+      <Switch SoundIDChange="+sustain">
+        <KeySwitch Key="87"/>
+        <ControllerSwitch Name="Modulation" Value="127"/>
+      </Switch>
+      <Switch SoundIDChange="+accent">
+        <KeySwitch Key="85"/>
+        <ControllerSwitch Name="Modulation" Value="127"/>
+      </Switch>
+      <Switch SoundIDChange="+sforzato">
+        <KeySwitch Key="86"/>
+        <ControllerSwitch Name="Modulation" Value="0"/>
+      </Switch>
+      <Switch SoundIDChange="+legato">
+        <KeySwitch Key="87"/>
+        <ControllerSwitch Name="Modulation" Value="0"/>
+      </Switch>
+      <Switch SoundIDChange="+legato.sustain">
+        <KeySwitch Key="87"/>
+        <ControllerSwitch Name="Modulation" Value="127"/>
+      </Switch>
+      <Switch SoundIDChange="+sforzato.aggressive">
+        <KeySwitch Key="86"/>
+        <ControllerSwitch Name="Modulation" Value="0"/>
+      </Switch>
+    </SwitchTypeDefinition>
+    <SwitchTypeDefinition Name="Appassionata High Strings">
+      <Switch SoundIDChange="[reset]">
+        <KeySwitch Key="25"/>
+        <ControllerSwitch Name="Modulation" Value="0"/>
+      </Switch>
+      <Switch SoundIDChange="+staccato">
+        <KeySwitch Key="24"/>
+        <ControllerSwitch Name="Modulation" Value="0"/>
+      </Switch>
+      <Switch SoundIDChange="+staccatissimo">
+        <KeySwitch Key="24"/>
+        <ControllerSwitch Name="Modulation" Value="0"/>
+      </Switch>
+      <Switch SoundIDChange="+legato">
+        <KeySwitch Key="25"/>
+        <ControllerSwitch Name="Modulation" Value="0"/>
+      </Switch>
+      <Switch SoundIDChange="+accent">
+        <KeySwitch Key="25"/>
+        <ControllerSwitch Name="Modulation" Value="127"/>
+      </Switch>
+      <Switch SoundIDChange="+fp">
+        <KeySwitch Key="25"/>
+        <ControllerSwitch Name="Modulation" Value="127"/>
+      </Switch>
+      <Switch SoundIDChange="+sforzato">
+        <KeySwitch Key="25"/>
+        <ControllerSwitch Name="Modulation" Value="127"/>
+      </Switch>
+      <Switch SoundIDChange="+sforzato.aggressive">
+        <KeySwitch Key="25"/>
+        <ControllerSwitch Name="Modulation" Value="127"/>
+      </Switch>
+    </SwitchTypeDefinition>
+    <SwitchTypeDefinition Name="Appassionata Contrabass">
+      <Switch SoundIDChange="[reset]">
+        <KeySwitch Key="85"/>
+        <ControllerSwitch Name="Modulation" Value="0"/>
+      </Switch>
+      <Switch SoundIDChange="+staccato">
+        <KeySwitch Key="84"/>
+        <ControllerSwitch Name="Modulation" Value="0"/>
+      </Switch>
+      <Switch SoundIDChange="+staccatissimo">
+        <KeySwitch Key="84"/>
+        <ControllerSwitch Name="Modulation" Value="0"/>
+      </Switch>
+      <Switch SoundIDChange="+legato">
+        <KeySwitch Key="85"/>
+        <ControllerSwitch Name="Modulation" Value="0"/>
+      </Switch>
+      <Switch SoundIDChange="+accent">
+        <KeySwitch Key="85"/>
+        <ControllerSwitch Name="Modulation" Value="127"/>
+      </Switch>
+      <Switch SoundIDChange="+fp">
+        <KeySwitch Key="85"/>
+        <ControllerSwitch Name="Modulation" Value="127"/>
+      </Switch>
+      <Switch SoundIDChange="+sforzato">
+        <KeySwitch Key="85"/>
+        <ControllerSwitch Name="Modulation" Value="127"/>
+      </Switch>
+      <Switch SoundIDChange="+sforzato.aggressive">
+        <KeySwitch Key="85"/>
+        <ControllerSwitch Name="Modulation" Value="127"/>
+      </Switch>
+    </SwitchTypeDefinition>
+    <SwitchTypeDefinition Name="High Strings">
+      <Switch SoundIDChange="[reset]">
+        <KeySwitch Key="26"/>
+        <ControllerSwitch Name="Modulation" Value="0"/>
+      </Switch>
+      <Switch SoundIDChange="+staccato">
+        <KeySwitch Key="24"/>
+        <ControllerSwitch Name="Modulation" Value="0"/>
+      </Switch>
+      <Switch SoundIDChange="+staccatissimo">
+        <KeySwitch Key="24"/>
+        <ControllerSwitch Name="Modulation" Value="0"/>
+      </Switch>
+      <Switch SoundIDChange="+spiccato">
+        <KeySwitch Key="24"/>
+        <ControllerSwitch Name="Modulation" Value="0"/>
+      </Switch>
+      <Switch SoundIDChange="+accent">
+        <KeySwitch Key="24"/>
+        <ControllerSwitch Name="Modulation" Value="127"/>
+      </Switch>
+      <Switch SoundIDChange="+detache">
+        <KeySwitch Key="25"/>
+        <ControllerSwitch Name="Modulation" Value="0"/>
+      </Switch>
+      <Switch SoundIDChange="+sustain">
+        <KeySwitch Key="26"/>
+        <ControllerSwitch Name="Modulation" Value="0"/>
+      </Switch>
+      <Switch SoundIDChange="+legato">
+        <KeySwitch Key="27"/>
+        <ControllerSwitch Name="Modulation" Value="0"/>
+      </Switch>
+      <Switch SoundIDChange="+portamento">
+        <KeySwitch Key="27"/>
+        <ControllerSwitch Name="Modulation" Value="127"/>
+      </Switch>
+      <Switch SoundIDChange="+sforzato">
+        <KeySwitch Key="28"/>
+        <ControllerSwitch Name="Modulation" Value="0"/>
+      </Switch>
+      <Switch SoundIDChange="+tremolo.unmeasured" IsMultipleNoteSample="true">
+        <KeySwitch Key="29"/>
+        <ControllerSwitch Name="Modulation" Value="0"/>
+      </Switch>
+      <Switch SoundIDChange="+tremolo.unmeasured.accent" IsMultipleNoteSample="true">
+        <KeySwitch Key="29"/>
+        <ControllerSwitch Name="Modulation" Value="127"/>
+      </Switch>
+      <Switch SoundIDChange="+pizzicato">
+        <KeySwitch Key="30"/>
+        <ControllerSwitch Name="Modulation" Value="0"/>
+      </Switch>
+      <Switch SoundIDChange="+portato">
+        <KeySwitch Key="25"/>
+        <ControllerSwitch Name="Modulation" Value="0"/>
+      </Switch>
+      <Switch SoundIDChange="+sforzato.aggressive">
+        <KeySwitch Key="28"/>
+        <ControllerSwitch Name="Modulation" Value="0"/>
+      </Switch>
+    </SwitchTypeDefinition>
+    <SwitchTypeDefinition Name="Contrabass">
+      <Switch SoundIDChange="[reset]">
+        <KeySwitch Key="86"/>
+        <ControllerSwitch Name="Modulation" Value="0"/>
+      </Switch>
+      <Switch SoundIDChange="+staccato">
+        <KeySwitch Key="84"/>
+        <ControllerSwitch Name="Modulation" Value="0"/>
+      </Switch>
+      <Switch SoundIDChange="+staccatissimo">
+        <KeySwitch Key="84"/>
+        <ControllerSwitch Name="Modulation" Value="0"/>
+      </Switch>
+      <Switch SoundIDChange="+spiccato">
+        <KeySwitch Key="84"/>
+        <ControllerSwitch Name="Modulation" Value="0"/>
+      </Switch>
+      <Switch SoundIDChange="+accent">
+        <KeySwitch Key="84"/>
+        <ControllerSwitch Name="Modulation" Value="127"/>
+      </Switch>
+      <Switch SoundIDChange="+detache">
+        <KeySwitch Key="85"/>
+        <ControllerSwitch Name="Modulation" Value="0"/>
+      </Switch>
+      <Switch SoundIDChange="+sustain">
+        <KeySwitch Key="86"/>
+        <ControllerSwitch Name="Modulation" Value="0"/>
+      </Switch>
+      <Switch SoundIDChange="+legato">
+        <KeySwitch Key="87"/>
+        <ControllerSwitch Name="Modulation" Value="0"/>
+      </Switch>
+      <Switch SoundIDChange="+portamento">
+        <KeySwitch Key="87"/>
+        <ControllerSwitch Name="Modulation" Value="127"/>
+      </Switch>
+      <Switch SoundIDChange="+sforzato">
+        <KeySwitch Key="88"/>
+        <ControllerSwitch Name="Modulation" Value="0"/>
+      </Switch>
+      <Switch SoundIDChange="+tremolo.unmeasured" IsMultipleNoteSample="true">
+        <KeySwitch Key="89"/>
+        <ControllerSwitch Name="Modulation" Value="0"/>
+      </Switch>
+      <Switch SoundIDChange="+tremolo.unmeasured.accent" IsMultipleNoteSample="true">
+        <KeySwitch Key="89"/>
+        <ControllerSwitch Name="Modulation" Value="127"/>
+      </Switch>
+      <Switch SoundIDChange="+pizzicato">
+        <KeySwitch Key="90"/>
+        <ControllerSwitch Name="Modulation" Value="0"/>
+      </Switch>
+      <Switch SoundIDChange="+portato">
+        <KeySwitch Key="25"/>
+        <ControllerSwitch Name="Modulation" Value="0"/>
+      </Switch>
+      <Switch SoundIDChange="+sforzato.aggressive">
+        <KeySwitch Key="88"/>
+        <ControllerSwitch Name="Modulation" Value="0"/>
+      </Switch>
+    </SwitchTypeDefinition>
+    <SwitchTypeDefinition Name="StringOrch">
+      <Switch SoundIDChange="[reset]">
+        <KeySwitch Key="23"/>
+        <ControllerSwitch Name="Modulation" Value="0"/>
+      </Switch>
+      <Switch SoundIDChange="+staccato">
+        <KeySwitch Key="21"/>
+        <ControllerSwitch Name="Modulation" Value="0"/>
+      </Switch>
+      <Switch SoundIDChange="+staccatissimo">
+        <KeySwitch Key="21"/>
+        <ControllerSwitch Name="Modulation" Value="0"/>
+      </Switch>
+      <Switch SoundIDChange="+spiccato">
+        <KeySwitch Key="21"/>
+        <ControllerSwitch Name="Modulation" Value="0"/>
+      </Switch>
+      <Switch SoundIDChange="+accent">
+        <KeySwitch Key="21"/>
+        <ControllerSwitch Name="Modulation" Value="127"/>
+      </Switch>
+      <Switch SoundIDChange="+detache">
+        <KeySwitch Key="22"/>
+        <ControllerSwitch Name="Modulation" Value="0"/>
+      </Switch>
+      <Switch SoundIDChange="+sustain">
+        <KeySwitch Key="23"/>
+        <ControllerSwitch Name="Modulation" Value="0"/>
+      </Switch>
+      <Switch SoundIDChange="+sforzato">
+        <KeySwitch Key="24"/>
+        <ControllerSwitch Name="Modulation" Value="0"/>
+      </Switch>
+      <Switch SoundIDChange="+tremolo.unmeasured" IsMultipleNoteSample="true">
+        <KeySwitch Key="25"/>
+        <ControllerSwitch Name="Modulation" Value="0"/>
+      </Switch>
+      <Switch SoundIDChange="+tremolo.unmeasured.accent" IsMultipleNoteSample="true">
+        <KeySwitch Key="25"/>
+        <ControllerSwitch Name="Modulation" Value="127"/>
+      </Switch>
+      <Switch SoundIDChange="+pizzicato">
+        <KeySwitch Key="26"/>
+        <ControllerSwitch Name="Modulation" Value="0"/>
+      </Switch>
+      <Switch SoundIDChange="+sforzato.aggressive">
+        <KeySwitch Key="24"/>
+        <ControllerSwitch Name="Modulation" Value="0"/>
+      </Switch>
+    </SwitchTypeDefinition>
+    <SwitchTypeDefinition Name="Guitar">
+      <Switch SoundIDChange="[reset]">
+        <KeySwitch Key="25"/>
+        <ControllerSwitch Name="Controller11" Value="100"/>
+      </Switch>
+      <Switch SoundIDChange="+staccato">
+        <KeySwitch Key="24"/>
+        <ControllerSwitch Name="Controller11" Value="100"/>
+      </Switch>
+      <Switch SoundIDChange="+staccatissimo">
+        <KeySwitch Key="24"/>
+        <ControllerSwitch Name="Controller11" Value="100"/>
+      </Switch>
+      <Switch SoundIDChange="+non vibrato">
+        <KeySwitch Key="25"/>
+        <ControllerSwitch Name="Controller11" Value="100"/>
+      </Switch>
+      <Switch SoundIDChange="+vibrato">
+        <KeySwitch Key="26"/>
+        <ControllerSwitch Name="Controller11" Value="100"/>
+      </Switch>
+    </SwitchTypeDefinition>
+    <SwitchTypeDefinition Name="Electric Guitar">
+      <Switch SoundIDChange="[reset]">
+        <KeySwitch Key="25"/>
+        <ControllerSwitch Name="Modulation" Value="0"/>
+        <ControllerSwitch Name="Controller11" Value="100"/>
+      </Switch>
+      <Switch SoundIDChange="+sustain">
+        <KeySwitch Key="25"/>
+        <ControllerSwitch Name="Modulation" Value="0"/>
+        <ControllerSwitch Name="Controller11" Value="100"/>
+      </Switch>
+      <Switch SoundIDChange="+staccato">
+        <KeySwitch Key="24"/>
+        <ControllerSwitch Name="Modulation" Value="0"/>
+        <ControllerSwitch Name="Controller11" Value="100"/>
+      </Switch>
+      <Switch SoundIDChange="+staccatissimo">
+        <KeySwitch Key="24"/>
+        <ControllerSwitch Name="Modulation" Value="0"/>
+        <ControllerSwitch Name="Controller11" Value="100"/>
+      </Switch>
+      <Switch SoundIDChange="+mute">
+        <KeySwitch Key="24"/>
+        <ControllerSwitch Name="Modulation" Value="0"/>
+        <ControllerSwitch Name="Controller11" Value="100"/>
+      </Switch>
+      <Switch SoundIDChange="+legato">
+        <KeySwitch Key="26"/>
+        <ControllerSwitch Name="Modulation" Value="0"/>
+        <ControllerSwitch Name="Controller11" Value="100"/>
+      </Switch>
+      <Switch SoundIDChange="+portamento">
+        <KeySwitch Key="26"/>
+        <ControllerSwitch Name="Modulation" Value="0"/>
+        <ControllerSwitch Name="Controller11" Value="100"/>
+      </Switch>
+      <Switch SoundIDChange="+vibrato">
+        <KeySwitch Key="25"/>
+        <ControllerSwitch Name="Modulation" Value="65"/>
+        <ControllerSwitch Name="Controller11" Value="100"/>
+      </Switch>
+      <Switch SoundIDChange="+legato.vibrato">
+        <KeySwitch Key="26"/>
+        <ControllerSwitch Name="Modulation" Value="65"/>
+        <ControllerSwitch Name="Controller11" Value="100"/>
+      </Switch>
+      <Switch SoundIDChange="+portamento.vibrato">
+        <KeySwitch Key="26"/>
+        <ControllerSwitch Name="Modulation" Value="65"/>
+        <ControllerSwitch Name="Controller11" Value="100"/>
+      </Switch>
+      <Switch SoundIDChange="+whammy">
+        <KeySwitch Key="25"/>
+        <ControllerSwitch Name="Modulation" Value="127"/>
+        <ControllerSwitch Name="Controller11" Value="100"/>
+      </Switch>
+      <Switch SoundIDChange="+legato.whammy">
+        <KeySwitch Key="26"/>
+        <ControllerSwitch Name="Modulation" Value="127"/>
+        <ControllerSwitch Name="Controller11" Value="100"/>
+      </Switch>
+      <Switch SoundIDChange="+portamento.whammy">
+        <KeySwitch Key="26"/>
+        <ControllerSwitch Name="Modulation" Value="127"/>
+        <ControllerSwitch Name="Controller11" Value="100"/>
+      </Switch>
+    </SwitchTypeDefinition>
+  </SwitchTypeList>
+  <PatchList>
+    <Patch Name="Piano">
+      <SoundID>keyboard.piano.grand</SoundID>
+      <VolumeType>NoteOnVelocity</VolumeType>
+      <SwitchType>Controller11Reset</SwitchType>
+      <PitchBendRange>2</PitchBendRange>
+    </Patch>
+    <Patch Name="Cembalo">
+      <SoundID>keyboard.harpsichord</SoundID>
+      <VolumeType>NoteOnVelocity</VolumeType>
+      <SwitchType>Controller11Reset</SwitchType>
+      <PitchBendRange>2</PitchBendRange>
+    </Patch>
+    <Patch Name="Organ">
+      <SoundID>keyboard.organ.pipe.8'</SoundID>
+      <VolumeType>Expression</VolumeType>
+      <SwitchType>Organ</SwitchType>
+      <PitchBendRange>2</PitchBendRange>
+    </Patch>
+    <Patch Name="Celesta">
+      <SoundID>keyboard.celesta</SoundID>
+      <VolumeType>NoteOnVelocity</VolumeType>
+      <SwitchType>Celesta</SwitchType>
+      <PitchBendRange>2</PitchBendRange>
+    </Patch>
+    <Patch Name="Glockenspiel">
+      <SoundID>pitched percussion.metal.glockenspiel</SoundID>
+      <VolumeType>NoteOnVelocity</VolumeType>
+      <SwitchType>Controller11Reset</SwitchType>
+      <PitchBendRange>2</PitchBendRange>
+    </Patch>
+    <Patch Name="Vibraphone">
+      <SoundID>pitched percussion.metal.vibraphone</SoundID>
+      <VolumeType>NoteOnVelocity</VolumeType>
+      <SwitchType>Vibraphone</SwitchType>
+      <PitchBendRange>2</PitchBendRange>
+    </Patch>
+    <Patch Name="Crotales">
+      <SoundID>pitched percussion.metal.crotales.bright</SoundID>
+      <VolumeType>NoteOnVelocity</VolumeType>
+      <SwitchType>Controller11Reset</SwitchType>
+      <PitchBendRange>2</PitchBendRange>
+    </Patch>
+    <Patch Name="Xylophone">
+      <SoundID>pitched percussion.wood.xylophone</SoundID>
+      <VolumeType>NoteOnVelocity</VolumeType>
+      <SwitchType>Controller11Reset</SwitchType>
+      <PitchBendRange>2</PitchBendRange>
+    </Patch>
+    <Patch Name="Marimba">
+      <SoundID>pitched percussion.wood.marimba</SoundID>
+      <VolumeType>NoteOnVelocity</VolumeType>
+      <SwitchType>Controller11Reset</SwitchType>
+      <PitchBendRange>2</PitchBendRange>
+    </Patch>
+    <Patch Name="Timpani">
+      <SoundID>pitched percussion.drum.timpani</SoundID>
+      <VolumeType>Expression</VolumeType>
+      <SwitchType>Timpani</SwitchType>
+      <PitchBendRange>2</PitchBendRange>
+      <AttackType>NoteOnVelocity</AttackType>
+    </Patch>
+    <Patch Name="Tubular bells">
+      <SoundID>pitched percussion.metal.bells.tubular bells</SoundID>
+      <VolumeType>NoteOnVelocity</VolumeType>
+      <SwitchType>Controller11Reset</SwitchType>
+      <PitchBendRange>2</PitchBendRange>
+    </Patch>
+    <Patch Name="Plate bells">
+      <SoundID>pitched percussion.metal.bells.plates</SoundID>
+      <VolumeType>NoteOnVelocity</VolumeType>
+      <SwitchType>Controller11Reset</SwitchType>
+      <PitchBendRange>2</PitchBendRange>
+    </Patch>
+    <Patch Name="Gongs">
+      <SoundID>pitched percussion.metal.cymbal.gong</SoundID>
+      <VolumeType>NoteOnVelocity</VolumeType>
+      <PitchBendRange>2</PitchBendRange>
+      <SwitchType>Controller11Reset</SwitchType>
+    </Patch>
+    <Patch Name="Harp">
+      <SoundID>pitched percussion.stringed.harp</SoundID>
+      <VolumeType>NoteOnVelocity</VolumeType>
+      <SwitchType>Harp</SwitchType>
+      <PitchBendRange>2</PitchBendRange>
+    </Patch>
+    <Patch Name="Piccolo">
+      <SoundID>wind.flutes.flute.piccolo</SoundID>
+      <VolumeType>Expression</VolumeType>
+      <AttackType>NoteOnVelocity</AttackType>
+      <SwitchType>Winds</SwitchType>
+      <PitchBendRange>2</PitchBendRange>
+    </Patch>
+    <Patch Name="Flute">
+      <SoundID>wind.flutes.flute</SoundID>
+      <VolumeType>Expression</VolumeType>
+      <AttackType>NoteOnVelocity</AttackType>
+      <SwitchType>Winds</SwitchType>
+      <PitchBendRange>2</PitchBendRange>
+    </Patch>
+    <Patch Name="Flute Ensemble">
+      <SoundID>wind.flutes.flute.ensemble</SoundID>
+      <VolumeType>Expression</VolumeType>
+      <AttackType>NoteOnVelocity</AttackType>
+      <SwitchType>Winds</SwitchType>
+      <PitchBendRange>2</PitchBendRange>
+    </Patch>
+    <Patch Name="Alto Flute">
+      <SoundID>wind.flutes.flute.alto</SoundID>
+      <VolumeType>Expression</VolumeType>
+      <AttackType>NoteOnVelocity</AttackType>
+      <SwitchType>Winds</SwitchType>
+      <PitchBendRange>2</PitchBendRange>
+    </Patch>
+    <Patch Name="Bass Flute">
+      <SoundID>wind.flutes.flute.bass</SoundID>
+      <VolumeType>Expression</VolumeType>
+      <AttackType>NoteOnVelocity</AttackType>
+      <SwitchType>Winds</SwitchType>
+      <PitchBendRange>2</PitchBendRange>
+    </Patch>
+    <Patch Name="Oboe">
+      <SoundID>wind.oboes.oboe</SoundID>
+      <VolumeType>Expression</VolumeType>
+      <AttackType>NoteOnVelocity</AttackType>
+      <SwitchType>Winds</SwitchType>
+      <PitchBendRange>2</PitchBendRange>
+    </Patch>
+    <Patch Name="Oboe Ensemble">
+      <SoundID>wind.oboes.oboe.ensemble</SoundID>
+      <VolumeType>Expression</VolumeType>
+      <AttackType>NoteOnVelocity</AttackType>
+      <SwitchType>Winds</SwitchType>
+      <PitchBendRange>2</PitchBendRange>
+    </Patch>
+    <Patch Name="Oboe d'Amore">
+      <SoundID>wind.oboes.oboe d'amore</SoundID>
+      <VolumeType>Expression</VolumeType>
+      <AttackType>NoteOnVelocity</AttackType>
+      <SwitchType>Winds</SwitchType>
+      <PitchBendRange>2</PitchBendRange>
+    </Patch>
+    <Patch Name="English Horn">
+      <SoundID>wind.oboes.english horn</SoundID>
+      <VolumeType>Expression</VolumeType>
+      <AttackType>NoteOnVelocity</AttackType>
+      <SwitchType>Winds</SwitchType>
+      <PitchBendRange>2</PitchBendRange>
+    </Patch>
+    <Patch Name="Heckelphone">
+      <SoundID>wind.oboes.heckelphone</SoundID>
+      <VolumeType>Expression</VolumeType>
+      <AttackType>NoteOnVelocity</AttackType>
+      <SwitchType>Winds</SwitchType>
+      <PitchBendRange>2</PitchBendRange>
+    </Patch>
+    <Patch Name="Clarinet">
+      <SoundID>wind.clarinets.clarinet</SoundID>
+      <VolumeType>Expression</VolumeType>
+      <AttackType>NoteOnVelocity</AttackType>
+      <SwitchType>Winds</SwitchType>
+      <PitchBendRange>2</PitchBendRange>
+    </Patch>
+    <Patch Name="Clarinet Eb">
+      <SoundID>wind.clarinets.eb</SoundID>
+      <VolumeType>Expression</VolumeType>
+      <AttackType>NoteOnVelocity</AttackType>
+      <SwitchType>Winds</SwitchType>
+      <PitchBendRange>2</PitchBendRange>
+    </Patch>
+    <Patch Name="Clarinet Ensemble">
+      <SoundID>wind.clarinets.clarinet.ensemble</SoundID>
+      <VolumeType>Expression</VolumeType>
+      <AttackType>NoteOnVelocity</AttackType>
+      <SwitchType>Winds</SwitchType>
+      <PitchBendRange>2</PitchBendRange>
+    </Patch>
+    <Patch Name="Bassset Horn">
+      <SoundID>wind.clarinets.basset-horn</SoundID>
+      <VolumeType>Expression</VolumeType>
+      <AttackType>NoteOnVelocity</AttackType>
+      <SwitchType>Winds</SwitchType>
+      <PitchBendRange>2</PitchBendRange>
+    </Patch>
+    <Patch Name="Bass Clarinet">
+      <SoundID>wind.clarinets.bass</SoundID>
+      <VolumeType>Expression</VolumeType>
+      <AttackType>NoteOnVelocity</AttackType>
+      <SwitchType>Winds</SwitchType>
+      <PitchBendRange>2</PitchBendRange>
+    </Patch>
+    <Patch Name="Contrabass Clarinet">
+      <SoundID>wind.clarinets.contrabass</SoundID>
+      <VolumeType>Expression</VolumeType>
+      <AttackType>NoteOnVelocity</AttackType>
+      <SwitchType>Low Winds</SwitchType>
+      <PitchBendRange>2</PitchBendRange>
+    </Patch>
+    <Patch Name="Bassoon">
+      <SoundID>wind.bassoons.bassoon</SoundID>
+      <VolumeType>Expression</VolumeType>
+      <AttackType>NoteOnVelocity</AttackType>
+      <SwitchType>Winds</SwitchType>
+      <PitchBendRange>2</PitchBendRange>
+    </Patch>
+    <Patch Name="Bassoon Ensemble">
+      <SoundID>wind.bassoons.bassoon.ensemble</SoundID>
+      <VolumeType>Expression</VolumeType>
+      <AttackType>NoteOnVelocity</AttackType>
+      <SwitchType>Winds</SwitchType>
+      <PitchBendRange>2</PitchBendRange>
+    </Patch>
+    <Patch Name="Contrabassoon">
+      <SoundID>wind.bassoons.contrabassoon</SoundID>
+      <VolumeType>Expression</VolumeType>
+      <AttackType>NoteOnVelocity</AttackType>
+      <SwitchType>Low Winds</SwitchType>
+      <PitchBendRange>2</PitchBendRange>
+    </Patch>
+    <Patch Name="Soprano Sax">
+      <SoundID>wind.saxophones.soprano</SoundID>
+      <VolumeType>Expression</VolumeType>
+      <AttackType>NoteOnVelocity</AttackType>
+      <SwitchType>Winds</SwitchType>
+      <PitchBendRange>2</PitchBendRange>
+    </Patch>
+    <Patch Name="Alto Sax">
+      <SoundID>wind.saxophones.alto</SoundID>
+      <VolumeType>Expression</VolumeType>
+      <AttackType>NoteOnVelocity</AttackType>
+      <SwitchType>Winds</SwitchType>
+      <PitchBendRange>2</PitchBendRange>
+    </Patch>
+    <Patch Name="Tenor Sax">
+      <SoundID>wind.saxophones.tenor</SoundID>
+      <VolumeType>Expression</VolumeType>
+      <AttackType>NoteOnVelocity</AttackType>
+      <SwitchType>Winds</SwitchType>
+      <PitchBendRange>2</PitchBendRange>
+    </Patch>
+    <Patch Name="Baritone Sax">
+      <SoundID>wind.saxophones.baritone</SoundID>
+      <VolumeType>Expression</VolumeType>
+      <AttackType>NoteOnVelocity</AttackType>
+      <SwitchType>Winds</SwitchType>
+      <PitchBendRange>2</PitchBendRange>
+    </Patch>
+    <Patch Name="Bass Sax">
+      <SoundID>wind.saxophones.bass</SoundID>
+      <VolumeType>Expression</VolumeType>
+      <AttackType>NoteOnVelocity</AttackType>
+      <SwitchType>Winds</SwitchType>
+      <PitchBendRange>2</PitchBendRange>
+    </Patch>
+    <Patch Name="Horn">
+      <SoundID>brass.horns.french horn</SoundID>
+      <VolumeType>Expression</VolumeType>
+      <AttackType>NoteOnVelocity</AttackType>
+      <SwitchType>Winds</SwitchType>
+      <PitchBendRange>2</PitchBendRange>
+    </Patch>
+    <Patch Name="Horn Ensemble">
+      <SoundID>brass.horns.french horn.ensemble</SoundID>
+      <VolumeType>Expression</VolumeType>
+      <AttackType>NoteOnVelocity</AttackType>
+      <SwitchType>Winds</SwitchType>
+      <PitchBendRange>2</PitchBendRange>
+    </Patch>
+    <Patch Name="Piccolo Trumpet">
+      <SoundID>brass.trumpets.piccolo</SoundID>
+      <VolumeType>Expression</VolumeType>
+      <AttackType>NoteOnVelocity</AttackType>
+      <SwitchType>Winds</SwitchType>
+      <PitchBendRange>2</PitchBendRange>
+    </Patch>
+    <Patch Name="Trumpet">
+      <SoundID>brass.trumpets.trumpet</SoundID>
+      <VolumeType>Expression</VolumeType>
+      <AttackType>NoteOnVelocity</AttackType>
+      <SwitchType>Winds</SwitchType>
+      <PitchBendRange>2</PitchBendRange>
+    </Patch>
+    <Patch Name="Trumpet Mute">
+      <SoundID>brass.trumpets.trumpet.mute</SoundID>
+      <VolumeType>Expression</VolumeType>
+      <AttackType>NoteOnVelocity</AttackType>
+      <SwitchType>Winds</SwitchType>
+      <PitchBendRange>2</PitchBendRange>
+    </Patch>
+    <Patch Name="Flugelhorn">
+      <SoundID>brass.trumpets.flugel horn</SoundID>
+      <VolumeType>Expression</VolumeType>
+      <AttackType>NoteOnVelocity</AttackType>
+      <SwitchType>Winds</SwitchType>
+      <PitchBendRange>2</PitchBendRange>
+    </Patch>
+    <Patch Name="Cornet">
+      <SoundID>brass.trumpets.cornet</SoundID>
+      <VolumeType>Expression</VolumeType>
+      <AttackType>NoteOnVelocity</AttackType>
+      <SwitchType>Winds</SwitchType>
+      <PitchBendRange>2</PitchBendRange>
+    </Patch>
+    <Patch Name="Bass trumpet">
+      <SoundID>brass.trumpets.bass</SoundID>
+      <VolumeType>Expression</VolumeType>
+      <AttackType>NoteOnVelocity</AttackType>
+      <SwitchType>Winds</SwitchType>
+      <PitchBendRange>2</PitchBendRange>
+    </Patch>
+    <Patch Name="Trumpet Ensemble">
+      <SoundID>brass.trumpets.trumpet.ensemble</SoundID>
+      <VolumeType>Expression</VolumeType>
+      <AttackType>NoteOnVelocity</AttackType>
+      <SwitchType>Winds</SwitchType>
+      <PitchBendRange>2</PitchBendRange>
+    </Patch>
+    <Patch Name="Trumpet Ensemble Mute">
+      <SoundID>brass.trumpets.trumpet.ensemble.mute</SoundID>
+      <VolumeType>Expression</VolumeType>
+      <AttackType>NoteOnVelocity</AttackType>
+      <SwitchType>Winds</SwitchType>
+      <PitchBendRange>2</PitchBendRange>
+    </Patch>
+    <Patch Name="Tenor Trombone">
+      <SoundID>brass.trombones.tenor</SoundID>
+      <VolumeType>Expression</VolumeType>
+      <AttackType>NoteOnVelocity</AttackType>
+      <SwitchType>Winds</SwitchType>
+      <PitchBendRange>2</PitchBendRange>
+    </Patch>
+    <Patch Name="Tenor Trombone Mute">
+      <SoundID>brass.trombones.tenor.mute</SoundID>
+      <VolumeType>Expression</VolumeType>
+      <AttackType>NoteOnVelocity</AttackType>
+      <SwitchType>Winds</SwitchType>
+      <PitchBendRange>2</PitchBendRange>
+    </Patch>
+    <Patch Name="Tenor Trombone Ensemble">
+      <SoundID>brass.trombones.tenor.ensemble</SoundID>
+      <VolumeType>Expression</VolumeType>
+      <AttackType>NoteOnVelocity</AttackType>
+      <SwitchType>Winds</SwitchType>
+      <PitchBendRange>2</PitchBendRange>
+    </Patch>
+    <Patch Name="Tenor Trombone Ensemble Mute">
+      <SoundID>brass.trombones.tenor.ensemble.mute</SoundID>
+      <VolumeType>Expression</VolumeType>
+      <AttackType>NoteOnVelocity</AttackType>
+      <SwitchType>Winds</SwitchType>
+      <PitchBendRange>2</PitchBendRange>
+    </Patch>
+    <Patch Name="Alto Trombone">
+      <SoundID>brass.trombones.alto</SoundID>
+      <VolumeType>Expression</VolumeType>
+      <AttackType>NoteOnVelocity</AttackType>
+      <SwitchType>Winds</SwitchType>
+      <PitchBendRange>2</PitchBendRange>
+    </Patch>
+    <Patch Name="Bass Trombone">
+      <SoundID>brass.trombones.bass</SoundID>
+      <VolumeType>Expression</VolumeType>
+      <AttackType>NoteOnVelocity</AttackType>
+      <SwitchType>Low Winds</SwitchType>
+      <PitchBendRange>2</PitchBendRange>
+    </Patch>
+    <Patch Name="Contrabass Trombone">
+      <SoundID>brass.trombones.contrabass</SoundID>
+      <VolumeType>Expression</VolumeType>
+      <AttackType>NoteOnVelocity</AttackType>
+      <SwitchType>Low Winds</SwitchType>
+      <PitchBendRange>2</PitchBendRange>
+    </Patch>
+    <Patch Name="Tuba">
+      <SoundID>brass.tubas.tuba</SoundID>
+      <VolumeType>Expression</VolumeType>
+      <AttackType>NoteOnVelocity</AttackType>
+      <SwitchType>Low Winds</SwitchType>
+      <PitchBendRange>2</PitchBendRange>
+    </Patch>
+    <Patch Name="Contrabass Tuba">
+      <SoundID>brass.tubas.contratuba</SoundID>
+      <VolumeType>Expression</VolumeType>
+      <AttackType>NoteOnVelocity</AttackType>
+      <SwitchType>Low Winds</SwitchType>
+      <PitchBendRange>2</PitchBendRange>
+    </Patch>
+    <Patch Name="Wagner Tuba">
+      <SoundID>brass.horns.wagner tuba</SoundID>
+      <VolumeType>Expression</VolumeType>
+      <AttackType>NoteOnVelocity</AttackType>
+      <SwitchType>Winds</SwitchType>
+      <PitchBendRange>2</PitchBendRange>
+    </Patch>
+    <Patch Name="Euphonium">
+      <SoundID>brass.tubas.euphonium</SoundID>
+      <VolumeType>Expression</VolumeType>
+      <AttackType>NoteOnVelocity</AttackType>
+      <SwitchType>Low Winds</SwitchType>
+      <PitchBendRange>2</PitchBendRange>
+    </Patch>
+    <Patch Name="Cimbasso">
+      <SoundID>brass.trombones.cimbasso</SoundID>
+      <VolumeType>Expression</VolumeType>
+      <AttackType>NoteOnVelocity</AttackType>
+      <SwitchType>Low Winds</SwitchType>
+      <PitchBendRange>2</PitchBendRange>
+    </Patch>
+    <Patch Name="Choir Soprano">
+      <SoundID>voice.female.soprano.ensemble.ah</SoundID>
+      <VolumeType>Expression</VolumeType>
+      <AttackType>NoteOnVelocity</AttackType>
+      <SwitchType>Winds</SwitchType>
+      <PitchBendRange>2</PitchBendRange>
+    </Patch>
+    <Patch Name="Choir Alto">
+      <SoundID>voice.female.alto.ensemble.ah</SoundID>
+      <VolumeType>Expression</VolumeType>
+      <AttackType>NoteOnVelocity</AttackType>
+      <SwitchType>Winds</SwitchType>
+      <PitchBendRange>2</PitchBendRange>
+    </Patch>
+    <Patch Name="Choir Tenor">
+      <SoundID>voice.male.tenor.ensemble.ah</SoundID>
+      <VolumeType>Expression</VolumeType>
+      <AttackType>NoteOnVelocity</AttackType>
+      <SwitchType>Winds</SwitchType>
+      <PitchBendRange>2</PitchBendRange>
+    </Patch>
+    <Patch Name="Choir Bass">
+      <SoundID>voice.male.bass.ensemble.ah</SoundID>
+      <VolumeType>Expression</VolumeType>
+      <AttackType>NoteOnVelocity</AttackType>
+      <SwitchType>Winds</SwitchType>
+      <PitchBendRange>2</PitchBendRange>
+    </Patch>
+    <Patch Name="Full Choir">
+      <SoundID>voice.ensemble.ah</SoundID>
+      <VolumeType>Expression</VolumeType>
+      <AttackType>NoteOnVelocity</AttackType>
+      <SwitchType>Winds</SwitchType>
+      <PitchBendRange>2</PitchBendRange>
+    </Patch>
+    <Patch Name="Solo Violin">
+      <SoundID>strings.violin</SoundID>
+      <VolumeType>Expression</VolumeType>
+      <AttackType>NoteOnVelocity</AttackType>
+      <SwitchType>High Strings</SwitchType>
+      <PitchBendRange>2</PitchBendRange>
+    </Patch>
+    <Patch Name="Solo Violin mute">
+      <SoundID>strings.violin.mute</SoundID>
+      <VolumeType>Expression</VolumeType>
+      <AttackType>NoteOnVelocity</AttackType>
+      <SwitchType>High Strings</SwitchType>
+      <PitchBendRange>2</PitchBendRange>
+    </Patch>
+    <Patch Name="Solo Viola">
+      <SoundID>strings.viola</SoundID>
+      <VolumeType>Expression</VolumeType>
+      <AttackType>NoteOnVelocity</AttackType>
+      <SwitchType>High Strings</SwitchType>
+      <PitchBendRange>2</PitchBendRange>
+    </Patch>
+    <Patch Name="Solo Viola mute">
+      <SoundID>strings.viola.mute</SoundID>
+      <VolumeType>Expression</VolumeType>
+      <AttackType>NoteOnVelocity</AttackType>
+      <SwitchType>High Strings</SwitchType>
+      <PitchBendRange>2</PitchBendRange>
+    </Patch>
+    <Patch Name="Solo Cello">
+      <SoundID>strings.violoncello</SoundID>
+      <VolumeType>Expression</VolumeType>
+      <AttackType>NoteOnVelocity</AttackType>
+      <SwitchType>High Strings</SwitchType>
+      <PitchBendRange>2</PitchBendRange>
+    </Patch>
+    <Patch Name="Solo Cello mute">
+      <SoundID>strings.violoncello.mute</SoundID>
+      <VolumeType>Expression</VolumeType>
+      <AttackType>NoteOnVelocity</AttackType>
+      <SwitchType>High Strings</SwitchType>
+      <PitchBendRange>2</PitchBendRange>
+    </Patch>
+    <Patch Name="Solo Doublebass">
+      <SoundID>strings.contrabass</SoundID>
+      <VolumeType>Expression</VolumeType>
+      <AttackType>NoteOnVelocity</AttackType>
+      <SwitchType>Contrabass</SwitchType>
+      <PitchBendRange>2</PitchBendRange>
+    </Patch>
+    <Patch Name="Solo Doublebass mute">
+      <SoundID>strings.contrabass.mute</SoundID>
+      <VolumeType>Expression</VolumeType>
+      <AttackType>NoteOnVelocity</AttackType>
+      <SwitchType>Contrabass</SwitchType>
+      <PitchBendRange>2</PitchBendRange>
+    </Patch>
+    <Patch Name="Violin ensemble">
+      <SoundID>strings.violin.ensemble</SoundID>
+      <VolumeType>Expression</VolumeType>
+      <AttackType>NoteOnVelocity</AttackType>
+      <SwitchType>High Strings</SwitchType>
+      <PitchBendRange>2</PitchBendRange>
+    </Patch>
+    <Patch Name="Violin ensemble mute">
+      <SoundID>strings.violin.ensemble.mute</SoundID>
+      <VolumeType>Expression</VolumeType>
+      <AttackType>NoteOnVelocity</AttackType>
+      <SwitchType>High Strings</SwitchType>
+      <PitchBendRange>2</PitchBendRange>
+    </Patch>
+    <Patch Name="Viola ensemble">
+      <SoundID>strings.viola.ensemble</SoundID>
+      <VolumeType>Expression</VolumeType>
+      <AttackType>NoteOnVelocity</AttackType>
+      <SwitchType>High Strings</SwitchType>
+      <PitchBendRange>2</PitchBendRange>
+    </Patch>
+    <Patch Name="Viola ensemble mute">
+      <SoundID>strings.viola.ensemble.mute</SoundID>
+      <VolumeType>Expression</VolumeType>
+      <AttackType>NoteOnVelocity</AttackType>
+      <SwitchType>High Strings</SwitchType>
+      <PitchBendRange>2</PitchBendRange>
+    </Patch>
+    <Patch Name="Cello ensemble">
+      <SoundID>strings.violoncello.ensemble</SoundID>
+      <VolumeType>Expression</VolumeType>
+      <AttackType>NoteOnVelocity</AttackType>
+      <SwitchType>High Strings</SwitchType>
+      <PitchBendRange>2</PitchBendRange>
+    </Patch>
+    <Patch Name="Cello ensemble mute">
+      <SoundID>strings.violoncello.ensemble.mute</SoundID>
+      <VolumeType>Expression</VolumeType>
+      <AttackType>NoteOnVelocity</AttackType>
+      <SwitchType>High Strings</SwitchType>
+      <PitchBendRange>2</PitchBendRange>
+    </Patch>
+    <Patch Name="Doublebass ensemble">
+      <SoundID>strings.contrabass.ensemble</SoundID>
+      <VolumeType>Expression</VolumeType>
+      <AttackType>NoteOnVelocity</AttackType>
+      <SwitchType>Contrabass</SwitchType>
+      <PitchBendRange>2</PitchBendRange>
+    </Patch>
+    <Patch Name="Doublebass ensemble mute">
+      <SoundID>strings.contrabass.ensemble.mute</SoundID>
+      <VolumeType>Expression</VolumeType>
+      <AttackType>NoteOnVelocity</AttackType>
+      <SwitchType>Contrabass</SwitchType>
+      <PitchBendRange>2</PitchBendRange>
+    </Patch>
+    <Patch Name="Violin ensemble appassionata (SE 2 Bonus)">
+      <SoundID>strings.violin.ensemble</SoundID>
+      <VolumeType>Expression</VolumeType>
+      <AttackType>NoteOnVelocity</AttackType>
+      <SwitchType>Appassionata High Strings</SwitchType>
+      <PitchBendRange>2</PitchBendRange>
+    </Patch>
+    <Patch Name="Viola ensemble appassionata (SE 2 Bonus)">
+      <SoundID>strings.viola.ensemble</SoundID>
+      <VolumeType>Expression</VolumeType>
+      <AttackType>NoteOnVelocity</AttackType>
+      <SwitchType>Appassionata High Strings</SwitchType>
+      <PitchBendRange>2</PitchBendRange>
+    </Patch>
+    <Patch Name="Cello ensemble appassionata (SE 2 Bonus)">
+      <SoundID>strings.violoncello.ensemble</SoundID>
+      <VolumeType>Expression</VolumeType>
+      <AttackType>NoteOnVelocity</AttackType>
+      <SwitchType>Appassionata High Strings</SwitchType>
+      <PitchBendRange>2</PitchBendRange>
+    </Patch>
+    <Patch Name="Doublebass ensemble appassionata (SE 2 Bonus)">
+      <SoundID>strings.contrabass.ensemble</SoundID>
+      <VolumeType>Expression</VolumeType>
+      <AttackType>NoteOnVelocity</AttackType>
+      <SwitchType>Appassionata Contrabass</SwitchType>
+      <PitchBendRange>2</PitchBendRange>
+    </Patch>
+    <Patch Name="String Orchestra">
+      <SoundID>strings.string orchestra</SoundID>
+      <VolumeType>Expression</VolumeType>
+      <AttackType>NoteOnVelocity</AttackType>
+      <SwitchType>StringOrch</SwitchType>
+      <PitchBendRange>2</PitchBendRange>
+    </Patch>
+    <Patch Name="Classical Guitar">
+      <SoundID>guitar.nylon string</SoundID>
+      <VolumeType>NoteOnVelocity</VolumeType>
+      <SwitchType>Guitar</SwitchType>
+      <PitchBendRange>2</PitchBendRange>
+    </Patch>
+    <Patch Name="Electric Guitar">
+      <SoundID>guitar.electric</SoundID>
+      <VolumeType>NoteOnVelocity</VolumeType>
+      <SwitchType>Electric Guitar</SwitchType>
+      <PitchBendRange>2</PitchBendRange>
+    </Patch>
+    <Patch Name="Drums">
+      <DrumMap>Drums</DrumMap>
+      <VolumeType>NoteOnVelocity</VolumeType>
+      <PitchBendRange>2</PitchBendRange>
+    </Patch>
+    <Patch Name="Cymbals">
+      <DrumMap>Cymbals</DrumMap>
+      <VolumeType>NoteOnVelocity</VolumeType>
+      <PitchBendRange>2</PitchBendRange>
+    </Patch>
+    <Patch Name="Percussion">
+      <DrumMap>Percussion</DrumMap>
+      <VolumeType>NoteOnVelocity</VolumeType>
+      <PitchBendRange>2</PitchBendRange>
+    </Patch>
+  </PatchList>
+  <DrumMapList>
+    <DrumMapDefinition Name="Drums">
+      <DrumSound Pitch="36" SoundID="unpitched.drum.very low.taiko" Name="LowTaiko"/>
+      <DrumSound Pitch="36" SoundID="unpitched.drum.very low.taiko.left" Name="LowTaikoLeft"/>
+      <DrumSound Pitch="37" SoundID="unpitched.drum.very low.taiko.roll" Name="LowTaikoRoll">
+        <StartSwitch IsMultipleNoteSample="true"/>
+      </DrumSound>
+      <DrumSound Pitch="38" SoundID="unpitched.drum.very low.taiko.right" Name="LowTaikoRight"/>
+      <DrumSound Pitch="41" SoundID="unpitched.drum.low.taiko" Name="LowTaiko"/>
+      <DrumSound Pitch="41" SoundID="unpitched.drum.low.taiko.left" Name="LowTaikoLeft"/>
+      <DrumSound Pitch="42" SoundID="unpitched.drum.low.taiko.roll" Name="LowTaikoRoll">
+        <StartSwitch IsMultipleNoteSample="true"/>
+      </DrumSound>
+      <DrumSound Pitch="43" SoundID="unpitched.drum.low.taiko.right" Name="LowTaikoRight"/>
+      <DrumSound Pitch="45" SoundID="unpitched.drum.medium-low.taiko" Name="MediumLowTaiko"/>
+      <DrumSound Pitch="45" SoundID="unpitched.drum.medium-low.taiko.left" Name="MediumLowTaikoLeft"/>
+      <DrumSound Pitch="46" SoundID="unpitched.drum.medium-low.taiko.roll" Name="MediumLowTaikoRoll">
+        <StartSwitch IsMultipleNoteSample="true"/>
+      </DrumSound>
+      <DrumSound Pitch="47" SoundID="unpitched.drum.medium-low.taiko.right" Name="MediumLowTaikoRight"/>
+      <DrumSound Pitch="48" SoundID="unpitched.drum.very low.bass drum.concert" Name="BassDrumConcert"/>
+      <DrumSound Pitch="48" SoundID="unpitched.drum.very low.bass drum.left.concert" Name="BassDrumLeft"/>
+      <DrumSound Pitch="49" SoundID="unpitched.drum.very low.bass drum.roll.concert" Name="BassDrumRollConcert">
+        <StartSwitch IsMultipleNoteSample="true"/>
+      </DrumSound>
+      <DrumSound Pitch="50" SoundID="unpitched.drum.very low.bass drum.right.concert" Name="BassDrumRight"/>
+      <DrumSound Pitch="53" SoundID="unpitched.drum.very low.bass drum.concert.up beat" Name="Up Beat"/>
+      <DrumSound Pitch="55" SoundID="unpitched.drum.very low.bass drum.concert.up beat.2" Name="Up Beat2"/>
+      <DrumSound Pitch="57" SoundID="unpitched.drum.very low.bass drum.concert.up beat.3" Name="Up Beat3"/>
+      <DrumSound Pitch="60" SoundID="unpitched.drum.medium.snare drum.snares on" Name="SnareDrum"/>
+      <DrumSound Pitch="60" SoundID="unpitched.drum.medium.snare drum.snares on.left" Name="SnareDrumLeft"/>
+      <DrumSound Pitch="61" SoundID="unpitched.drum.medium.snare drum.snares on.roll" Name="SnareDrumRoll">
+        <StartSwitch IsMultipleNoteSample="true"/>
+      </DrumSound>
+      <DrumSound Pitch="62" SoundID="unpitched.drum.medium.snare drum.snares on.right" Name="SnareDrumRight"/>
+      <DrumSound Pitch="65" SoundID="unpitched.drum.medium.snare drum.snares on.fast.up beat" Name="Up Beat"/>
+      <DrumSound Pitch="67" SoundID="unpitched.drum.medium.snare drum.snares on.medium length.up beat" Name="Up Beat2"/>
+      <DrumSound Pitch="69" SoundID="unpitched.drum.medium.snare drum.snares on.slow.up beat" Name="Up Beat3"/>
+      <DrumSound Pitch="72" SoundID="unpitched.drum.medium.snare drum.snares on.ensemble" Name="EnsSnareDrum"/>
+      <DrumSound Pitch="72" SoundID="unpitched.drum.medium.snare drum.snares on.ensemble.left" Name="EnsSnareDrum left"/>
+      <DrumSound Pitch="73" SoundID="unpitched.drum.medium.snare drum.snares on.ensemble.roll" Name="EnsSnareDrumRoll">
+        <StartSwitch IsMultipleNoteSample="true"/>
+      </DrumSound>
+      <DrumSound Pitch="74" SoundID="unpitched.drum.medium.snare drum.snares on.ensemble.right" Name="SnareDrum right"/>
+      <DrumSound Pitch="77" SoundID="unpitched.drum.medium.snare drum.snares on.ensemble.fast.up beat" Name="Up Beat"/>
+      <DrumSound Pitch="79" SoundID="unpitched.drum.medium.snare drum.snares on.ensemble.medium length.up beat" Name="Up Beat2"/>
+      <DrumSound Pitch="81" SoundID="unpitched.drum.medium.snare drum.snares on.ensemble.slow.up beat" Name="Up Beat3"/>
+      <DrumSound Pitch="84" SoundID="unpitched.drum.medium.tambourine.stroke.drum" Name="Tambourine"/>
+      <DrumSound Pitch="85" SoundID="unpitched.drum.medium.tambourine.roll" Name="TambourineRoll">
+        <StartSwitch IsMultipleNoteSample="true"/>
+      </DrumSound>
+      <DrumSound Pitch="86" SoundID="unpitched.drum.medium.tambourine.stroke.2" Name="Tambourine2"/>
+      <DrumSound Pitch="89" SoundID="unpitched.drum.medium.tambourine.stroke.fast.up beat" Name="Up Beat"/>
+      <DrumSound Pitch="91" SoundID="unpitched.drum.medium.tambourine.stroke.medium length.up beat" Name="Up Beat2"/>
+      <DrumSound Pitch="93" SoundID="unpitched.drum.medium.tambourine.stroke.slow.up beat" Name="Up Beat3"/>
+      <DrumSound Pitch="96" SoundID="unpitched.drum.medium-low.tom-tom" Name="LowTom"/>
+      <DrumSound Pitch="96" SoundID="unpitched.drum.medium-low.tom-tom.left" Name="LowTomLeft"/>
+      <DrumSound Pitch="97" SoundID="unpitched.drum.medium-low.tom-tom.roll" Name="LowTomRoll">
+        <StartSwitch IsMultipleNoteSample="true"/>
+      </DrumSound>
+      <DrumSound Pitch="98" SoundID="unpitched.drum.medium-low.tom-tom.right" Name="LowTomRight"/>
+      <DrumSound Pitch="101" SoundID="unpitched.drum.medium.tom-tom" Name="MedTom"/>
+      <DrumSound Pitch="101" SoundID="unpitched.drum.medium.tom-tom.left" Name="MedTomLeft"/>
+      <DrumSound Pitch="102" SoundID="unpitched.drum.medium.tom-tom.roll" Name="MedTomRoll">
+        <StartSwitch IsMultipleNoteSample="true"/>
+      </DrumSound>
+      <DrumSound Pitch="103" SoundID="unpitched.drum.medium.tom-tom.right" Name="MedTomRight"/>
+      <DrumSound Pitch="105" SoundID="unpitched.drum.high.tom-tom" Name="HighTom"/>
+      <DrumSound Pitch="105" SoundID="unpitched.drum.high.tom-tom.left" Name="HighTomLeft"/>
+      <DrumSound Pitch="106" SoundID="unpitched.drum.high.tom-tom.roll" Name="HighTomRoll">
+        <StartSwitch IsMultipleNoteSample="true"/>
+      </DrumSound>
+      <DrumSound Pitch="107" SoundID="unpitched.drum.high.tom-tom.right" Name="HighTomRight"/>
+      <DrumSound Name="Bass Drum" SoundID="unpitched.drum.very low.bass drum" Pitch="48"/>
+      <DrumSound Name="Bass Drum Roll" SoundID="unpitched.drum.very low.bass drum.roll" Pitch="49"/>
+    </DrumMapDefinition>
+    <DrumMapDefinition Name="Cymbals">
+      <DrumSound Pitch="36" SoundID="unpitched.metal.cymbal.gong.large" Name="Low Gong"/>
+      <DrumSound Pitch="48" SoundID="unpitched.metal.cymbal.gong.medium" Name="Medium-Low Gong"/>
+      <DrumSound Pitch="60" SoundID="unpitched.metal.cymbal.gong.medium.2" Name="Medium Gong"/>
+      <DrumSound Pitch="70" SoundID="unpitched.metal.cymbal.gong.high" Name="High Gong"/>
+      <DrumSound Pitch="72" SoundID="unpitched.metal.cymbal.suspended" Name="SuspCymbal"/>
+      <DrumSound Pitch="73" SoundID="unpitched.metal.cymbal.suspended.choke" Name="SuspCymbalDamped"/>
+      <DrumSound Pitch="73" SoundID="unpitched.metal.cymbal.suspended.mute" Name="SuspCymbalMute"/>
+      <DrumSound Pitch="73" SoundID="unpitched.metal.cymbal.suspended.closed" Name="SuspCymbalClosed"/>
+      <DrumSound Pitch="74" SoundID="unpitched.metal.cymbal.suspended.2" Name="SuspCymbal2"/>
+      <DrumSound Pitch="75" SoundID="unpitched.metal.cymbal.suspended.choke.2" Name="SuspCymbalDamped2"/>
+      <DrumSound Pitch="75" SoundID="unpitched.metal.cymbal.suspended.mute.2" Name="SuspCymbalMute2"/>
+      <DrumSound Pitch="75" SoundID="unpitched.metal.cymbal.suspended.closed.2" Name="SuspCymbalClosed2"/>
+      <DrumSound Pitch="77" SoundID="unpitched.metal.cymbal.suspended.roll" Name="SuspCymbalRoll">
+        <StartSwitch IsMultipleNoteSample="true"/>
+      </DrumSound>
+      <DrumSound Pitch="79" SoundID="unpitched.metal.cymbal.suspended.roll.crescendo.fast" Name="SuspCymbalRollCresc">
+        <StartSwitch IsMultipleNoteSample="true"/>
+      </DrumSound>
+      <DrumSound Pitch="81" SoundID="unpitched.metal.cymbal.suspended.roll.crescendo.fast.2" Name="SuspCymbalRollCresc2">
+        <StartSwitch IsMultipleNoteSample="true"/>
+      </DrumSound>
+      <DrumSound Pitch="83" SoundID="unpitched.metal.cymbal.suspended.roll.crescendo" Name="SuspCymbalRollCrescSlow">
+        <StartSwitch IsMultipleNoteSample="true"/>
+      </DrumSound>
+      <DrumSound Pitch="84" SoundID="unpitched.metal.cymbal.clash" Name="ClashCymbal"/>
+      <DrumSound Pitch="85" SoundID="unpitched.metal.cymbal.clash.choke" Name="ClashCymbalChoke"/>
+      <DrumSound Pitch="85" SoundID="unpitched.metal.cymbal.clash.mute" Name="ClashCymbalMute"/>
+      <DrumSound Pitch="85" SoundID="unpitched.metal.cymbal.clash.closed" Name="ClashCymbalClosed"/>
+      <DrumSound Pitch="86" SoundID="unpitched.metal.cymbal.clash.2" Name="ClashCymbal2"/>
+      <DrumSound Pitch="87" SoundID="unpitched.metal.cymbal.clash.choke.2" Name="ClashCymbalChoke2"/>
+      <DrumSound Pitch="87" SoundID="unpitched.metal.cymbal.clash.mute.2" Name="ClashCymbalMute2"/>
+      <DrumSound Pitch="87" SoundID="unpitched.metal.cymbal.clash.closed.2" Name="ClashCymbalClosed2"/>
+      <DrumSound Pitch="91" SoundID="unpitched.metal.cymbal.tam tam" Name="TamTam"/>
+      <DrumSound Pitch="92" SoundID="unpitched.metal.cymbal.tam tam.roll" Name="TamTamRoll">
+        <StartSwitch IsMultipleNoteSample="true"/>
+      </DrumSound>
+      <DrumSound Pitch="93" SoundID="unpitched.metal.cymbal.tam tam.2" Name="TamTam2"/>
+      <DrumSound Pitch="94" SoundID="unpitched.metal.cymbal.tam tam.scrape" Name="TamTamTriangleStick"/>
+    </DrumMapDefinition>
+    <DrumMapDefinition Name="Percussion">
+      <DrumSound Pitch="24" SoundID="unpitched.exotic.thunder.thundersheet.tremolo.unmeasured" Name="Thundersheet Tremolo">
+        <StartSwitch IsMultipleNoteSample="true"/>
+      </DrumSound>
+      <DrumSound Pitch="25" SoundID="unpitched.exotic.thunder.thundersheet" Name="Thundersheet shake">
+        <StartSwitch IsMultipleNoteSample="true"/>
+      </DrumSound>
+      <DrumSound Pitch="26" SoundID="unpitched.exotic.thunder.thundersheet.rub" Name="Thundersheet rub"/>
+      <DrumSound Pitch="27" SoundID="unpitched.exotic.thunder.thundersheet.2" Name="Thundersheet shake2">
+        <StartSwitch IsMultipleNoteSample="true"/>
+      </DrumSound>
+      <DrumSound Pitch="28" SoundID="unpitched.exotic.thunder.thundersheet.rub.2" Name="Thundersheet rub2"/>
+      <DrumSound Pitch="29" SoundID="unpitched.exotic.thunder.thundersheet.bowed" Name="Thundersheet bowed"/>
+      <DrumSound Pitch="30" SoundID="unpitched.exotic.thunder.thundersheet.hit" Name="Thundersheet hit"/>
+      <DrumSound Pitch="31" SoundID="unpitched.exotic.thunder.thundersheet.bowed.2" Name="Thundersheet bowed2"/>
+      <DrumSound Pitch="32" SoundID="unpitched.exotic.thunder.thundersheet.hit.2" Name="Thundersheet hit2"/>
+      <DrumSound Pitch="33" SoundID="unpitched.exotic.thunder.thundersheet.hit.chain" Name="Thundersheet hit w/chain"/>
+      <DrumSound Pitch="35" SoundID="unpitched.exotic.thunder.thundersheet.hit.chain.2" Name="Thundersheet hit w/chain.2"/>
+      <DrumSound Pitch="36" SoundID="unpitched.metal.bells.high.railway track" Name="Railway Rails high"/>
+      <DrumSound Pitch="38" SoundID="unpitched.metal.bells.high.railway track.2" Name="Railway Rails high2"/>
+      <DrumSound Pitch="41" SoundID="unpitched.metal.bells.medium-high.railway track" Name="Railway Rails medium-high"/>
+      <DrumSound Pitch="43" SoundID="unpitched.metal.bells.medium-high.railway track.2" Name="Railway Rails medium-high2"/>
+      <DrumSound Pitch="45" SoundID="unpitched.metal.bells.medium.railway track" Name="Railway Rails medium"/>
+      <DrumSound Pitch="47" SoundID="unpitched.metal.bells.medium.railway track.2" Name="Railway Rails medium2"/>
+      <DrumSound Pitch="48" SoundID="unpitched.metal.bells.medium-high.wind chimes.up.slow" Name="Metal Chimes up slow"/>
+      <DrumSound Pitch="50" SoundID="unpitched.metal.bells.medium-high.wind chimes.down.slow" Name="Metal Chimes down slow"/>
+      <DrumSound Pitch="53" SoundID="unpitched.metal.bells.medium-high.wind chimes.up.fast" Name="Metal Chimes up fast"/>
+      <DrumSound Pitch="55" SoundID="unpitched.metal.bells.medium-high.wind chimes.down.fast" Name="Metal Chimes down fast"/>
+      <DrumSound Pitch="57" SoundID="unpitched.metal.bells.medium-high.wind chimes" Name="Metal Chimes high"/>
+      <DrumSound Pitch="59" SoundID="unpitched.metal.bells.medium-high.wind chimes.2" Name="Metal Chimes low"/>
+      <DrumSound Pitch="60" SoundID="unpitched.wood.high.castanets" Name="Castanet hit"/>
+      <DrumSound Pitch="61" SoundID="unpitched.wood.high.castanets.roll" Name="Castanet tremolo">
+        <StartSwitch IsMultipleNoteSample="true"/>
+      </DrumSound>
+      <DrumSound Pitch="62" SoundID="unpitched.wood.high.castanets.right" Name="Castanet hit right"/>
+      <DrumSound Pitch="64" SoundID="unpitched.wood.high.castanets.up beat" Name="Castanet up beat"/>
+      <DrumSound Pitch="65" SoundID="unpitched.wood.high.castanets.up beat.2" Name="Castanet up beat2"/>
+      <DrumSound Pitch="67" SoundID="unpitched.wood.high.castanets.up beat.3" Name="Castanet up beat3"/>
+      <DrumSound Pitch="69" SoundID="unpitched.wood.high.castanets.up beat.4" Name="Castanet up beat4"/>
+      <DrumSound Pitch="71" SoundID="unpitched.wood.high.castanets.up beat.fast" Name="Castanet up beat fast"/>
+      <DrumSound Pitch="72" SoundID="unpitched.metal.bells.high.triangle" Name="Triangle"/>
+      <DrumSound Pitch="73" SoundID="unpitched.metal.bells.high.triangle.closed" Name="Triangle Closed"/>
+      <DrumSound Pitch="74" SoundID="unpitched.metal.bells.high.triangle.2" Name="Triangle2"/>
+      <DrumSound Pitch="75" SoundID="unpitched.metal.bells.high.triangle.closed.2" Name="Triangle Closed2"/>
+      <DrumSound Pitch="76" SoundID="unpitched.metal.bells.high.triangle.roll" Name="Triangle Roll">
+        <StartSwitch IsMultipleNoteSample="true"/>
+      </DrumSound>
+      <DrumSound Name="Triangle Tremolo" SoundID="unpitched.metal.bells.high.triangle.tremolo.unmeasured" Pitch="76"/>
+    </DrumMapDefinition>
+  </DrumMapList>
+</SoundSet>

@@ -1,0 +1,144 @@
+<?xml version="1.0"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" attributeFormDefault="unqualified" elementFormDefault="qualified">
+  <xs:element name="SoundSet" type="SoundSetType"/>
+  <xs:complexType name="HeaderType">
+    <xs:sequence>
+      <xs:element type="xs:int" name="FileVersion"/>
+      <xs:element type="xs:string" name="Name"/>
+      <xs:element type="xs:string" name="PatchLoadMechanism"/>
+      <xs:element type="xs:byte" name="NumLanes"/>
+      <xs:element type="xs:string" name="DefaultSoundSet"/>
+      <xs:element type="xs:byte" name="ProgramsRelativeTo"/>
+      <xs:element type="xs:string" name="SupportsPitchBendRange"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="ControllerTypeDefinitionType">
+    <xs:sequence>
+      <xs:element type="xs:byte" name="ControllerOn" minOccurs="0"/>
+      <xs:element type="xs:byte" name="ControllerOff" minOccurs="0"/>
+      <xs:element type="xs:byte" name="ControllerDefault"/>
+    </xs:sequence>
+    <xs:attribute type="xs:string" name="Name" use="optional"/>
+    <xs:attribute type="xs:byte" name="Number" use="optional"/>
+    <xs:attribute type="xs:string" name="Binary" use="optional"/>
+  </xs:complexType>
+  <xs:complexType name="ControllerTypeListType">
+    <xs:sequence>
+      <xs:element type="ControllerTypeDefinitionType" name="ControllerTypeDefinition" maxOccurs="unbounded" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="VolumeTypeDefinitionType" mixed="true">
+    <xs:sequence>
+      <xs:element type="xs:string" name="ControllerType" minOccurs="0"/>
+    </xs:sequence>
+    <xs:attribute type="xs:string" name="Name" use="optional"/>
+    <xs:attribute type="xs:string" name="Method" use="optional"/>
+  </xs:complexType>
+  <xs:complexType name="VolumeTypeListType">
+    <xs:sequence>
+      <xs:element type="VolumeTypeDefinitionType" name="VolumeTypeDefinition" maxOccurs="unbounded" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="AttackTypeDefinitionType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="Name"/>
+        <xs:attribute type="xs:string" name="Method"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="AttackTypeListType">
+    <xs:sequence>
+      <xs:element type="AttackTypeDefinitionType" name="AttackTypeDefinition"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="ControllerSwitchType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="Name" use="optional"/>
+        <xs:attribute type="xs:byte" name="Value" use="optional"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="SwitchType">
+    <xs:sequence>
+      <xs:element type="KeySwitchType" name="KeySwitch" maxOccurs="unbounded" minOccurs="0"/>
+      <xs:element type="ControllerSwitchType" name="ControllerSwitch" maxOccurs="unbounded" minOccurs="0"/>
+      <xs:element type="xs:string" name="VolumeType" minOccurs="0"/>
+      <xs:element type="xs:string" name="AttackType" minOccurs="0"/>
+    </xs:sequence>
+    <xs:attribute type="xs:string" name="SoundIDChange" use="optional"/>
+    <xs:attribute type="xs:string" name="IsMultipleNoteSample" use="optional"/>
+  </xs:complexType>
+  <xs:complexType name="SwitchTypeDefinitionType">
+    <xs:sequence>
+      <xs:element type="SwitchType" name="Switch" maxOccurs="unbounded" minOccurs="0"/>
+    </xs:sequence>
+    <xs:attribute type="xs:string" name="Name" use="optional"/>
+  </xs:complexType>
+  <xs:complexType name="KeySwitchType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:byte" name="Key" use="optional"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="SwitchTypeListType">
+    <xs:sequence>
+      <xs:element type="SwitchTypeDefinitionType" name="SwitchTypeDefinition" maxOccurs="unbounded" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="PatchType">
+    <xs:choice maxOccurs="unbounded" minOccurs="0">
+      <xs:element type="xs:string" name="SoundID"/>
+      <xs:element type="xs:string" name="VolumeType"/>
+      <xs:element type="xs:string" name="SwitchType"/>
+      <xs:element type="xs:byte" name="PitchBendRange"/>
+      <xs:element type="xs:string" name="AttackType"/>
+      <xs:element type="xs:string" name="DrumMap"/>
+    </xs:choice>
+    <xs:attribute type="xs:string" name="Name" use="optional"/>
+  </xs:complexType>
+  <xs:complexType name="PatchListType">
+    <xs:sequence>
+      <xs:element type="PatchType" name="Patch" maxOccurs="unbounded" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="DrumSoundType" mixed="true">
+    <xs:sequence>
+      <xs:element type="StartSwitchType" name="StartSwitch" minOccurs="0"/>
+    </xs:sequence>
+    <xs:attribute type="xs:byte" name="Pitch" use="optional"/>
+    <xs:attribute type="xs:string" name="SoundID" use="optional"/>
+    <xs:attribute type="xs:string" name="Name" use="optional"/>
+  </xs:complexType>
+  <xs:complexType name="StartSwitchType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="IsMultipleNoteSample" use="optional"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="DrumMapDefinitionType">
+    <xs:sequence>
+      <xs:element type="DrumSoundType" name="DrumSound" maxOccurs="unbounded" minOccurs="0"/>
+    </xs:sequence>
+    <xs:attribute type="xs:string" name="Name" use="optional"/>
+  </xs:complexType>
+  <xs:complexType name="DrumMapListType">
+    <xs:sequence>
+      <xs:element type="DrumMapDefinitionType" name="DrumMapDefinition" maxOccurs="unbounded" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="SoundSetType">
+    <xs:sequence>
+      <xs:element type="HeaderType" name="Header"/>
+      <xs:element type="ControllerTypeListType" name="ControllerTypeList"/>
+      <xs:element type="VolumeTypeListType" name="VolumeTypeList"/>
+      <xs:element type="AttackTypeListType" name="AttackTypeList"/>
+      <xs:element type="SwitchTypeListType" name="SwitchTypeList"/>
+      <xs:element type="PatchListType" name="PatchList"/>
+      <xs:element type="DrumMapListType" name="DrumMapList"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>

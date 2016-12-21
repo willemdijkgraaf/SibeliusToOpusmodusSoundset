@@ -1,0 +1,976 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE SoundSet SYSTEM "SoundSet.dtd" []>
+<SoundSet xmlns:ss="http://www.sibelius.com/xml/SoundSet.dtd">
+  <Header>
+    <FileVersion>50001</FileVersion>
+    <Name>VE Choir</Name>
+    <PatchLoadMechanism>Fixed</PatchLoadMechanism>
+    <NumLanes>16</NumLanes>
+    <DefaultSoundSet>false</DefaultSoundSet>
+    <ProgramsRelativeTo>1</ProgramsRelativeTo>
+    <SupportsPitchBendRange>false</SupportsPitchBendRange>
+  </Header>
+  <ControllerTypeList>
+    <ControllerTypeDefinition Name="Modulation" Number="1" Binary="false">
+      <ControllerDefault>0</ControllerDefault>
+    </ControllerTypeDefinition>
+    <ControllerTypeDefinition Name="Volume" Number="7" Binary="false">
+      <ControllerDefault>64</ControllerDefault>
+    </ControllerTypeDefinition>
+    <ControllerTypeDefinition Name="Controller11" Number="11" Binary="false">
+      <ControllerDefault>64</ControllerDefault>
+    </ControllerTypeDefinition>
+    <ControllerTypeDefinition Name="Controller23" Number="23" Binary="false">
+      <ControllerDefault>25</ControllerDefault>
+    </ControllerTypeDefinition>
+    <ControllerTypeDefinition Name="Sustain" Number="64" Binary="true">
+      <ControllerOn>127</ControllerOn>
+      <ControllerOff>0</ControllerOff>
+      <ControllerDefault>0</ControllerDefault>
+    </ControllerTypeDefinition>
+    <ControllerTypeDefinition Name="Legato" Number="68" Binary="true">
+      <ControllerOn>127</ControllerOn>
+      <ControllerOff>0</ControllerOff>
+      <ControllerDefault>0</ControllerDefault>
+    </ControllerTypeDefinition>
+    <ControllerTypeDefinition Name="Reverb" Number="91" Binary="false">
+      <ControllerDefault>64</ControllerDefault>
+    </ControllerTypeDefinition>
+  </ControllerTypeList>
+  <VolumeTypeList>
+    <VolumeTypeDefinition Name="NoteOnVelocity" Method="Default"/>
+    <VolumeTypeDefinition Name="Volume" Method="Controller">
+      <ControllerType>Volume</ControllerType>
+    </VolumeTypeDefinition>
+    <VolumeTypeDefinition Name="Expression" Method="Controller">
+      <ControllerType>Controller11</ControllerType>
+    </VolumeTypeDefinition>
+  </VolumeTypeList>
+  <AttackTypeList>
+    <AttackTypeDefinition Name="NoteOnVelocity" Method="Default"/>
+  </AttackTypeList>
+  <SwitchTypeList>
+    <SwitchTypeDefinition Name="Choir">
+      <Switch SoundIDChange="[reset]">
+        <KeySwitch Key="25"/>
+        <ControllerSwitch Name="Modulation" Value="0"/>
+      </Switch>
+      <Switch SoundIDChange="+staccato">
+        <KeySwitch Key="24"/>
+        <ControllerSwitch Name="Modulation" Value="0"/>
+      </Switch>
+      <Switch SoundIDChange="+staccatissimo">
+        <KeySwitch Key="24"/>
+        <ControllerSwitch Name="Modulation" Value="0"/>
+      </Switch>
+      <Switch SoundIDChange="+sustain">
+        <KeySwitch Key="25"/>
+        <ControllerSwitch Name="Modulation" Value="0"/>
+      </Switch>
+      <Switch SoundIDChange="+sforzato">
+        <KeySwitch Key="26"/>
+        <ControllerSwitch Name="Modulation" Value="0"/>
+      </Switch>
+      <Switch SoundIDChange="+fp">
+        <KeySwitch Key="26"/>
+        <ControllerSwitch Name="Modulation" Value="127"/>
+      </Switch>
+      <Switch SoundIDChange="+accent">
+        <KeySwitch Key="26"/>
+        <ControllerSwitch Name="Modulation" Value="0"/>
+      </Switch>
+      <Switch SoundIDChange="+legato">
+        <KeySwitch Key="28"/>
+        <ControllerSwitch Name="Modulation" Value="0"/>
+      </Switch>
+      <Switch SoundIDChange="+legato +fast">
+        <KeySwitch Key="29"/>
+        <ControllerSwitch Name="Modulation" Value="0"/>
+      </Switch>
+      <Switch SoundIDChange="+fast">
+        <KeySwitch Key="29"/>
+        <ControllerSwitch Name="Modulation" Value="0"/>
+      </Switch>
+      <Switch SoundIDChange="+trill">
+        <KeySwitch Key="29"/>
+        <ControllerSwitch Name="Modulation" Value="0"/>
+      </Switch>
+      <Switch SoundIDChange="+trill.half">
+        <KeySwitch Key="29"/>
+        <ControllerSwitch Name="Modulation" Value="0"/>
+      </Switch>
+      <Switch SoundIDChange="+trill.whole">
+        <KeySwitch Key="29"/>
+        <ControllerSwitch Name="Modulation" Value="0"/>
+      </Switch>
+      <Switch SoundIDChange="+glissando">
+        <KeySwitch Key="30"/>
+        <ControllerSwitch Name="Modulation" Value="0"/>
+      </Switch>
+      <Switch SoundIDChange="+cluster">
+        <KeySwitch Key="31"/>
+        <ControllerSwitch Name="Modulation" Value="0"/>
+      </Switch>
+      <Switch SoundIDChange="+creepy">
+        <KeySwitch Key="32"/>
+        <ControllerSwitch Name="Modulation" Value="0"/>
+      </Switch>
+      <Switch SoundIDChange="+legato +cluster">
+        <KeySwitch Key="31"/>
+        <ControllerSwitch Name="Modulation" Value="0"/>
+      </Switch>
+      <Switch SoundIDChange="+legato +creepy">
+        <KeySwitch Key="32"/>
+        <ControllerSwitch Name="Modulation" Value="0"/>
+      </Switch>
+      <Switch SoundIDChange="+breathe">
+        <KeySwitch Key="98"/>
+      </Switch>
+      <Switch SoundIDChange="+tremolo.unmeasured" IsMultipleNoteSample="true">
+        <KeySwitch Key="25"/>
+        <ControllerSwitch Name="Modulation" Value="127"/>
+      </Switch>
+      <Switch SoundIDChange="+vibrato">
+        <KeySwitch Key="25"/>
+        <ControllerSwitch Name="Modulation" Value="127"/>
+      </Switch>
+      <Switch SoundIDChange="+staccatissimo +vibrato">
+        <KeySwitch Key="24"/>
+        <ControllerSwitch Name="Modulation" Value="127"/>
+      </Switch>
+      <Switch SoundIDChange="+staccato +vibrato">
+        <KeySwitch Key="24"/>
+        <ControllerSwitch Name="Modulation" Value="127"/>
+      </Switch>
+      <Switch SoundIDChange="+sforzato +vibrato">
+        <KeySwitch Key="26"/>
+        <ControllerSwitch Name="Modulation" Value="0"/>
+      </Switch>
+      <Switch SoundIDChange="+fp +vibrato">
+        <KeySwitch Key="26"/>
+        <ControllerSwitch Name="Modulation" Value="127"/>
+      </Switch>
+      <Switch SoundIDChange="+legato +vibrato">
+        <KeySwitch Key="28"/>
+        <ControllerSwitch Name="Modulation" Value="127"/>
+      </Switch>
+      <Switch SoundIDChange="+legato +vibrato +fast">
+        <KeySwitch Key="29"/>
+        <ControllerSwitch Name="Modulation" Value="127"/>
+      </Switch>
+      <Switch SoundIDChange="+vibrato +fast">
+        <KeySwitch Key="29"/>
+        <ControllerSwitch Name="Modulation" Value="127"/>
+      </Switch>
+      <Switch SoundIDChange="+trill +vibrato">
+        <KeySwitch Key="29"/>
+        <ControllerSwitch Name="Modulation" Value="127"/>
+      </Switch>
+      <Switch SoundIDChange="+trill.half +vibrato">
+        <KeySwitch Key="29"/>
+        <ControllerSwitch Name="Modulation" Value="127"/>
+      </Switch>
+      <Switch SoundIDChange="+trill.whole +vibrato">
+        <KeySwitch Key="29"/>
+        <ControllerSwitch Name="Modulation" Value="127"/>
+      </Switch>
+      <Switch SoundIDChange="+glissando +vibrato">
+        <KeySwitch Key="30"/>
+        <ControllerSwitch Name="Modulation" Value="127"/>
+      </Switch>
+      <Switch SoundIDChange="+vibrato +cluster">
+        <KeySwitch Key="31"/>
+        <ControllerSwitch Name="Modulation" Value="127"/>
+      </Switch>
+      <Switch SoundIDChange="+vibrato +creepy">
+        <KeySwitch Key="32"/>
+        <ControllerSwitch Name="Modulation" Value="127"/>
+      </Switch>
+      <Switch SoundIDChange="+legato +vibrato +cluster">
+        <KeySwitch Key="31"/>
+        <ControllerSwitch Name="Modulation" Value="127"/>
+      </Switch>
+      <Switch SoundIDChange="+legato +vibrato +creepy">
+        <KeySwitch Key="32"/>
+        <ControllerSwitch Name="Modulation" Value="127"/>
+      </Switch>
+      <Switch SoundIDChange="+vibrato +breathe">
+        <KeySwitch Key="89"/>
+      </Switch>
+      <Switch SoundIDChange="+ah">
+        <KeySwitch Key="12"/>
+        <KeySwitch Key="25"/>
+      </Switch>
+      <Switch SoundIDChange="+ah +staccato">
+        <KeySwitch Key="12"/>
+        <KeySwitch Key="24"/>
+        <ControllerSwitch Name="Modulation" Value="0"/>
+      </Switch>
+      <Switch SoundIDChange="+ah +staccatissimo">
+        <KeySwitch Key="12"/>
+        <KeySwitch Key="24"/>
+        <ControllerSwitch Name="Modulation" Value="0"/>
+      </Switch>
+      <Switch SoundIDChange="+ah +sustain">
+        <KeySwitch Key="12"/>
+        <KeySwitch Key="25"/>
+        <ControllerSwitch Name="Modulation" Value="0"/>
+      </Switch>
+      <Switch SoundIDChange="+ah +sforzato">
+        <KeySwitch Key="12"/>
+        <KeySwitch Key="26"/>
+        <ControllerSwitch Name="Modulation" Value="0"/>
+      </Switch>
+      <Switch SoundIDChange="+ah +fp">
+        <KeySwitch Key="12"/>
+        <KeySwitch Key="26"/>
+        <ControllerSwitch Name="Modulation" Value="127"/>
+      </Switch>
+      <Switch SoundIDChange="+ah +accent">
+        <KeySwitch Key="12"/>
+        <KeySwitch Key="26"/>
+        <ControllerSwitch Name="Modulation" Value="0"/>
+      </Switch>
+      <Switch SoundIDChange="+ah +legato">
+        <KeySwitch Key="12"/>
+        <KeySwitch Key="28"/>
+        <ControllerSwitch Name="Modulation" Value="0"/>
+      </Switch>
+      <Switch SoundIDChange="+ah +legato +fast">
+        <KeySwitch Key="12"/>
+        <KeySwitch Key="29"/>
+        <ControllerSwitch Name="Modulation" Value="0"/>
+      </Switch>
+      <Switch SoundIDChange="+ah +fast">
+        <KeySwitch Key="12"/>
+        <KeySwitch Key="29"/>
+        <ControllerSwitch Name="Modulation" Value="0"/>
+      </Switch>
+      <Switch SoundIDChange="+ah +trill">
+        <KeySwitch Key="12"/>
+        <KeySwitch Key="29"/>
+        <ControllerSwitch Name="Modulation" Value="0"/>
+      </Switch>
+      <Switch SoundIDChange="+ah +trill.half">
+        <KeySwitch Key="12"/>
+        <KeySwitch Key="29"/>
+        <ControllerSwitch Name="Modulation" Value="0"/>
+      </Switch>
+      <Switch SoundIDChange="+ah +trill.whole">
+        <KeySwitch Key="12"/>
+        <KeySwitch Key="29"/>
+        <ControllerSwitch Name="Modulation" Value="0"/>
+      </Switch>
+      <Switch SoundIDChange="+ah +glissando">
+        <KeySwitch Key="12"/>
+        <KeySwitch Key="30"/>
+        <ControllerSwitch Name="Modulation" Value="0"/>
+      </Switch>
+      <Switch SoundIDChange="+ah +cluster">
+        <KeySwitch Key="12"/>
+        <KeySwitch Key="31"/>
+        <ControllerSwitch Name="Modulation" Value="0"/>
+      </Switch>
+      <Switch SoundIDChange="+ah +creepy">
+        <KeySwitch Key="12"/>
+        <KeySwitch Key="32"/>
+        <ControllerSwitch Name="Modulation" Value="0"/>
+      </Switch>
+      <Switch SoundIDChange="+ah +legato +cluster">
+        <KeySwitch Key="12"/>
+        <KeySwitch Key="31"/>
+        <ControllerSwitch Name="Modulation" Value="0"/>
+      </Switch>
+      <Switch SoundIDChange="+ah +legato +creepy">
+        <KeySwitch Key="12"/>
+        <KeySwitch Key="32"/>
+        <ControllerSwitch Name="Modulation" Value="0"/>
+      </Switch>
+      <Switch SoundIDChange="+ah +breathe">
+        <KeySwitch Key="12"/>
+        <KeySwitch Key="98"/>
+      </Switch>
+      <Switch SoundIDChange="+ah +tremolo.unmeasured" IsMultipleNoteSample="true">
+        <KeySwitch Key="12"/>
+        <KeySwitch Key="25"/>
+        <ControllerSwitch Name="Modulation" Value="127"/>
+      </Switch>
+      <Switch SoundIDChange="+ah +vibrato">
+        <KeySwitch Key="12"/>
+        <KeySwitch Key="25"/>
+        <ControllerSwitch Name="Modulation" Value="127"/>
+      </Switch>
+      <Switch SoundIDChange="+ah +staccatissimo +vibrato">
+        <KeySwitch Key="12"/>
+        <KeySwitch Key="24"/>
+        <ControllerSwitch Name="Modulation" Value="127"/>
+      </Switch>
+      <Switch SoundIDChange="+ah +staccato +vibrato">
+        <KeySwitch Key="12"/>
+        <KeySwitch Key="24"/>
+        <ControllerSwitch Name="Modulation" Value="127"/>
+      </Switch>
+      <Switch SoundIDChange="+ah +sforzato +vibrato">
+        <KeySwitch Key="12"/>
+        <KeySwitch Key="26"/>
+        <ControllerSwitch Name="Modulation" Value="0"/>
+      </Switch>
+      <Switch SoundIDChange="+ah +fp +vibrato">
+        <KeySwitch Key="12"/>
+        <KeySwitch Key="26"/>
+        <ControllerSwitch Name="Modulation" Value="127"/>
+      </Switch>
+      <Switch SoundIDChange="+ah +legato +vibrato">
+        <KeySwitch Key="12"/>
+        <KeySwitch Key="28"/>
+        <ControllerSwitch Name="Modulation" Value="127"/>
+      </Switch>
+      <Switch SoundIDChange="+ah +legato +vibrato +fast">
+        <KeySwitch Key="12"/>
+        <KeySwitch Key="29"/>
+        <ControllerSwitch Name="Modulation" Value="127"/>
+      </Switch>
+      <Switch SoundIDChange="+ah +vibrato +fast">
+        <KeySwitch Key="12"/>
+        <KeySwitch Key="29"/>
+        <ControllerSwitch Name="Modulation" Value="127"/>
+      </Switch>
+      <Switch SoundIDChange="+ah +trill +vibrato">
+        <KeySwitch Key="12"/>
+        <KeySwitch Key="29"/>
+        <ControllerSwitch Name="Modulation" Value="127"/>
+      </Switch>
+      <Switch SoundIDChange="+ah +trill.half +vibrato">
+        <KeySwitch Key="12"/>
+        <KeySwitch Key="29"/>
+        <ControllerSwitch Name="Modulation" Value="127"/>
+      </Switch>
+      <Switch SoundIDChange="+ah +trill.whole +vibrato">
+        <KeySwitch Key="12"/>
+        <KeySwitch Key="29"/>
+        <ControllerSwitch Name="Modulation" Value="127"/>
+      </Switch>
+      <Switch SoundIDChange="+ah +glissando +vibrato">
+        <KeySwitch Key="12"/>
+        <KeySwitch Key="30"/>
+        <ControllerSwitch Name="Modulation" Value="127"/>
+      </Switch>
+      <Switch SoundIDChange="+ah +vibrato +cluster">
+        <KeySwitch Key="12"/>
+        <KeySwitch Key="31"/>
+        <ControllerSwitch Name="Modulation" Value="127"/>
+      </Switch>
+      <Switch SoundIDChange="+ah +vibrato +creepy">
+        <KeySwitch Key="12"/>
+        <KeySwitch Key="32"/>
+        <ControllerSwitch Name="Modulation" Value="127"/>
+      </Switch>
+      <Switch SoundIDChange="+ah +legato +vibrato +cluster">
+        <KeySwitch Key="12"/>
+        <KeySwitch Key="31"/>
+        <ControllerSwitch Name="Modulation" Value="127"/>
+      </Switch>
+      <Switch SoundIDChange="+ah +legato +vibrato +creepy">
+        <KeySwitch Key="12"/>
+        <KeySwitch Key="32"/>
+        <ControllerSwitch Name="Modulation" Value="127"/>
+      </Switch>
+      <Switch SoundIDChange="+ah +vibrato +breathe">
+        <KeySwitch Key="12"/>
+        <KeySwitch Key="89"/>
+      </Switch>
+      <Switch SoundIDChange="+oo">
+        <KeySwitch Key="13"/>
+        <KeySwitch Key="25"/>
+      </Switch>
+      <Switch SoundIDChange="+oo +staccato">
+        <KeySwitch Key="13"/>
+        <KeySwitch Key="24"/>
+        <ControllerSwitch Name="Modulation" Value="0"/>
+      </Switch>
+      <Switch SoundIDChange="+oo +staccatissimo">
+        <KeySwitch Key="13"/>
+        <KeySwitch Key="24"/>
+        <ControllerSwitch Name="Modulation" Value="0"/>
+      </Switch>
+      <Switch SoundIDChange="+oo +sustain">
+        <KeySwitch Key="13"/>
+        <KeySwitch Key="25"/>
+        <ControllerSwitch Name="Modulation" Value="0"/>
+      </Switch>
+      <Switch SoundIDChange="+oo +sforzato">
+        <KeySwitch Key="13"/>
+        <KeySwitch Key="26"/>
+        <ControllerSwitch Name="Modulation" Value="0"/>
+      </Switch>
+      <Switch SoundIDChange="+oo +fp">
+        <KeySwitch Key="13"/>
+        <KeySwitch Key="26"/>
+        <ControllerSwitch Name="Modulation" Value="127"/>
+      </Switch>
+      <Switch SoundIDChange="+oo +accent">
+        <KeySwitch Key="13"/>
+        <KeySwitch Key="26"/>
+        <ControllerSwitch Name="Modulation" Value="0"/>
+      </Switch>
+      <Switch SoundIDChange="+oo +legato">
+        <KeySwitch Key="13"/>
+        <KeySwitch Key="28"/>
+        <ControllerSwitch Name="Modulation" Value="0"/>
+      </Switch>
+      <Switch SoundIDChange="+oo +legato +fast">
+        <KeySwitch Key="13"/>
+        <KeySwitch Key="29"/>
+        <ControllerSwitch Name="Modulation" Value="0"/>
+      </Switch>
+      <Switch SoundIDChange="+oo +fast">
+        <KeySwitch Key="13"/>
+        <KeySwitch Key="29"/>
+        <ControllerSwitch Name="Modulation" Value="0"/>
+      </Switch>
+      <Switch SoundIDChange="+oo +trill">
+        <KeySwitch Key="13"/>
+        <KeySwitch Key="29"/>
+        <ControllerSwitch Name="Modulation" Value="0"/>
+      </Switch>
+      <Switch SoundIDChange="+oo +trill.half">
+        <KeySwitch Key="13"/>
+        <KeySwitch Key="29"/>
+        <ControllerSwitch Name="Modulation" Value="0"/>
+      </Switch>
+      <Switch SoundIDChange="+oo +trill.whole">
+        <KeySwitch Key="13"/>
+        <KeySwitch Key="29"/>
+        <ControllerSwitch Name="Modulation" Value="0"/>
+      </Switch>
+      <Switch SoundIDChange="+oo +glissando">
+        <KeySwitch Key="13"/>
+        <KeySwitch Key="30"/>
+        <ControllerSwitch Name="Modulation" Value="0"/>
+      </Switch>
+      <Switch SoundIDChange="+oo +cluster">
+        <KeySwitch Key="13"/>
+        <KeySwitch Key="31"/>
+        <ControllerSwitch Name="Modulation" Value="0"/>
+      </Switch>
+      <Switch SoundIDChange="+oo +creepy">
+        <KeySwitch Key="13"/>
+        <KeySwitch Key="32"/>
+        <ControllerSwitch Name="Modulation" Value="0"/>
+      </Switch>
+      <Switch SoundIDChange="+oo +legato +cluster">
+        <KeySwitch Key="13"/>
+        <KeySwitch Key="31"/>
+        <ControllerSwitch Name="Modulation" Value="0"/>
+      </Switch>
+      <Switch SoundIDChange="+oo +legato +creepy">
+        <KeySwitch Key="13"/>
+        <KeySwitch Key="32"/>
+        <ControllerSwitch Name="Modulation" Value="0"/>
+      </Switch>
+      <Switch SoundIDChange="+oo +breathe">
+        <KeySwitch Key="13"/>
+        <KeySwitch Key="98"/>
+      </Switch>
+      <Switch SoundIDChange="+oo +tremolo.unmeasured" IsMultipleNoteSample="true">
+        <KeySwitch Key="13"/>
+        <KeySwitch Key="25"/>
+        <ControllerSwitch Name="Modulation" Value="127"/>
+      </Switch>
+      <Switch SoundIDChange="+oo +vibrato">
+        <KeySwitch Key="13"/>
+        <KeySwitch Key="25"/>
+        <ControllerSwitch Name="Modulation" Value="127"/>
+      </Switch>
+      <Switch SoundIDChange="+oo +staccatissimo +vibrato">
+        <KeySwitch Key="13"/>
+        <KeySwitch Key="24"/>
+        <ControllerSwitch Name="Modulation" Value="127"/>
+      </Switch>
+      <Switch SoundIDChange="+oo +staccato +vibrato">
+        <KeySwitch Key="13"/>
+        <KeySwitch Key="24"/>
+        <ControllerSwitch Name="Modulation" Value="127"/>
+      </Switch>
+      <Switch SoundIDChange="+oo +sforzato +vibrato">
+        <KeySwitch Key="13"/>
+        <KeySwitch Key="26"/>
+        <ControllerSwitch Name="Modulation" Value="0"/>
+      </Switch>
+      <Switch SoundIDChange="+oo+fp +vibrato">
+        <KeySwitch Key="13"/>
+        <KeySwitch Key="26"/>
+        <ControllerSwitch Name="Modulation" Value="127"/>
+      </Switch>
+      <Switch SoundIDChange="+oo +legato +vibrato">
+        <KeySwitch Key="13"/>
+        <KeySwitch Key="28"/>
+        <ControllerSwitch Name="Modulation" Value="127"/>
+      </Switch>
+      <Switch SoundIDChange="+oo +legato +vibrato +fast">
+        <KeySwitch Key="13"/>
+        <KeySwitch Key="29"/>
+        <ControllerSwitch Name="Modulation" Value="127"/>
+      </Switch>
+      <Switch SoundIDChange="+oo +vibrato +fast">
+        <KeySwitch Key="13"/>
+        <KeySwitch Key="29"/>
+        <ControllerSwitch Name="Modulation" Value="127"/>
+      </Switch>
+      <Switch SoundIDChange="+oo +trill +vibrato">
+        <KeySwitch Key="13"/>
+        <KeySwitch Key="29"/>
+        <ControllerSwitch Name="Modulation" Value="127"/>
+      </Switch>
+      <Switch SoundIDChange="+oo +trill.half +vibrato">
+        <KeySwitch Key="13"/>
+        <KeySwitch Key="29"/>
+        <ControllerSwitch Name="Modulation" Value="127"/>
+      </Switch>
+      <Switch SoundIDChange="+oo +trill.whole +vibrato">
+        <KeySwitch Key="13"/>
+        <KeySwitch Key="29"/>
+        <ControllerSwitch Name="Modulation" Value="127"/>
+      </Switch>
+      <Switch SoundIDChange="+oo +glissando +vibrato">
+        <KeySwitch Key="13"/>
+        <KeySwitch Key="30"/>
+        <ControllerSwitch Name="Modulation" Value="127"/>
+      </Switch>
+      <Switch SoundIDChange="+oo +vibrato +cluster">
+        <KeySwitch Key="13"/>
+        <KeySwitch Key="31"/>
+        <ControllerSwitch Name="Modulation" Value="127"/>
+      </Switch>
+      <Switch SoundIDChange="+oo +vibrato +creepy">
+        <KeySwitch Key="13"/>
+        <KeySwitch Key="32"/>
+        <ControllerSwitch Name="Modulation" Value="127"/>
+      </Switch>
+      <Switch SoundIDChange="+oo +legato +vibrato +cluster">
+        <KeySwitch Key="13"/>
+        <KeySwitch Key="31"/>
+        <ControllerSwitch Name="Modulation" Value="127"/>
+      </Switch>
+      <Switch SoundIDChange="+oo +legato +vibrato +creepy">
+        <KeySwitch Key="13"/>
+        <KeySwitch Key="32"/>
+        <ControllerSwitch Name="Modulation" Value="127"/>
+      </Switch>
+      <Switch SoundIDChange="+oo +vibrato +breathe">
+        <KeySwitch Key="13"/>
+        <KeySwitch Key="89"/>
+      </Switch>
+      <Switch SoundIDChange="+custom1">
+        <KeySwitch Key="33"/>
+        <ControllerSwitch Name="Modulation" Value="0"/>
+      </Switch>
+      <Switch SoundIDChange="+custom2">
+        <KeySwitch Key="34"/>
+        <ControllerSwitch Name="Modulation" Value="0"/>
+      </Switch>
+      <Switch SoundIDChange="+custom3">
+        <KeySwitch Key="35"/>
+        <ControllerSwitch Name="Modulation" Value="0"/>
+      </Switch>
+      <Switch SoundIDChange="+ah +custom1">
+        <KeySwitch Key="12"/>
+        <KeySwitch Key="33"/>
+        <ControllerSwitch Name="Modulation" Value="0"/>
+      </Switch>
+      <Switch SoundIDChange="+ah +custom2">
+        <KeySwitch Key="12"/>
+        <KeySwitch Key="34"/>
+        <ControllerSwitch Name="Modulation" Value="0"/>
+      </Switch>
+      <Switch SoundIDChange="+ah +custom3">
+        <KeySwitch Key="12"/>
+        <KeySwitch Key="35"/>
+        <ControllerSwitch Name="Modulation" Value="0"/>
+      </Switch>
+      <Switch SoundIDChange="+oo +custom1">
+        <KeySwitch Key="13"/>
+        <KeySwitch Key="33"/>
+        <ControllerSwitch Name="Modulation" Value="0"/>
+      </Switch>
+      <Switch SoundIDChange="+oo +custom2">
+        <KeySwitch Key="13"/>
+        <KeySwitch Key="34"/>
+        <ControllerSwitch Name="Modulation" Value="0"/>
+      </Switch>
+      <Switch SoundIDChange="+oo +custom3">
+        <KeySwitch Key="13"/>
+        <KeySwitch Key="35"/>
+        <ControllerSwitch Name="Modulation" Value="0"/>
+      </Switch>
+    </SwitchTypeDefinition>
+    <SwitchTypeDefinition Name="Whistler">
+      <Switch SoundIDChange="[reset]">
+        <KeySwitch Key="25"/>
+        <ControllerSwitch Name="Modulation" Value="0"/>
+        <KeySwitch Key="21"/>
+      </Switch>
+      <Switch SoundIDChange="+vibrato">
+        <KeySwitch Key="25"/>
+        <ControllerSwitch Name="Modulation" Value="0"/>
+        <KeySwitch Key="21"/>
+      </Switch>
+      <Switch SoundIDChange="+staccato">
+        <KeySwitch Key="24"/>
+        <ControllerSwitch Name="Modulation" Value="0"/>
+      </Switch>
+      <Switch SoundIDChange="+legato.staccato">
+        <KeySwitch Key="24"/>
+        <ControllerSwitch Name="Modulation" Value="90"/>
+      </Switch>
+      <Switch SoundIDChange="+legato.staccato +non vibrato">
+        <KeySwitch Key="24"/>
+        <ControllerSwitch Name="Modulation" Value="40"/>
+      </Switch>
+      <Switch SoundIDChange="+legato.staccato +short">
+        <KeySwitch Key="24"/>
+        <ControllerSwitch Name="Modulation" Value="40"/>
+      </Switch>
+      <Switch SoundIDChange="+legato.staccato +long">
+        <KeySwitch Key="25"/>
+        <ControllerSwitch Name="Modulation" Value="90"/>
+      </Switch>
+      <Switch SoundIDChange="+legato.staccato +vibrato.heavy +long">
+        <KeySwitch Key="24"/>
+        <ControllerSwitch Name="Modulation" Value="127"/>
+      </Switch>
+      <Switch SoundIDChange="+non vibrato">
+        <KeySwitch Key="25"/>
+        <ControllerSwitch Name="Modulation" Value="40"/>
+        <KeySwitch Key="21"/>
+      </Switch>
+      <Switch SoundIDChange="+marcato">
+        <KeySwitch Key="26"/>
+        <ControllerSwitch Name="Modulation" Value="0"/>
+        <KeySwitch Key="21"/>
+      </Switch>
+      <Switch SoundIDChange="+marcato +non vibrato">
+        <KeySwitch Key="26"/>
+        <ControllerSwitch Name="Modulation" Value="40"/>
+        <KeySwitch Key="21"/>
+      </Switch>
+      <Switch SoundIDChange="+legato">
+        <KeySwitch Key="27"/>
+        <ControllerSwitch Name="Modulation" Value="0"/>
+        <KeySwitch Key="21"/>
+      </Switch>
+      <Switch SoundIDChange="+legato +non vibrato">
+        <KeySwitch Key="27"/>
+        <ControllerSwitch Name="Modulation" Value="40"/>
+        <KeySwitch Key="21"/>
+      </Switch>
+      <Switch SoundIDChange="+portamento">
+        <KeySwitch Key="28"/>
+        <ControllerSwitch Name="Modulation" Value="0"/>
+        <KeySwitch Key="21"/>
+      </Switch>
+      <Switch SoundIDChange="+non vibrato +portamento">
+        <KeySwitch Key="28"/>
+        <ControllerSwitch Name="Modulation" Value="40"/>
+        <KeySwitch Key="21"/>
+      </Switch>
+      <Switch SoundIDChange="+fast +portamento">
+        <KeySwitch Key="28"/>
+        <ControllerSwitch Name="Modulation" Value="0"/>
+        <KeySwitch Key="21"/>
+      </Switch>
+      <Switch SoundIDChange="+non vibrato +fast +portamento">
+        <KeySwitch Key="28"/>
+        <ControllerSwitch Name="Modulation" Value="40"/>
+        <KeySwitch Key="21"/>
+      </Switch>
+      <Switch SoundIDChange="+slow +portamento">
+        <KeySwitch Key="28"/>
+        <ControllerSwitch Name="Modulation" Value="90"/>
+        <KeySwitch Key="21"/>
+      </Switch>
+      <Switch SoundIDChange="+non vibrato +slow +portamento">
+        <KeySwitch Key="28"/>
+        <ControllerSwitch Name="Modulation" Value="127"/>
+        <KeySwitch Key="21"/>
+      </Switch>
+      <Switch SoundIDChange="+legato +fast">
+        <KeySwitch Key="29"/>
+        <ControllerSwitch Name="Modulation" Value="0"/>
+        <KeySwitch Key="21"/>
+      </Switch>
+      <Switch SoundIDChange="+rep">
+        <KeySwitch Key="30"/>
+        <ControllerSwitch Name="Modulation" Value="0"/>
+      </Switch>
+      <Switch SoundIDChange="+legato +rep">
+        <KeySwitch Key="30"/>
+        <ControllerSwitch Name="Modulation" Value="0"/>
+      </Switch>
+      <Switch SoundIDChange="+legato.staccato +rep">
+        <KeySwitch Key="30"/>
+        <ControllerSwitch Name="Modulation" Value="90"/>
+      </Switch>
+      <Switch SoundIDChange="+staccato +rep">
+        <KeySwitch Key="30"/>
+        <ControllerSwitch Name="Modulation" Value="127"/>
+      </Switch>
+      <Switch SoundIDChange="+trill.half" IsMultipleNoteSample="true">
+        <KeySwitch Key="31"/>
+        <ControllerSwitch Name="Modulation" Value="0"/>
+        <KeySwitch Key="21"/>
+      </Switch>
+      <Switch SoundIDChange="+trill.whole" IsMultipleNoteSample="true">
+        <KeySwitch Key="31"/>
+        <ControllerSwitch Name="Modulation" Value="90"/>
+        <KeySwitch Key="21"/>
+      </Switch>
+      <Switch SoundIDChange="+legato +non vibrato +rep">
+        <KeySwitch Key="30"/>
+        <ControllerSwitch Name="Modulation" Value="40"/>
+      </Switch>
+      <Switch SoundIDChange="+non vibrato +rep">
+        <KeySwitch Key="30"/>
+        <ControllerSwitch Name="Modulation" Value="40"/>
+      </Switch>
+      <Switch SoundIDChange="+scoop">
+        <KeySwitch Key="32"/>
+        <ControllerSwitch Name="Modulation" Value="0"/>
+      </Switch>
+      <Switch SoundIDChange="+non vibrato +scoop">
+        <KeySwitch Key="32"/>
+        <ControllerSwitch Name="Modulation" Value="40"/>
+      </Switch>
+      <Switch SoundIDChange="+fall">
+        <KeySwitch Key="23"/>
+        <KeySwitch Key="25"/>
+        <ControllerSwitch Name="Modulation" Value="0"/>
+      </Switch>
+      <Switch SoundIDChange="+fall +staccato">
+        <KeySwitch Key="23"/>
+        <KeySwitch Key="25"/>
+        <ControllerSwitch Name="Modulation" Value="0"/>
+      </Switch>
+      <Switch SoundIDChange="+fall +legato.staccato">
+        <KeySwitch Key="32"/>
+        <ControllerSwitch Name="Modulation" Value="127"/>
+      </Switch>
+      <Switch SoundIDChange="+fall +non vibrato">
+        <KeySwitch Key="23"/>
+        <KeySwitch Key="25"/>
+        <ControllerSwitch Name="Modulation" Value="40"/>
+      </Switch>
+      <Switch SoundIDChange="+fall +marcato">
+        <KeySwitch Key="23"/>
+        <KeySwitch Key="26"/>
+        <ControllerSwitch Name="Modulation" Value="0"/>
+      </Switch>
+      <Switch SoundIDChange="+fall +marcato +non vibrato">
+        <KeySwitch Key="23"/>
+        <KeySwitch Key="26"/>
+        <ControllerSwitch Name="Modulation" Value="40"/>
+      </Switch>
+      <Switch SoundIDChange="+fall +legato">
+        <KeySwitch Key="23"/>
+        <KeySwitch Key="27"/>
+        <ControllerSwitch Name="Modulation" Value="0"/>
+      </Switch>
+      <Switch SoundIDChange="+fall +legato +non vibrato">
+        <KeySwitch Key="23"/>
+        <KeySwitch Key="27"/>
+        <ControllerSwitch Name="Modulation" Value="40"/>
+      </Switch>
+      <Switch SoundIDChange="+fall +portamento">
+        <KeySwitch Key="23"/>
+        <KeySwitch Key="28"/>
+        <ControllerSwitch Name="Modulation" Value="0"/>
+      </Switch>
+      <Switch SoundIDChange="+fall +non vibrato +portamento">
+        <KeySwitch Key="23"/>
+        <KeySwitch Key="28"/>
+        <ControllerSwitch Name="Modulation" Value="40"/>
+      </Switch>
+      <Switch SoundIDChange="+fall +fast +portamento">
+        <KeySwitch Key="23"/>
+        <KeySwitch Key="28"/>
+        <ControllerSwitch Name="Modulation" Value="0"/>
+      </Switch>
+      <Switch SoundIDChange="+fall +non vibrato +fast +portamento">
+        <KeySwitch Key="23"/>
+        <KeySwitch Key="28"/>
+        <ControllerSwitch Name="Modulation" Value="40"/>
+      </Switch>
+      <Switch SoundIDChange="+fall +slow +portamento">
+        <KeySwitch Key="23"/>
+        <KeySwitch Key="28"/>
+        <ControllerSwitch Name="Modulation" Value="90"/>
+      </Switch>
+      <Switch SoundIDChange="+fall +non vibrato +slow +portamento">
+        <KeySwitch Key="23"/>
+        <KeySwitch Key="28"/>
+        <ControllerSwitch Name="Modulation" Value="127"/>
+      </Switch>
+      <Switch SoundIDChange="+fall +legato +fast">
+        <KeySwitch Key="23"/>
+        <KeySwitch Key="29"/>
+        <ControllerSwitch Name="Modulation" Value="0"/>
+      </Switch>
+      <Switch SoundIDChange="+fall +rep">
+        <KeySwitch Key="30"/>
+        <ControllerSwitch Name="Modulation" Value="0"/>
+      </Switch>
+      <Switch SoundIDChange="+fall +legato +rep">
+        <KeySwitch Key="30"/>
+        <ControllerSwitch Name="Modulation" Value="0"/>
+      </Switch>
+      <Switch SoundIDChange="+fall +legato.staccato +rep">
+        <KeySwitch Key="30"/>
+        <ControllerSwitch Name="Modulation" Value="90"/>
+      </Switch>
+      <Switch SoundIDChange="+fall +staccato +rep">
+        <KeySwitch Key="30"/>
+        <ControllerSwitch Name="Modulation" Value="127"/>
+      </Switch>
+      <Switch SoundIDChange="+fall +trill.half" IsMultipleNoteSample="true">
+        <KeySwitch Key="23"/>
+        <KeySwitch Key="31"/>
+        <ControllerSwitch Name="Modulation" Value="0"/>
+      </Switch>
+      <Switch SoundIDChange="+fall +trill.whole" IsMultipleNoteSample="true">
+        <KeySwitch Key="23"/>
+        <KeySwitch Key="31"/>
+        <ControllerSwitch Name="Modulation" Value="90"/>
+      </Switch>
+      <Switch SoundIDChange="+fall +legato +non vibrato +rep">
+        <KeySwitch Key="30"/>
+        <ControllerSwitch Name="Modulation" Value="40"/>
+      </Switch>
+      <Switch SoundIDChange="+fall +non vibrato +rep">
+        <KeySwitch Key="30"/>
+        <ControllerSwitch Name="Modulation" Value="40"/>
+      </Switch>
+      <Switch SoundIDChange="+fall +scoop">
+        <KeySwitch Key="32"/>
+        <ControllerSwitch Name="Modulation" Value="90"/>
+      </Switch>
+      <Switch SoundIDChange="+fall +non vibrato +scoop">
+        <KeySwitch Key="32"/>
+        <ControllerSwitch Name="Modulation" Value="90"/>
+      </Switch>
+      <Switch SoundIDChange="+slow">
+        <KeySwitch Key="25"/>
+        <ControllerSwitch Name="Modulation" Value="0"/>
+        <KeySwitch Key="21"/>
+      </Switch>
+      <Switch SoundIDChange="+fall +slow">
+        <KeySwitch Key="25"/>
+        <ControllerSwitch Name="Modulation" Value="0"/>
+        <KeySwitch Key="23"/>
+      </Switch>
+      <Switch SoundIDChange="+fast">
+        <KeySwitch Key="29"/>
+        <ControllerSwitch Name="Modulation" Value="0"/>
+        <KeySwitch Key="21"/>
+      </Switch>
+      <Switch SoundIDChange="+fall +fast">
+        <KeySwitch Key="29"/>
+        <ControllerSwitch Name="Modulation" Value="0"/>
+        <KeySwitch Key="23"/>
+      </Switch>
+    </SwitchTypeDefinition>
+  </SwitchTypeList>
+  <PatchList>
+    <Patch Name="Full Choir">
+      <SoundID>voice.ensemble.ah</SoundID>
+      <VolumeType>Expression</VolumeType>
+      <SwitchType>Choir</SwitchType>
+      <PitchBendRange>2</PitchBendRange>
+      <AttackType>NoteOnVelocity</AttackType>
+    </Patch>
+    <Patch Name="Choir Soprano">
+      <SoundID>voice.female.soprano.ensemble.ah</SoundID>
+      <VolumeType>Expression</VolumeType>
+      <SwitchType>Choir</SwitchType>
+      <PitchBendRange>2</PitchBendRange>
+      <AttackType>NoteOnVelocity</AttackType>
+    </Patch>
+    <Patch Name="Choir Alto">
+      <SoundID>voice.female.alto.ensemble.ah</SoundID>
+      <VolumeType>Expression</VolumeType>
+      <SwitchType>Choir</SwitchType>
+      <PitchBendRange>2</PitchBendRange>
+      <AttackType>NoteOnVelocity</AttackType>
+    </Patch>
+    <Patch Name="Choir Tenor">
+      <SoundID>voice.male.tenor.ensemble.ah</SoundID>
+      <VolumeType>Expression</VolumeType>
+      <SwitchType>Choir</SwitchType>
+      <PitchBendRange>2</PitchBendRange>
+      <AttackType>NoteOnVelocity</AttackType>
+    </Patch>
+    <Patch Name="Choir Bass">
+      <SoundID>voice.male.bass.ensemble.ah</SoundID>
+      <VolumeType>Expression</VolumeType>
+      <SwitchType>Choir</SwitchType>
+      <PitchBendRange>2</PitchBendRange>
+      <AttackType>NoteOnVelocity</AttackType>
+    </Patch>
+    <Patch Name="Solo Coloratura Soprano">
+      <SoundID>voice.female.soprano.ah</SoundID>
+      <VolumeType>Expression</VolumeType>
+      <AttackType>NoteOnVelocity</AttackType>
+      <SwitchType>Choir</SwitchType>
+      <PitchBendRange>2</PitchBendRange>
+    </Patch>
+    <Patch Name="Solo Soprano">
+      <SoundID>voice.female.soprano.ah</SoundID>
+      <VolumeType>Expression</VolumeType>
+      <AttackType>NoteOnVelocity</AttackType>
+      <SwitchType>Choir</SwitchType>
+      <PitchBendRange>2</PitchBendRange>
+    </Patch>
+    <Patch Name="Solo Mezzo Soprano">
+      <SoundID>voice.female.soprano.ah</SoundID>
+      <VolumeType>Expression</VolumeType>
+      <AttackType>NoteOnVelocity</AttackType>
+      <SwitchType>Choir</SwitchType>
+      <PitchBendRange>2</PitchBendRange>
+    </Patch>
+    <Patch Name="Solo Alto">
+      <SoundID>voice.female.alto.ah</SoundID>
+      <VolumeType>Expression</VolumeType>
+      <AttackType>NoteOnVelocity</AttackType>
+      <SwitchType>Choir</SwitchType>
+      <PitchBendRange>2</PitchBendRange>
+    </Patch>
+    <Patch Name="Solo Tenor">
+      <SoundID>voice.male.tenor.ah</SoundID>
+      <VolumeType>Expression</VolumeType>
+      <AttackType>NoteOnVelocity</AttackType>
+      <SwitchType>Choir</SwitchType>
+      <PitchBendRange>2</PitchBendRange>
+    </Patch>
+    <Patch Name="Solo Baritone">
+      <SoundID>voice.male.baritone.ah</SoundID>
+      <VolumeType>Expression</VolumeType>
+      <AttackType>NoteOnVelocity</AttackType>
+      <SwitchType>Choir</SwitchType>
+      <PitchBendRange>2</PitchBendRange>
+    </Patch>
+    <Patch Name="Solo Bass">
+      <SoundID>voice.male.bass.ah</SoundID>
+      <VolumeType>Expression</VolumeType>
+      <AttackType>NoteOnVelocity</AttackType>
+      <SwitchType>Choir</SwitchType>
+      <PitchBendRange>2</PitchBendRange>
+    </Patch>
+    <Patch Name="Whistler">
+      <SoundID>wind.flutes.breathy.whistling</SoundID>
+      <VolumeType>NoteOnVelocity</VolumeType>
+      <AttackType>NoteOnVelocity</AttackType>
+      <SwitchType>Whistler</SwitchType>
+      <PitchBendRange>2</PitchBendRange>
+    </Patch>
+  </PatchList>
+  <DrumMapList/>
+</SoundSet>

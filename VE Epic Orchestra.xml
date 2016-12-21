@@ -1,0 +1,392 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE SoundSet SYSTEM "SoundSet.dtd" []>
+<SoundSet xmlns:ss="http://www.sibelius.com/xml/SoundSet.dtd">
+  <Header>
+    <FileVersion>50001</FileVersion>
+    <Name>VE Epic Orchestra</Name>
+    <PatchLoadMechanism>Fixed</PatchLoadMechanism>
+    <NumLanes>16</NumLanes>
+    <DefaultSoundSet>false</DefaultSoundSet>
+    <ProgramsRelativeTo>1</ProgramsRelativeTo>
+    <SupportsPitchBendRange>false</SupportsPitchBendRange>
+  </Header>
+  <ControllerTypeList>
+    <ControllerTypeDefinition Name="Modulation" Number="1" Binary="false">
+      <ControllerDefault>0</ControllerDefault>
+    </ControllerTypeDefinition>
+    <ControllerTypeDefinition Name="Volume" Number="7" Binary="false">
+      <ControllerDefault>64</ControllerDefault>
+    </ControllerTypeDefinition>
+    <ControllerTypeDefinition Name="Controller11" Number="11" Binary="false">
+      <ControllerDefault>64</ControllerDefault>
+    </ControllerTypeDefinition>
+    <ControllerTypeDefinition Name="Sustain" Number="64" Binary="true">
+      <ControllerOn>127</ControllerOn>
+      <ControllerOff>0</ControllerOff>
+      <ControllerDefault>0</ControllerDefault>
+    </ControllerTypeDefinition>
+    <ControllerTypeDefinition Name="Legato" Number="68" Binary="true">
+      <ControllerOn>127</ControllerOn>
+      <ControllerOff>0</ControllerOff>
+      <ControllerDefault>0</ControllerDefault>
+    </ControllerTypeDefinition>
+  </ControllerTypeList>
+  <VolumeTypeList>
+    <VolumeTypeDefinition Name="NoteOnVelocity" Method="Default"/>
+    <VolumeTypeDefinition Name="ModWheel" Method="Controller">
+      <ControllerType>Modulation</ControllerType>
+    </VolumeTypeDefinition>
+    <VolumeTypeDefinition Name="Volume" Method="Controller">
+      <ControllerType>Volume</ControllerType>
+    </VolumeTypeDefinition>
+    <VolumeTypeDefinition Name="Expression" Method="Controller">
+      <ControllerType>Controller11</ControllerType>
+    </VolumeTypeDefinition>
+  </VolumeTypeList>
+  <AttackTypeList>
+    <AttackTypeDefinition Name="NoteOnVelocity" Method="Default"/>
+  </AttackTypeList>
+  <SwitchTypeList>
+    <SwitchTypeDefinition Name="Timpani">
+      <Switch SoundIDChange="[reset]">
+        <KeySwitch Key="21"/>
+      </Switch>
+      <Switch SoundIDChange="+tremolo.unmeasured" IsMultipleNoteSample="true">
+        <KeySwitch Key="23"/>
+        <VolumeType>Expression</VolumeType>
+        <AttackType>NoteOnVelocity</AttackType>
+      </Switch>
+    </SwitchTypeDefinition>
+    <SwitchTypeDefinition Name="Woodwinds">
+      <Switch SoundIDChange="[reset]">
+        <KeySwitch Key="23"/>
+      </Switch>
+      <Switch SoundIDChange="+staccato">
+        <KeySwitch Key="21"/>
+      </Switch>
+      <Switch SoundIDChange="+staccatissimo">
+        <KeySwitch Key="21"/>
+      </Switch>
+      <Switch SoundIDChange="+sustain">
+        <KeySwitch Key="23"/>
+      </Switch>
+    </SwitchTypeDefinition>
+    <SwitchTypeDefinition Name="Brass">
+      <Switch SoundIDChange="[reset]">
+        <KeySwitch Key="26"/>
+      </Switch>
+      <Switch SoundIDChange="+staccato">
+        <KeySwitch Key="24"/>
+      </Switch>
+      <Switch SoundIDChange="+staccatissimo">
+        <KeySwitch Key="24"/>
+      </Switch>
+      <Switch SoundIDChange="+sustain">
+        <KeySwitch Key="26"/>
+      </Switch>
+    </SwitchTypeDefinition>
+    <SwitchTypeDefinition Name="Appassionata Strings">
+      <Switch SoundIDChange="[reset]">
+        <KeySwitch Key="104"/>
+      </Switch>
+      <Switch SoundIDChange="+staccato">
+        <KeySwitch Key="103"/>
+      </Switch>
+      <Switch SoundIDChange="+staccatissimo">
+        <KeySwitch Key="103"/>
+      </Switch>
+      <Switch SoundIDChange="+spiccato">
+        <KeySwitch Key="103"/>
+      </Switch>
+      <Switch SoundIDChange="+sustain">
+        <KeySwitch Key="104"/>
+      </Switch>
+      <Switch SoundIDChange="+sforzato">
+        <KeySwitch Key="106"/>
+      </Switch>
+      <Switch SoundIDChange="+tremolo.unmeasured" IsMultipleNoteSample="true">
+        <KeySwitch Key="107"/>
+      </Switch>
+      <Switch SoundIDChange="+pizzicato">
+        <KeySwitch Key="108"/>
+      </Switch>
+      <Switch SoundIDChange="+legato">
+        <KeySwitch Key="105"/>
+      </Switch>
+    </SwitchTypeDefinition>
+    <SwitchTypeDefinition Name="Oboe d'amore">
+      <Switch SoundIDChange="[reset]">
+        <KeySwitch Key="26"/>
+      </Switch>
+      <Switch SoundIDChange="+staccato">
+        <KeySwitch Key="24"/>
+      </Switch>
+      <Switch SoundIDChange="+staccatissimo">
+        <KeySwitch Key="24"/>
+      </Switch>
+      <Switch SoundIDChange="+sustain">
+        <KeySwitch Key="26"/>
+      </Switch>
+      <Switch SoundIDChange="+legato">
+        <KeySwitch Key="28"/>
+      </Switch>
+    </SwitchTypeDefinition>
+    <SwitchTypeDefinition Name="Cornet">
+      <Switch SoundIDChange="[reset]">
+        <KeySwitch Key="26"/>
+      </Switch>
+      <Switch SoundIDChange="+staccato">
+        <KeySwitch Key="24"/>
+      </Switch>
+      <Switch SoundIDChange="+staccatissimo">
+        <KeySwitch Key="24"/>
+      </Switch>
+      <Switch SoundIDChange="+sustain">
+        <KeySwitch Key="26"/>
+      </Switch>
+      <Switch SoundIDChange="+legato">
+        <KeySwitch Key="28"/>
+      </Switch>
+      <Switch SoundIDChange="+portamento">
+        <KeySwitch Key="29"/>
+      </Switch>
+    </SwitchTypeDefinition>
+  </SwitchTypeList>
+  <PatchList>
+    <Patch Name="Woodwinds">
+      <SoundID>wind.wind group</SoundID>
+      <VolumeType>Expression</VolumeType>
+      <AttackType>NoteOnVelocity</AttackType>
+      <SwitchType>Woodwinds</SwitchType>
+      <PitchBendRange>2</PitchBendRange>
+    </Patch>
+    <Patch Name="Flute Ensemble">
+      <SoundID>wind.flutes.flute</SoundID>
+      <VolumeType>Expression</VolumeType>
+      <AttackType>NoteOnVelocity</AttackType>
+      <SwitchType>Woodwinds</SwitchType>
+      <PitchBendRange>2</PitchBendRange>
+    </Patch>
+    <Patch Name="Clarinet Ensemble">
+      <SoundID>wind.clarinets.clarinet</SoundID>
+      <VolumeType>Expression</VolumeType>
+      <AttackType>NoteOnVelocity</AttackType>
+      <SwitchType>Woodwinds</SwitchType>
+      <PitchBendRange>2</PitchBendRange>
+    </Patch>
+    <Patch Name="Bassoon Ensemble">
+      <SoundID>wind.bassoons.bassoon</SoundID>
+      <VolumeType>Expression</VolumeType>
+      <AttackType>NoteOnVelocity</AttackType>
+      <SwitchType>Woodwinds</SwitchType>
+      <PitchBendRange>2</PitchBendRange>
+    </Patch>
+    <Patch Name="Oboe d'Amore">
+      <SoundID>wind.oboes.oboe d'amore</SoundID>
+      <VolumeType>Expression</VolumeType>
+      <AttackType>NoteOnVelocity</AttackType>
+      <SwitchType>Oboe d'amore</SwitchType>
+      <PitchBendRange>2</PitchBendRange>
+    </Patch>
+    <Patch Name="Horns - a8">
+      <SoundID>brass.horns.french horn</SoundID>
+      <VolumeType>Expression</VolumeType>
+      <AttackType>NoteOnVelocity</AttackType>
+      <SwitchType>Brass</SwitchType>
+      <PitchBendRange>2</PitchBendRange>
+    </Patch>
+    <Patch Name="Trumpets - a6">
+      <SoundID>brass.trumpets.trumpet</SoundID>
+      <VolumeType>Expression</VolumeType>
+      <AttackType>NoteOnVelocity</AttackType>
+      <SwitchType>Brass</SwitchType>
+      <PitchBendRange>2</PitchBendRange>
+    </Patch>
+    <Patch Name="Cornet">
+      <SoundID>brass.trumpets.cornet</SoundID>
+      <VolumeType>Expression</VolumeType>
+      <AttackType>NoteOnVelocity</AttackType>
+      <SwitchType>Cornet</SwitchType>
+      <PitchBendRange>2</PitchBendRange>
+    </Patch>
+    <Patch Name="Timpani">
+      <SoundID>pitched percussion.drum.timpani</SoundID>
+      <VolumeType>Expression</VolumeType>
+      <SwitchType>Timpani</SwitchType>
+      <PitchBendRange>2</PitchBendRange>
+      <AttackType>NoteOnVelocity</AttackType>
+    </Patch>
+    <Patch Name="Percussion">
+      <DrumMap>Percussion</DrumMap>
+      <VolumeType>NoteOnVelocity</VolumeType>
+      <PitchBendRange>2</PitchBendRange>
+    </Patch>
+    <Patch Name="Appassionata Strings">
+      <SoundID>strings.string orchestra</SoundID>
+      <VolumeType>Expression</VolumeType>
+      <AttackType>NoteOnVelocity</AttackType>
+      <SwitchType>Appassionata Strings</SwitchType>
+      <PitchBendRange>2</PitchBendRange>
+    </Patch>
+    <Patch Name="Appassionata Violins">
+      <SoundID>strings.violin.ensemble</SoundID>
+      <VolumeType>Expression</VolumeType>
+      <AttackType>NoteOnVelocity</AttackType>
+      <SwitchType>Appassionata Strings</SwitchType>
+      <PitchBendRange>2</PitchBendRange>
+    </Patch>
+    <Patch Name="Appassionata Violas">
+      <SoundID>strings.viola.ensemble</SoundID>
+      <VolumeType>Expression</VolumeType>
+      <AttackType>NoteOnVelocity</AttackType>
+      <SwitchType>Appassionata Strings</SwitchType>
+      <PitchBendRange>2</PitchBendRange>
+    </Patch>
+    <Patch Name="Appassionata Celli">
+      <SoundID>strings.violoncello.ensemble</SoundID>
+      <VolumeType>Expression</VolumeType>
+      <AttackType>NoteOnVelocity</AttackType>
+      <SwitchType>Appassionata Strings</SwitchType>
+      <PitchBendRange>2</PitchBendRange>
+    </Patch>
+    <Patch Name="Appassionata Doublebasses">
+      <SoundID>strings.contrabass.ensemble</SoundID>
+      <VolumeType>Expression</VolumeType>
+      <AttackType>NoteOnVelocity</AttackType>
+      <SwitchType>Appassionata Strings</SwitchType>
+      <PitchBendRange>2</PitchBendRange>
+    </Patch>
+  </PatchList>
+  <DrumMapList>
+    <DrumMapDefinition Name="Percussion">
+      <DrumSound Pitch="77" SoundID="unpitched.drum.medium.snare drum.snares on" Name="SnareDrum"/>
+      <DrumSound Pitch="79" SoundID="unpitched.drum.medium.snare drum.snares on.left" Name="SnareDrumLeft"/>
+      <DrumSound Pitch="77" SoundID="unpitched.drum.medium.snare drum.snares on.right" Name="SnareDrumRight"/>
+      <DrumSound Pitch="81" SoundID="unpitched.drum.medium.snare drum.snares on.roll" Name="SnareDrumRoll">
+        <StartSwitch IsMultipleNoteSample="true"/>
+      </DrumSound>
+      <DrumSound Pitch="72" SoundID="unpitched.drum.very low.bass drum" Name="BassDrum"/>
+      <DrumSound Pitch="72" SoundID="unpitched.drum.very low.bass drum.right" Name="BassDrumRight"/>
+      <DrumSound Pitch="74" SoundID="unpitched.drum.very low.bass drum.left" Name="BassDrumLeft"/>
+      <DrumSound Pitch="74" SoundID="unpitched.drum.very low.bass drum.1" Name="BassDrum1"/>
+      <DrumSound Pitch="74" SoundID="unpitched.drum.very low.bass drum.2" Name="BassDrum2"/>
+      <DrumSound Pitch="76" SoundID="unpitched.drum.very low.bass drum.roll" Name="BassDrumRoll">
+        <StartSwitch IsMultipleNoteSample="true"/>
+      </DrumSound>
+      <DrumSound Pitch="73" SoundID="unpitched.drum.very low.bass drum.mute" Name="BassDrum mute"/>
+      <DrumSound Pitch="73" SoundID="unpitched.drum.very low.bass drum.damp" Name="BassDrum damp"/>
+      <DrumSound Pitch="73" SoundID="unpitched.drum.very low.bass drum.closed" Name="BassDrum closed"/>
+      <DrumSound Pitch="73" SoundID="unpitched.drum.very low.bass drum.secco" Name="BassDrum secco"/>
+      <DrumSound Pitch="73" SoundID="unpitched.drum.very low.bass drum.right.mute" Name="BassDrumRight mute"/>
+      <DrumSound Pitch="73" SoundID="unpitched.drum.very low.bass drum.damp.right" Name="BassDrumRight damp"/>
+      <DrumSound Pitch="73" SoundID="unpitched.drum.very low.bass drum.closed.right" Name="BassDrumRight closed"/>
+      <DrumSound Pitch="73" SoundID="unpitched.drum.very low.bass drum.secco.right" Name="BassDrumRight secco"/>
+      <DrumSound Pitch="75" SoundID="unpitched.drum.very low.bass drum.left.mute" Name="BassDrumLeft mute"/>
+      <DrumSound Pitch="75" SoundID="unpitched.drum.very low.bass drum.damp.left" Name="BassDrumLeft damp"/>
+      <DrumSound Pitch="75" SoundID="unpitched.drum.very low.bass drum.closed.left" Name="BassDrumLeft closed"/>
+      <DrumSound Pitch="75" SoundID="unpitched.drum.very low.bass drum.secco.left" Name="BassDrumLeft secco"/>
+      <DrumSound Pitch="75" SoundID="unpitched.drum.very low.bass drum.mute.1" Name="BassDrum1 mute"/>
+      <DrumSound Pitch="75" SoundID="unpitched.drum.very low.bass drum.damp.1" Name="BassDrum1 damp"/>
+      <DrumSound Pitch="75" SoundID="unpitched.drum.very low.bass drum.closed.1" Name="BassDrum1 closed"/>
+      <DrumSound Pitch="75" SoundID="unpitched.drum.very low.bass drum.secco.1" Name="BassDrum1 secco"/>
+      <DrumSound Pitch="75" SoundID="unpitched.drum.very low.bass drum.mute.2" Name="BassDrum2 mute"/>
+      <DrumSound Pitch="75" SoundID="unpitched.drum.very low.bass drum.damp.2" Name="BassDrum2 damp"/>
+      <DrumSound Pitch="75" SoundID="unpitched.drum.very low.bass drum.closed.2" Name="BassDrum2 closed"/>
+      <DrumSound Pitch="75" SoundID="unpitched.drum.very low.bass drum.secco.2" Name="BassDrum2 secco"/>
+      <DrumSound Pitch="72" SoundID="unpitched.drum.very low.bass drum.concert" Name="BassDrum Concert"/>
+      <DrumSound Pitch="72" SoundID="unpitched.drum.very low.bass drum.concert.right" Name="BassDrumRight"/>
+      <DrumSound Pitch="74" SoundID="unpitched.drum.very low.bass drum.concert.left" Name="BassDrumLeft"/>
+      <DrumSound Pitch="74" SoundID="unpitched.drum.very low.bass drum.concert.1" Name="BassDrum1"/>
+      <DrumSound Pitch="74" SoundID="unpitched.drum.very low.bass drum.concert.2" Name="BassDrum2"/>
+      <DrumSound Pitch="76" SoundID="unpitched.drum.very low.bass drum.concert.roll" Name="BassDrumRoll">
+        <StartSwitch IsMultipleNoteSample="true"/>
+      </DrumSound>
+      <DrumSound Pitch="73" SoundID="unpitched.drum.very low.bass drum.concert.mute" Name="BassDrum mute"/>
+      <DrumSound Pitch="73" SoundID="unpitched.drum.very low.bass drum.concert.damp" Name="BassDrum damp"/>
+      <DrumSound Pitch="73" SoundID="unpitched.drum.very low.bass drum.concert.closed" Name="BassDrum closed"/>
+      <DrumSound Pitch="73" SoundID="unpitched.drum.very low.bass drum.concert.secco" Name="BassDrum secco"/>
+      <DrumSound Pitch="73" SoundID="unpitched.drum.very low.bass drum.concert.right.mute" Name="BassDrumRight mute"/>
+      <DrumSound Pitch="73" SoundID="unpitched.drum.very low.bass drum.concert.damp.right" Name="BassDrumRight damp"/>
+      <DrumSound Pitch="73" SoundID="unpitched.drum.very low.bass drum.concert.closed.right" Name="BassDrumRight closed"/>
+      <DrumSound Pitch="73" SoundID="unpitched.drum.very low.bass drum.concert.secco.right" Name="BassDrumRight secco"/>
+      <DrumSound Pitch="75" SoundID="unpitched.drum.very low.bass drum.concert.left.mute" Name="BassDrumLeft mute"/>
+      <DrumSound Pitch="75" SoundID="unpitched.drum.very low.bass drum.concert.damp.left" Name="BassDrumLeft damp"/>
+      <DrumSound Pitch="75" SoundID="unpitched.drum.very low.bass drum.concert.closed.left" Name="BassDrumLeft closed"/>
+      <DrumSound Pitch="75" SoundID="unpitched.drum.very low.bass drum.concert.secco.left" Name="BassDrumLeft secco"/>
+      <DrumSound Pitch="75" SoundID="unpitched.drum.very low.bass drum.concert.mute.1" Name="BassDrum1 mute"/>
+      <DrumSound Pitch="75" SoundID="unpitched.drum.very low.bass drum.concert.damp.1" Name="BassDrum1 damp"/>
+      <DrumSound Pitch="75" SoundID="unpitched.drum.very low.bass drum.concert.closed.1" Name="BassDrum1 closed"/>
+      <DrumSound Pitch="75" SoundID="unpitched.drum.very low.bass drum.concert.secco.1" Name="BassDrum1 secco"/>
+      <DrumSound Pitch="75" SoundID="unpitched.drum.very low.bass drum.concert.mute.2" Name="BassDrum2 mute"/>
+      <DrumSound Pitch="75" SoundID="unpitched.drum.very low.bass drum.concert.damp.2" Name="BassDrum2 damp"/>
+      <DrumSound Pitch="75" SoundID="unpitched.drum.very low.bass drum.concert.closed.2" Name="BassDrum2 closed"/>
+      <DrumSound Pitch="75" SoundID="unpitched.drum.very low.bass drum.concert.secco.2" Name="BassDrum2 secco"/>
+      <DrumSound Pitch="89" SoundID="unpitched.drum.medium.tambourine.stroke.skin" Name="Tambourine Skin"/>
+      <DrumSound Pitch="89" SoundID="unpitched.drum.medium.tambourine.stroke.skin.closed" Name="Tambourine closed"/>
+      <DrumSound Pitch="89" SoundID="unpitched.drum.medium.tambourine.stroke.skin.mute" Name="Tambourine mute"/>
+      <DrumSound Pitch="91" SoundID="unpitched.drum.medium.tambourine.stroke.skin.1" Name="Tambourine1"/>
+      <DrumSound Pitch="91" SoundID="unpitched.drum.medium.tambourine.stroke.skin.closed.1" Name="Tambourine1 closed"/>
+      <DrumSound Pitch="91" SoundID="unpitched.drum.medium.tambourine.stroke.skin.mute.1" Name="Tambourine1 mute"/>
+      <DrumSound Pitch="91" SoundID="unpitched.drum.medium.tambourine.stroke.skin.2" Name="Tambourine2"/>
+      <DrumSound Pitch="91" SoundID="unpitched.drum.medium.tambourine.stroke.skin.closed.2" Name="Tambourine2 closed"/>
+      <DrumSound Pitch="91" SoundID="unpitched.drum.medium.tambourine.stroke.skin.mute.2" Name="Tambourine2 mute"/>
+      <DrumSound Pitch="90" SoundID="unpitched.drum.medium.tambourine.stroke.frame" Name="Tambourine Frame"/>
+      <DrumSound Pitch="89" SoundID="unpitched.drum.medium.tambourine.stroke.frame.closed" Name="Tambourine closed"/>
+      <DrumSound Pitch="89" SoundID="unpitched.drum.medium.tambourine.stroke.frame.mute" Name="Tambourine mute"/>
+      <DrumSound Pitch="92" SoundID="unpitched.drum.medium.tambourine.stroke.frame.1" Name="Tambourine1"/>
+      <DrumSound Pitch="91" SoundID="unpitched.drum.medium.tambourine.stroke.frame.closed.1" Name="Tambourine1 closed"/>
+      <DrumSound Pitch="91" SoundID="unpitched.drum.medium.tambourine.stroke.frame.mute.1" Name="Tambourine1 mute"/>
+      <DrumSound Pitch="92" SoundID="unpitched.drum.medium.tambourine.stroke.frame.2" Name="Tambourine2"/>
+      <DrumSound Pitch="91" SoundID="unpitched.drum.medium.tambourine.stroke.frame.closed.2" Name="Tambourine2 closed"/>
+      <DrumSound Pitch="91" SoundID="unpitched.drum.medium.tambourine.stroke.frame.mute.2" Name="Tambourine2 mute"/>
+      <DrumSound Pitch="89" SoundID="unpitched.drum.medium.tambourine.pop" Name="Tambourine pop"/>
+      <DrumSound Pitch="91" SoundID="unpitched.drum.medium.tambourine.pop.1" Name="Tambourine1 pop"/>
+      <DrumSound Pitch="91" SoundID="unpitched.drum.medium.tambourine.pop.2" Name="Tambourine2 pop"/>
+      <DrumSound Pitch="93" SoundID="unpitched.drum.medium.tambourine.roll" Name="TambourineRoll">
+        <StartSwitch IsMultipleNoteSample="true"/>
+      </DrumSound>
+      <DrumSound Pitch="84" SoundID="unpitched.metal.cymbal.clash" Name="ClashCymbal"/>
+      <DrumSound Pitch="85" SoundID="unpitched.metal.cymbal.clash.choke" Name="ClashCymbalChoke"/>
+      <DrumSound Pitch="85" SoundID="unpitched.metal.cymbal.clash.mute" Name="ClashCymbalMute"/>
+      <DrumSound Pitch="85" SoundID="unpitched.metal.cymbal.clash.closed" Name="ClashCymbalClosed"/>
+      <DrumSound Pitch="86" SoundID="unpitched.metal.cymbal.clash.1" Name="ClashCymbal1"/>
+      <DrumSound Pitch="86" SoundID="unpitched.metal.cymbal.clash.2" Name="ClashCymbal2"/>
+      <DrumSound Pitch="87" SoundID="unpitched.metal.cymbal.clash.choke.1" Name="ClashCymbalChoke1"/>
+      <DrumSound Pitch="87" SoundID="unpitched.metal.cymbal.clash.mute.1" Name="ClashCymbalMute1"/>
+      <DrumSound Pitch="87" SoundID="unpitched.metal.cymbal.clash.closed.1" Name="ClashCymbalClosed1"/>
+      <DrumSound Pitch="87" SoundID="unpitched.metal.cymbal.clash.choke.2" Name="ClashCymbalChoke2"/>
+      <DrumSound Pitch="87" SoundID="unpitched.metal.cymbal.clash.mute.2" Name="ClashCymbalMute2"/>
+      <DrumSound Pitch="87" SoundID="unpitched.metal.cymbal.clash.closed.2" Name="ClashCymbalClosed2"/>
+      <DrumSound Pitch="101" SoundID="unpitched.metal.cymbal.tam tam" Name="TamTam"/>
+      <DrumSound Pitch="104" SoundID="unpitched.metal.cymbal.tam tam.roll" Name="TamTamRoll">
+        <StartSwitch IsMultipleNoteSample="true"/>
+      </DrumSound>
+      <DrumSound Pitch="103" SoundID="unpitched.metal.cymbal.tam tam.1" Name="TamTam1"/>
+      <DrumSound Pitch="103" SoundID="unpitched.metal.cymbal.tam tam.2" Name="TamTam2"/>
+      <DrumSound Pitch="96" SoundID="unpitched.metal.bells.high.triangle" Name="Triangle"/>
+      <DrumSound Pitch="97" SoundID="unpitched.metal.bells.high.triangle.closed" Name="Triangle Closed"/>
+      <DrumSound Pitch="98" SoundID="unpitched.metal.bells.high.triangle.1" Name="Triangle1"/>
+      <DrumSound Pitch="99" SoundID="unpitched.metal.bells.high.triangle.closed.1" Name="Triangle Closed1"/>
+      <DrumSound Pitch="98" SoundID="unpitched.metal.bells.high.triangle.2" Name="Triangle2"/>
+      <DrumSound Pitch="99" SoundID="unpitched.metal.bells.high.triangle.closed.2" Name="Triangle Closed2"/>
+      <DrumSound Pitch="100" SoundID="unpitched.metal.bells.high.triangle.tremolo.unmeasured" Name="Triangle Roll">
+        <StartSwitch IsMultipleNoteSample="true"/>
+      </DrumSound>
+      <DrumSound Pitch="96" SoundID="unpitched.metal.bells.high.triangle.stroke" Name="Triangle stroke"/>
+      <DrumSound Pitch="97" SoundID="unpitched.metal.bells.high.triangle.stroke.closed" Name="Triangle Stroke Closed"/>
+      <DrumSound Pitch="98" SoundID="unpitched.metal.bells.high.triangle.stroke.1" Name="Triangle1"/>
+      <DrumSound Pitch="99" SoundID="unpitched.metal.bells.high.triangle.stroke.closed.1" Name="Triangle Stroke Closed1"/>
+      <DrumSound Pitch="98" SoundID="unpitched.metal.bells.high.triangle.stroke.2" Name="Triangle2"/>
+      <DrumSound Pitch="99" SoundID="unpitched.metal.bells.high.triangle.stroke.closed.2" Name="Triangle Stroke Closed2"/>
+      <DrumSound Pitch="100" SoundID="unpitched.metal.bells.high.triangle.stroke.tremolo.unmeasured" Name="Triangle Roll">
+        <StartSwitch IsMultipleNoteSample="true"/>
+      </DrumSound>
+      <DrumSound Pitch="105" SoundID="unpitched.metal.cymbal.suspended" Name="SuspCymbal"/>
+      <DrumSound Pitch="107" SoundID="unpitched.metal.cymbal.suspended.1" Name="SuspCymbal1"/>
+      <DrumSound Pitch="107" SoundID="unpitched.metal.cymbal.suspended.2" Name="SuspCymbal2"/>
+      <DrumSound Pitch="108" SoundID="unpitched.metal.cymbal.suspended.roll" Name="SuspCymbalRoll">
+        <StartSwitch IsMultipleNoteSample="true"/>
+      </DrumSound>
+    </DrumMapDefinition>
+  </DrumMapList>
+</SoundSet>

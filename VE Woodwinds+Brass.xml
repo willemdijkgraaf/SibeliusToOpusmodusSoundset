@@ -1,0 +1,5053 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE SoundSet SYSTEM "SoundSet.dtd" []>
+<SoundSet xmlns:ss="http://www.sibelius.com/xml/SoundSet.dtd">
+  <Header>
+    <FileVersion>50001</FileVersion>
+    <Name>VE Woodwinds + Brass</Name>
+    <PatchLoadMechanism>Fixed</PatchLoadMechanism>
+    <NumLanes>16</NumLanes>
+    <DefaultSoundSet>false</DefaultSoundSet>
+    <ProgramsRelativeTo>1</ProgramsRelativeTo>
+    <SupportsPitchBendRange>false</SupportsPitchBendRange>
+  </Header>
+  <ControllerTypeList>
+    <ControllerTypeDefinition Name="Controller11" Number="11" Binary="false">
+      <ControllerDefault>64</ControllerDefault>
+    </ControllerTypeDefinition>
+  </ControllerTypeList>
+  <VolumeTypeList>
+    <VolumeTypeDefinition Name="Expression" Method="Controller">
+      <ControllerType>Controller11</ControllerType>
+    </VolumeTypeDefinition>
+  </VolumeTypeList>
+  <AttackTypeList>
+    <AttackTypeDefinition Name="NoteOnVelocity" Method="Default"/>
+  </AttackTypeList>
+  <SwitchTypeList>
+    <SwitchTypeDefinition Name="Winds High">
+      <Switch SoundIDChange="[reset]">
+        <KeySwitch Key="12"/>
+        <KeySwitch Key="26"/>
+      </Switch>
+      <Switch SoundIDChange="+staccatissimo">
+        <KeySwitch Key="12"/>
+        <KeySwitch Key="24"/>
+      </Switch>
+      <Switch SoundIDChange="+staccato">
+        <KeySwitch Key="12"/>
+        <KeySwitch Key="24"/>
+      </Switch>
+      <Switch SoundIDChange="+legato.staccato">
+        <KeySwitch Key="12"/>
+        <KeySwitch Key="25"/>
+      </Switch>
+      <Switch SoundIDChange="+legato.staccato.vibrato">
+        <KeySwitch Key="12"/>
+        <KeySwitch Key="27"/>
+      </Switch>
+      <Switch SoundIDChange="+sustain">
+        <KeySwitch Key="12"/>
+        <KeySwitch Key="26"/>
+      </Switch>
+      <Switch SoundIDChange="+long">
+        <KeySwitch Key="12"/>
+        <KeySwitch Key="26"/>
+      </Switch>
+      <Switch SoundIDChange="+slow">
+        <KeySwitch Key="12"/>
+        <KeySwitch Key="26"/>
+      </Switch>
+      <Switch SoundIDChange="+non vibrato">
+        <KeySwitch Key="12"/>
+        <KeySwitch Key="26"/>
+      </Switch>
+      <Switch SoundIDChange="+vibrato">
+        <KeySwitch Key="12"/>
+        <KeySwitch Key="27"/>
+      </Switch>
+      <Switch SoundIDChange="+vibrato.heavy">
+        <KeySwitch Key="12"/>
+        <KeySwitch Key="28"/>
+      </Switch>
+      <Switch SoundIDChange="+vibrato.progressive">
+        <KeySwitch Key="12"/>
+        <KeySwitch Key="29"/>
+      </Switch>
+      <Switch SoundIDChange="+legato">
+        <KeySwitch Key="12"/>
+        <KeySwitch Key="32"/>
+      </Switch>
+      <Switch SoundIDChange="+legato.non vibrato">
+        <KeySwitch Key="12"/>
+        <KeySwitch Key="32"/>
+      </Switch>
+      <Switch SoundIDChange="+legato.vibrato">
+        <KeySwitch Key="12"/>
+        <KeySwitch Key="33"/>
+      </Switch>
+      <Switch SoundIDChange="+marcato">
+        <KeySwitch Key="12"/>
+        <KeySwitch Key="30"/>
+      </Switch>
+      <Switch SoundIDChange="+marcato +staccato">
+        <KeySwitch Key="12"/>
+        <KeySwitch Key="24"/>
+      </Switch>
+      <Switch SoundIDChange="+marcato +staccatissimo">
+        <KeySwitch Key="12"/>
+        <KeySwitch Key="24"/>
+      </Switch>
+      <Switch SoundIDChange="+marcato +vibrato">
+        <KeySwitch Key="12"/>
+        <KeySwitch Key="31"/>
+      </Switch>
+      <Switch SoundIDChange="+portamento">
+        <KeySwitch Key="13"/>
+        <KeySwitch Key="27"/>
+      </Switch>
+      <Switch SoundIDChange="+fp">
+        <KeySwitch Key="12"/>
+        <KeySwitch Key="34"/>
+      </Switch>
+      <Switch SoundIDChange="+sforzato">
+        <KeySwitch Key="12"/>
+        <KeySwitch Key="35"/>
+      </Switch>
+      <Switch SoundIDChange="+tremolo.unmeasured" IsMultipleNoteSample="true">
+        <KeySwitch Key="13"/>
+        <KeySwitch Key="26"/>
+      </Switch>
+      <Switch SoundIDChange="+flutter-tongue" IsMultipleNoteSample="true">
+        <KeySwitch Key="13"/>
+        <KeySwitch Key="26"/>
+      </Switch>
+      <Switch SoundIDChange="+tongue-ram">
+        <KeySwitch Key="13"/>
+        <KeySwitch Key="29"/>
+      </Switch>
+      <Switch SoundIDChange="+slap">
+        <KeySwitch Key="13"/>
+        <KeySwitch Key="29"/>
+      </Switch>
+      <Switch SoundIDChange="+trill.half" IsMultipleNoteSample="true">
+        <KeySwitch Key="13"/>
+        <KeySwitch Key="24"/>
+      </Switch>
+      <Switch SoundIDChange="+trill.whole" IsMultipleNoteSample="true">
+        <KeySwitch Key="13"/>
+        <KeySwitch Key="25"/>
+      </Switch>
+      <Switch SoundIDChange="+glissando">
+        <KeySwitch Key="13"/>
+        <KeySwitch Key="28"/>
+      </Switch>
+      <Switch SoundIDChange="+legato.blare">
+        <KeySwitch Key="12"/>
+        <KeySwitch Key="29"/>
+      </Switch>
+      <Switch SoundIDChange="+marcato +blare">
+        <KeySwitch Key="12"/>
+        <KeySwitch Key="29"/>
+      </Switch>
+      <Switch SoundIDChange="+fall">
+        <KeySwitch Key="12"/>
+        <KeySwitch Key="28"/>
+        <KeySwitch Key="21"/>
+      </Switch>
+      <Switch SoundIDChange="+fall +slow">
+        <KeySwitch Key="12"/>
+        <KeySwitch Key="28"/>
+        <KeySwitch Key="23"/>
+      </Switch>
+      <Switch SoundIDChange="+fall +fast">
+        <KeySwitch Key="12"/>
+        <KeySwitch Key="28"/>
+        <KeySwitch Key="21"/>
+      </Switch>
+      <Switch SoundIDChange="+fall +long">
+        <KeySwitch Key="12"/>
+        <KeySwitch Key="28"/>
+        <KeySwitch Key="23"/>
+      </Switch>
+      <Switch SoundIDChange="+fall +short">
+        <KeySwitch Key="12"/>
+        <KeySwitch Key="28"/>
+        <KeySwitch Key="21"/>
+      </Switch>
+      <Switch SoundIDChange="+vibrato +portamento">
+        <KeySwitch Key="13"/>
+        <KeySwitch Key="27"/>
+      </Switch>
+      <Switch SoundIDChange="+custom1">
+        <KeySwitch Key="13"/>
+        <KeySwitch Key="30"/>
+      </Switch>
+      <Switch SoundIDChange="+vibrato +custom1">
+        <KeySwitch Key="13"/>
+        <KeySwitch Key="30"/>
+      </Switch>
+      <Switch SoundIDChange="+legato +custom1">
+        <KeySwitch Key="13"/>
+        <KeySwitch Key="30"/>
+      </Switch>
+      <Switch SoundIDChange="+non vibrato +custom1">
+        <KeySwitch Key="13"/>
+        <KeySwitch Key="30"/>
+      </Switch>
+      <Switch SoundIDChange="+staccato +custom1">
+        <KeySwitch Key="13"/>
+        <KeySwitch Key="30"/>
+      </Switch>
+      <Switch SoundIDChange="+legato.staccato +custom1">
+        <KeySwitch Key="13"/>
+        <KeySwitch Key="30"/>
+      </Switch>
+      <Switch SoundIDChange="+legato.vibrato +custom1">
+        <KeySwitch Key="13"/>
+        <KeySwitch Key="30"/>
+      </Switch>
+      <Switch SoundIDChange="+marcato +custom1">
+        <KeySwitch Key="13"/>
+        <KeySwitch Key="30"/>
+      </Switch>
+      <Switch SoundIDChange="+custom2">
+        <KeySwitch Key="13"/>
+        <KeySwitch Key="31"/>
+      </Switch>
+      <Switch SoundIDChange="+vibrato +custom2">
+        <KeySwitch Key="13"/>
+        <KeySwitch Key="31"/>
+      </Switch>
+      <Switch SoundIDChange="+legato +custom2">
+        <KeySwitch Key="13"/>
+        <KeySwitch Key="31"/>
+      </Switch>
+      <Switch SoundIDChange="+non vibrato +custom2">
+        <KeySwitch Key="13"/>
+        <KeySwitch Key="31"/>
+      </Switch>
+      <Switch SoundIDChange="+staccato +custom2">
+        <KeySwitch Key="13"/>
+        <KeySwitch Key="31"/>
+      </Switch>
+      <Switch SoundIDChange="+legato.staccato +custom2">
+        <KeySwitch Key="13"/>
+        <KeySwitch Key="31"/>
+      </Switch>
+      <Switch SoundIDChange="+legato.vibrato +custom2">
+        <KeySwitch Key="13"/>
+        <KeySwitch Key="31"/>
+      </Switch>
+      <Switch SoundIDChange="+marcato +custom2">
+        <KeySwitch Key="13"/>
+        <KeySwitch Key="31"/>
+      </Switch>
+      <Switch SoundIDChange="+custom3">
+        <KeySwitch Key="13"/>
+        <KeySwitch Key="32"/>
+      </Switch>
+      <Switch SoundIDChange="+vibrato +custom3">
+        <KeySwitch Key="13"/>
+        <KeySwitch Key="32"/>
+      </Switch>
+      <Switch SoundIDChange="+legato +custom3">
+        <KeySwitch Key="13"/>
+        <KeySwitch Key="32"/>
+      </Switch>
+      <Switch SoundIDChange="+non vibrato +custom3">
+        <KeySwitch Key="13"/>
+        <KeySwitch Key="32"/>
+      </Switch>
+      <Switch SoundIDChange="+staccato +custom3">
+        <KeySwitch Key="13"/>
+        <KeySwitch Key="32"/>
+      </Switch>
+      <Switch SoundIDChange="+legato.staccato +custom3">
+        <KeySwitch Key="13"/>
+        <KeySwitch Key="32"/>
+      </Switch>
+      <Switch SoundIDChange="+legato.vibrato +custom3">
+        <KeySwitch Key="13"/>
+        <KeySwitch Key="32"/>
+      </Switch>
+      <Switch SoundIDChange="+marcato +custom3">
+        <KeySwitch Key="13"/>
+        <KeySwitch Key="32"/>
+      </Switch>
+      <Switch SoundIDChange="+custom4">
+        <KeySwitch Key="13"/>
+        <KeySwitch Key="33"/>
+      </Switch>
+      <Switch SoundIDChange="+vibrato +custom4">
+        <KeySwitch Key="13"/>
+        <KeySwitch Key="33"/>
+      </Switch>
+      <Switch SoundIDChange="+legato +custom4">
+        <KeySwitch Key="13"/>
+        <KeySwitch Key="33"/>
+      </Switch>
+      <Switch SoundIDChange="+non vibrato +custom4">
+        <KeySwitch Key="13"/>
+        <KeySwitch Key="33"/>
+      </Switch>
+      <Switch SoundIDChange="+staccato +custom4">
+        <KeySwitch Key="13"/>
+        <KeySwitch Key="33"/>
+      </Switch>
+      <Switch SoundIDChange="+legato.staccato +custom4">
+        <KeySwitch Key="13"/>
+        <KeySwitch Key="33"/>
+      </Switch>
+      <Switch SoundIDChange="+legato.vibrato +custom4">
+        <KeySwitch Key="13"/>
+        <KeySwitch Key="33"/>
+      </Switch>
+      <Switch SoundIDChange="+marcato +custom4">
+        <KeySwitch Key="13"/>
+        <KeySwitch Key="33"/>
+      </Switch>
+      <Switch SoundIDChange="+custom5">
+        <KeySwitch Key="13"/>
+        <KeySwitch Key="34"/>
+      </Switch>
+      <Switch SoundIDChange="+vibrato +custom5">
+        <KeySwitch Key="13"/>
+        <KeySwitch Key="34"/>
+      </Switch>
+      <Switch SoundIDChange="+legato +custom5">
+        <KeySwitch Key="13"/>
+        <KeySwitch Key="34"/>
+      </Switch>
+      <Switch SoundIDChange="+non vibrato +custom5">
+        <KeySwitch Key="13"/>
+        <KeySwitch Key="34"/>
+      </Switch>
+      <Switch SoundIDChange="+staccato +custom5">
+        <KeySwitch Key="13"/>
+        <KeySwitch Key="34"/>
+      </Switch>
+      <Switch SoundIDChange="+legato.staccato +custom5">
+        <KeySwitch Key="13"/>
+        <KeySwitch Key="34"/>
+      </Switch>
+      <Switch SoundIDChange="+legato.vibrato +custom5">
+        <KeySwitch Key="13"/>
+        <KeySwitch Key="34"/>
+      </Switch>
+      <Switch SoundIDChange="+marcato +custom5">
+        <KeySwitch Key="13"/>
+        <KeySwitch Key="34"/>
+      </Switch>
+      <Switch SoundIDChange="+custom6">
+        <KeySwitch Key="13"/>
+        <KeySwitch Key="35"/>
+      </Switch>
+      <Switch SoundIDChange="+vibrato +custom6">
+        <KeySwitch Key="13"/>
+        <KeySwitch Key="35"/>
+      </Switch>
+      <Switch SoundIDChange="+legato +custom6">
+        <KeySwitch Key="13"/>
+        <KeySwitch Key="35"/>
+      </Switch>
+      <Switch SoundIDChange="+non vibrato +custom6">
+        <KeySwitch Key="13"/>
+        <KeySwitch Key="35"/>
+      </Switch>
+      <Switch SoundIDChange="+staccato +custom6">
+        <KeySwitch Key="13"/>
+        <KeySwitch Key="35"/>
+      </Switch>
+      <Switch SoundIDChange="+legato.staccato +custom6">
+        <KeySwitch Key="13"/>
+        <KeySwitch Key="35"/>
+      </Switch>
+      <Switch SoundIDChange="+legato.vibrato +custom6">
+        <KeySwitch Key="13"/>
+        <KeySwitch Key="35"/>
+      </Switch>
+      <Switch SoundIDChange="+marcato +custom6">
+        <KeySwitch Key="13"/>
+        <KeySwitch Key="35"/>
+      </Switch>
+    </SwitchTypeDefinition>
+    <SwitchTypeDefinition Name="Winds High notrill">
+      <Switch SoundIDChange="[reset]">
+        <KeySwitch Key="12"/>
+        <KeySwitch Key="26"/>
+        <KeySwitch Key="21"/>
+      </Switch>
+      <Switch SoundIDChange="+staccatissimo">
+        <KeySwitch Key="12"/>
+        <KeySwitch Key="24"/>
+      </Switch>
+      <Switch SoundIDChange="+staccato">
+        <KeySwitch Key="12"/>
+        <KeySwitch Key="24"/>
+      </Switch>
+      <Switch SoundIDChange="+legato.staccato">
+        <KeySwitch Key="12"/>
+        <KeySwitch Key="25"/>
+      </Switch>
+      <Switch SoundIDChange="+legato.staccato.vibrato">
+        <KeySwitch Key="12"/>
+        <KeySwitch Key="27"/>
+      </Switch>
+      <Switch SoundIDChange="+sustain">
+        <KeySwitch Key="12"/>
+        <KeySwitch Key="26"/>
+        <KeySwitch Key="21"/>
+      </Switch>
+      <Switch SoundIDChange="+long">
+        <KeySwitch Key="12"/>
+        <KeySwitch Key="26"/>
+        <KeySwitch Key="21"/>
+      </Switch>
+      <Switch SoundIDChange="+slow">
+        <KeySwitch Key="12"/>
+        <KeySwitch Key="26"/>
+        <KeySwitch Key="21"/>
+      </Switch>
+      <Switch SoundIDChange="+non vibrato">
+        <KeySwitch Key="12"/>
+        <KeySwitch Key="26"/>
+        <KeySwitch Key="21"/>
+      </Switch>
+      <Switch SoundIDChange="+vibrato">
+        <KeySwitch Key="12"/>
+        <KeySwitch Key="27"/>
+        <KeySwitch Key="21"/>
+      </Switch>
+      <Switch SoundIDChange="+vibrato.heavy">
+        <KeySwitch Key="12"/>
+        <KeySwitch Key="28"/>
+        <KeySwitch Key="21"/>
+      </Switch>
+      <Switch SoundIDChange="+vibrato.progressive">
+        <KeySwitch Key="12"/>
+        <KeySwitch Key="29"/>
+        <KeySwitch Key="21"/>
+      </Switch>
+      <Switch SoundIDChange="+legato">
+        <KeySwitch Key="12"/>
+        <KeySwitch Key="32"/>
+        <KeySwitch Key="21"/>
+      </Switch>
+      <Switch SoundIDChange="+legato.non vibrato">
+        <KeySwitch Key="12"/>
+        <KeySwitch Key="32"/>
+        <KeySwitch Key="21"/>
+      </Switch>
+      <Switch SoundIDChange="+legato.vibrato">
+        <KeySwitch Key="12"/>
+        <KeySwitch Key="33"/>
+        <KeySwitch Key="21"/>
+      </Switch>
+      <Switch SoundIDChange="+marcato">
+        <KeySwitch Key="12"/>
+        <KeySwitch Key="30"/>
+        <KeySwitch Key="21"/>
+      </Switch>
+      <Switch SoundIDChange="+marcato +staccato">
+        <KeySwitch Key="12"/>
+        <KeySwitch Key="24"/>
+        <KeySwitch Key="21"/>
+      </Switch>
+      <Switch SoundIDChange="+marcato +staccatissimo">
+        <KeySwitch Key="12"/>
+        <KeySwitch Key="24"/>
+        <KeySwitch Key="21"/>
+      </Switch>
+      <Switch SoundIDChange="+marcato +vibrato">
+        <KeySwitch Key="12"/>
+        <KeySwitch Key="31"/>
+        <KeySwitch Key="21"/>
+      </Switch>
+      <Switch SoundIDChange="+portamento">
+        <KeySwitch Key="13"/>
+        <KeySwitch Key="27"/>
+        <KeySwitch Key="21"/>
+      </Switch>
+      <Switch SoundIDChange="+fp">
+        <KeySwitch Key="12"/>
+        <KeySwitch Key="34"/>
+      </Switch>
+      <Switch SoundIDChange="+sforzato">
+        <KeySwitch Key="12"/>
+        <KeySwitch Key="35"/>
+      </Switch>
+      <Switch SoundIDChange="+tremolo.unmeasured" IsMultipleNoteSample="true">
+        <KeySwitch Key="13"/>
+        <KeySwitch Key="26"/>
+      </Switch>
+      <Switch SoundIDChange="+flutter-tongue" IsMultipleNoteSample="true">
+        <KeySwitch Key="13"/>
+        <KeySwitch Key="26"/>
+      </Switch>
+      <Switch SoundIDChange="+tongue-ram">
+        <KeySwitch Key="13"/>
+        <KeySwitch Key="29"/>
+      </Switch>
+      <Switch SoundIDChange="+slap">
+        <KeySwitch Key="13"/>
+        <KeySwitch Key="29"/>
+      </Switch>
+      <Switch SoundIDChange="+trill.half">
+        <KeySwitch Key="13"/>
+        <KeySwitch Key="24"/>
+      </Switch>
+      <Switch SoundIDChange="+glissando">
+        <KeySwitch Key="13"/>
+        <KeySwitch Key="28"/>
+        <KeySwitch Key="21"/>
+      </Switch>
+      <Switch SoundIDChange="+legato +blare">
+        <KeySwitch Key="12"/>
+        <KeySwitch Key="29"/>
+      </Switch>
+      <Switch SoundIDChange="+marcato +blare">
+        <KeySwitch Key="12"/>
+        <KeySwitch Key="29"/>
+      </Switch>
+      <Switch SoundIDChange="+trill.whole">
+        <KeySwitch Key="13"/>
+        <KeySwitch Key="25"/>
+      </Switch>
+      <Switch SoundIDChange="+fall">
+        <KeySwitch Key="12"/>
+        <KeySwitch Key="26"/>
+        <KeySwitch Key="23"/>
+      </Switch>
+      <Switch SoundIDChange="+fall +vibrato">
+        <KeySwitch Key="12"/>
+        <KeySwitch Key="27"/>
+        <KeySwitch Key="23"/>
+      </Switch>
+      <Switch SoundIDChange="+fall +vibrato.progressive">
+        <KeySwitch Key="12"/>
+        <KeySwitch Key="29"/>
+        <KeySwitch Key="23"/>
+      </Switch>
+      <Switch SoundIDChange="+fall.marcato">
+        <KeySwitch Key="12"/>
+        <KeySwitch Key="30"/>
+        <KeySwitch Key="23"/>
+      </Switch>
+      <Switch SoundIDChange="+fall +legato">
+        <KeySwitch Key="12"/>
+        <KeySwitch Key="32"/>
+        <KeySwitch Key="23"/>
+      </Switch>
+      <Switch SoundIDChange="+fall +legato.non vibrato">
+        <KeySwitch Key="12"/>
+        <KeySwitch Key="32"/>
+        <KeySwitch Key="23"/>
+      </Switch>
+      <Switch SoundIDChange="+fall +legato.vibrato">
+        <KeySwitch Key="12"/>
+        <KeySwitch Key="33"/>
+        <KeySwitch Key="23"/>
+      </Switch>
+      <Switch SoundIDChange="+fall +portamento">
+        <KeySwitch Key="13"/>
+        <KeySwitch Key="27"/>
+        <KeySwitch Key="23"/>
+      </Switch>
+      <Switch SoundIDChange="+fall +glissando">
+        <KeySwitch Key="13"/>
+        <KeySwitch Key="28"/>
+        <KeySwitch Key="23"/>
+      </Switch>
+      <Switch SoundIDChange="+scoop">
+        <KeySwitch Key="13"/>
+        <KeySwitch Key="29"/>
+      </Switch>
+      <Switch SoundIDChange="+scoop +non vibrato">
+        <KeySwitch Key="13"/>
+        <KeySwitch Key="29"/>
+      </Switch>
+      <Switch SoundIDChange="+scoop +vibrato">
+        <KeySwitch Key="13"/>
+        <KeySwitch Key="29"/>
+      </Switch>
+      <Switch SoundIDChange="+vibrato +portamento">
+        <KeySwitch Key="13"/>
+        <KeySwitch Key="27"/>
+        <KeySwitch Key="21"/>
+      </Switch>
+      <Switch SoundIDChange="+fall +vibrato.portamento">
+        <KeySwitch Key="13"/>
+        <KeySwitch Key="27"/>
+        <KeySwitch Key="23"/>
+      </Switch>
+      <Switch SoundIDChange="+custom1">
+        <KeySwitch Key="13"/>
+        <KeySwitch Key="30"/>
+      </Switch>
+      <Switch SoundIDChange="+vibrato +custom1">
+        <KeySwitch Key="13"/>
+        <KeySwitch Key="30"/>
+      </Switch>
+      <Switch SoundIDChange="+legato +custom1">
+        <KeySwitch Key="13"/>
+        <KeySwitch Key="30"/>
+      </Switch>
+      <Switch SoundIDChange="+non vibrato +custom1">
+        <KeySwitch Key="13"/>
+        <KeySwitch Key="30"/>
+      </Switch>
+      <Switch SoundIDChange="+staccato +custom1">
+        <KeySwitch Key="13"/>
+        <KeySwitch Key="30"/>
+      </Switch>
+      <Switch SoundIDChange="+legato.staccato +custom1">
+        <KeySwitch Key="13"/>
+        <KeySwitch Key="30"/>
+      </Switch>
+      <Switch SoundIDChange="+legato.vibrato +custom1">
+        <KeySwitch Key="13"/>
+        <KeySwitch Key="30"/>
+      </Switch>
+      <Switch SoundIDChange="+marcato +custom1">
+        <KeySwitch Key="13"/>
+        <KeySwitch Key="30"/>
+      </Switch>
+      <Switch SoundIDChange="+custom2">
+        <KeySwitch Key="13"/>
+        <KeySwitch Key="31"/>
+      </Switch>
+      <Switch SoundIDChange="+vibrato +custom2">
+        <KeySwitch Key="13"/>
+        <KeySwitch Key="31"/>
+      </Switch>
+      <Switch SoundIDChange="+legato +custom2">
+        <KeySwitch Key="13"/>
+        <KeySwitch Key="31"/>
+      </Switch>
+      <Switch SoundIDChange="+non vibrato +custom2">
+        <KeySwitch Key="13"/>
+        <KeySwitch Key="31"/>
+      </Switch>
+      <Switch SoundIDChange="+staccato +custom2">
+        <KeySwitch Key="13"/>
+        <KeySwitch Key="31"/>
+      </Switch>
+      <Switch SoundIDChange="+legato.staccato +custom2">
+        <KeySwitch Key="13"/>
+        <KeySwitch Key="31"/>
+      </Switch>
+      <Switch SoundIDChange="+legato.vibrato +custom2">
+        <KeySwitch Key="13"/>
+        <KeySwitch Key="31"/>
+      </Switch>
+      <Switch SoundIDChange="+marcato +custom2">
+        <KeySwitch Key="13"/>
+        <KeySwitch Key="31"/>
+      </Switch>
+      <Switch SoundIDChange="+custom3">
+        <KeySwitch Key="13"/>
+        <KeySwitch Key="32"/>
+      </Switch>
+      <Switch SoundIDChange="+vibrato +custom3">
+        <KeySwitch Key="13"/>
+        <KeySwitch Key="32"/>
+      </Switch>
+      <Switch SoundIDChange="+legato +custom3">
+        <KeySwitch Key="13"/>
+        <KeySwitch Key="32"/>
+      </Switch>
+      <Switch SoundIDChange="+non vibrato +custom3">
+        <KeySwitch Key="13"/>
+        <KeySwitch Key="32"/>
+      </Switch>
+      <Switch SoundIDChange="+staccato +custom3">
+        <KeySwitch Key="13"/>
+        <KeySwitch Key="32"/>
+      </Switch>
+      <Switch SoundIDChange="+legato.staccato +custom3">
+        <KeySwitch Key="13"/>
+        <KeySwitch Key="32"/>
+      </Switch>
+      <Switch SoundIDChange="+legato.vibrato +custom3">
+        <KeySwitch Key="13"/>
+        <KeySwitch Key="32"/>
+      </Switch>
+      <Switch SoundIDChange="+marcato +custom3">
+        <KeySwitch Key="13"/>
+        <KeySwitch Key="32"/>
+      </Switch>
+      <Switch SoundIDChange="+custom4">
+        <KeySwitch Key="13"/>
+        <KeySwitch Key="33"/>
+      </Switch>
+      <Switch SoundIDChange="+vibrato +custom4">
+        <KeySwitch Key="13"/>
+        <KeySwitch Key="33"/>
+      </Switch>
+      <Switch SoundIDChange="+legato +custom4">
+        <KeySwitch Key="13"/>
+        <KeySwitch Key="33"/>
+      </Switch>
+      <Switch SoundIDChange="+non vibrato +custom4">
+        <KeySwitch Key="13"/>
+        <KeySwitch Key="33"/>
+      </Switch>
+      <Switch SoundIDChange="+staccato +custom4">
+        <KeySwitch Key="13"/>
+        <KeySwitch Key="33"/>
+      </Switch>
+      <Switch SoundIDChange="+legato.staccato +custom4">
+        <KeySwitch Key="13"/>
+        <KeySwitch Key="33"/>
+      </Switch>
+      <Switch SoundIDChange="+legato.vibrato +custom4">
+        <KeySwitch Key="13"/>
+        <KeySwitch Key="33"/>
+      </Switch>
+      <Switch SoundIDChange="+marcato +custom4">
+        <KeySwitch Key="13"/>
+        <KeySwitch Key="33"/>
+      </Switch>
+      <Switch SoundIDChange="+custom5">
+        <KeySwitch Key="13"/>
+        <KeySwitch Key="34"/>
+      </Switch>
+      <Switch SoundIDChange="+vibrato +custom5">
+        <KeySwitch Key="13"/>
+        <KeySwitch Key="34"/>
+      </Switch>
+      <Switch SoundIDChange="+legato +custom5">
+        <KeySwitch Key="13"/>
+        <KeySwitch Key="34"/>
+      </Switch>
+      <Switch SoundIDChange="+non vibrato +custom5">
+        <KeySwitch Key="13"/>
+        <KeySwitch Key="34"/>
+      </Switch>
+      <Switch SoundIDChange="+staccato +custom5">
+        <KeySwitch Key="13"/>
+        <KeySwitch Key="34"/>
+      </Switch>
+      <Switch SoundIDChange="+legato.staccato +custom5">
+        <KeySwitch Key="13"/>
+        <KeySwitch Key="34"/>
+      </Switch>
+      <Switch SoundIDChange="+legato.vibrato +custom5">
+        <KeySwitch Key="13"/>
+        <KeySwitch Key="34"/>
+      </Switch>
+      <Switch SoundIDChange="+marcato +custom5">
+        <KeySwitch Key="13"/>
+        <KeySwitch Key="34"/>
+      </Switch>
+      <Switch SoundIDChange="+custom6">
+        <KeySwitch Key="13"/>
+        <KeySwitch Key="35"/>
+      </Switch>
+      <Switch SoundIDChange="+vibrato +custom6">
+        <KeySwitch Key="13"/>
+        <KeySwitch Key="35"/>
+      </Switch>
+      <Switch SoundIDChange="+legato +custom6">
+        <KeySwitch Key="13"/>
+        <KeySwitch Key="35"/>
+      </Switch>
+      <Switch SoundIDChange="+non vibrato +custom6">
+        <KeySwitch Key="13"/>
+        <KeySwitch Key="35"/>
+      </Switch>
+      <Switch SoundIDChange="+staccato +custom6">
+        <KeySwitch Key="13"/>
+        <KeySwitch Key="35"/>
+      </Switch>
+      <Switch SoundIDChange="+legato.staccato +custom6">
+        <KeySwitch Key="13"/>
+        <KeySwitch Key="35"/>
+      </Switch>
+      <Switch SoundIDChange="+legato.vibrato +custom6">
+        <KeySwitch Key="13"/>
+        <KeySwitch Key="35"/>
+      </Switch>
+      <Switch SoundIDChange="+marcato +custom6">
+        <KeySwitch Key="13"/>
+        <KeySwitch Key="35"/>
+      </Switch>
+    </SwitchTypeDefinition>
+    <SwitchTypeDefinition Name="Winds Low">
+      <Switch SoundIDChange="[reset]">
+        <KeySwitch Key="84"/>
+        <KeySwitch Key="98"/>
+      </Switch>
+      <Switch SoundIDChange="+staccatissimo">
+        <KeySwitch Key="84"/>
+        <KeySwitch Key="96"/>
+      </Switch>
+      <Switch SoundIDChange="+staccato">
+        <KeySwitch Key="84"/>
+        <KeySwitch Key="96"/>
+      </Switch>
+      <Switch SoundIDChange="+legato.staccato">
+        <KeySwitch Key="84"/>
+        <KeySwitch Key="97"/>
+      </Switch>
+      <Switch SoundIDChange="+legato.staccato.vibrato">
+        <KeySwitch Key="84"/>
+        <KeySwitch Key="99"/>
+      </Switch>
+      <Switch SoundIDChange="+sustain">
+        <KeySwitch Key="84"/>
+        <KeySwitch Key="98"/>
+      </Switch>
+      <Switch SoundIDChange="+long">
+        <KeySwitch Key="84"/>
+        <KeySwitch Key="98"/>
+      </Switch>
+      <Switch SoundIDChange="+slow">
+        <KeySwitch Key="84"/>
+        <KeySwitch Key="98"/>
+      </Switch>
+      <Switch SoundIDChange="+non vibrato">
+        <KeySwitch Key="84"/>
+        <KeySwitch Key="98"/>
+      </Switch>
+      <Switch SoundIDChange="+vibrato">
+        <KeySwitch Key="84"/>
+        <KeySwitch Key="99"/>
+      </Switch>
+      <Switch SoundIDChange="+vibrato.heavy">
+        <KeySwitch Key="84"/>
+        <KeySwitch Key="100"/>
+      </Switch>
+      <Switch SoundIDChange="+vibrato.progressive">
+        <KeySwitch Key="84"/>
+        <KeySwitch Key="101"/>
+      </Switch>
+      <Switch SoundIDChange="+legato">
+        <KeySwitch Key="84"/>
+        <KeySwitch Key="104"/>
+      </Switch>
+      <Switch SoundIDChange="+legato.non vibrato">
+        <KeySwitch Key="84"/>
+        <KeySwitch Key="104"/>
+      </Switch>
+      <Switch SoundIDChange="+legato.vibrato">
+        <KeySwitch Key="84"/>
+        <KeySwitch Key="105"/>
+      </Switch>
+      <Switch SoundIDChange="+marcato">
+        <KeySwitch Key="84"/>
+        <KeySwitch Key="102"/>
+      </Switch>
+      <Switch SoundIDChange="+marcato.staccato">
+        <KeySwitch Key="84"/>
+        <KeySwitch Key="96"/>
+      </Switch>
+      <Switch SoundIDChange="+marcato.staccatissimo">
+        <KeySwitch Key="84"/>
+        <KeySwitch Key="96"/>
+      </Switch>
+      <Switch SoundIDChange="+marcato.vibrato">
+        <KeySwitch Key="84"/>
+        <KeySwitch Key="103"/>
+      </Switch>
+      <Switch SoundIDChange="+portamento">
+        <KeySwitch Key="85"/>
+        <KeySwitch Key="99"/>
+      </Switch>
+      <Switch SoundIDChange="+fp">
+        <KeySwitch Key="84"/>
+        <KeySwitch Key="106"/>
+      </Switch>
+      <Switch SoundIDChange="+sforzato">
+        <KeySwitch Key="84"/>
+        <KeySwitch Key="107"/>
+      </Switch>
+      <Switch SoundIDChange="+tremolo.unmeasured" IsMultipleNoteSample="true">
+        <KeySwitch Key="85"/>
+        <KeySwitch Key="98"/>
+      </Switch>
+      <Switch SoundIDChange="+flutter-tongue" IsMultipleNoteSample="true">
+        <KeySwitch Key="85"/>
+        <KeySwitch Key="98"/>
+      </Switch>
+      <Switch SoundIDChange="+tongue-ram">
+        <KeySwitch Key="85"/>
+        <KeySwitch Key="101"/>
+      </Switch>
+      <Switch SoundIDChange="+slap">
+        <KeySwitch Key="85"/>
+        <KeySwitch Key="101"/>
+      </Switch>
+      <Switch SoundIDChange="+trill.half" IsMultipleNoteSample="true">
+        <KeySwitch Key="85"/>
+        <KeySwitch Key="96"/>
+      </Switch>
+      <Switch SoundIDChange="+trill.whole" IsMultipleNoteSample="true">
+        <KeySwitch Key="85"/>
+        <KeySwitch Key="97"/>
+      </Switch>
+      <Switch SoundIDChange="+glissando">
+        <KeySwitch Key="85"/>
+        <KeySwitch Key="100"/>
+      </Switch>
+      <Switch SoundIDChange="+blare">
+        <KeySwitch Key="84"/>
+        <KeySwitch Key="101"/>
+      </Switch>
+      <Switch SoundIDChange="+fall">
+        <KeySwitch Key="84"/>
+        <KeySwitch Key="100"/>
+        <KeySwitch Key="21"/>
+      </Switch>
+      <Switch SoundIDChange="+fall +slow">
+        <KeySwitch Key="84"/>
+        <KeySwitch Key="100"/>
+        <KeySwitch Key="23"/>
+      </Switch>
+      <Switch SoundIDChange="+fall +fast">
+        <KeySwitch Key="84"/>
+        <KeySwitch Key="100"/>
+        <KeySwitch Key="21"/>
+      </Switch>
+      <Switch SoundIDChange="+fall +long">
+        <KeySwitch Key="84"/>
+        <KeySwitch Key="100"/>
+        <KeySwitch Key="23"/>
+      </Switch>
+      <Switch SoundIDChange="+fall +short">
+        <KeySwitch Key="84"/>
+        <KeySwitch Key="100"/>
+        <KeySwitch Key="21"/>
+      </Switch>
+      <Switch SoundIDChange="+vibrato +portamento">
+        <KeySwitch Key="85"/>
+        <KeySwitch Key="99"/>
+      </Switch>
+      <Switch SoundIDChange="+custom1">
+        <KeySwitch Key="85"/>
+        <KeySwitch Key="102"/>
+      </Switch>
+      <Switch SoundIDChange="+vibrato +custom1">
+        <KeySwitch Key="85"/>
+        <KeySwitch Key="102"/>
+      </Switch>
+      <Switch SoundIDChange="+legato +custom1">
+        <KeySwitch Key="85"/>
+        <KeySwitch Key="102"/>
+      </Switch>
+      <Switch SoundIDChange="+non vibrato +custom1">
+        <KeySwitch Key="85"/>
+        <KeySwitch Key="102"/>
+      </Switch>
+      <Switch SoundIDChange="+staccato +custom1">
+        <KeySwitch Key="85"/>
+        <KeySwitch Key="102"/>
+      </Switch>
+      <Switch SoundIDChange="+legato.staccato +custom1">
+        <KeySwitch Key="85"/>
+        <KeySwitch Key="102"/>
+      </Switch>
+      <Switch SoundIDChange="+legato.vibrato +custom1">
+        <KeySwitch Key="85"/>
+        <KeySwitch Key="102"/>
+      </Switch>
+      <Switch SoundIDChange="+marcato +custom1">
+        <KeySwitch Key="85"/>
+        <KeySwitch Key="102"/>
+      </Switch>
+      <Switch SoundIDChange="+custom2">
+        <KeySwitch Key="85"/>
+        <KeySwitch Key="103"/>
+      </Switch>
+      <Switch SoundIDChange="+vibrato +custom2">
+        <KeySwitch Key="85"/>
+        <KeySwitch Key="103"/>
+      </Switch>
+      <Switch SoundIDChange="+legato +custom2">
+        <KeySwitch Key="85"/>
+        <KeySwitch Key="103"/>
+      </Switch>
+      <Switch SoundIDChange="+non vibrato +custom2">
+        <KeySwitch Key="85"/>
+        <KeySwitch Key="103"/>
+      </Switch>
+      <Switch SoundIDChange="+staccato +custom2">
+        <KeySwitch Key="85"/>
+        <KeySwitch Key="103"/>
+      </Switch>
+      <Switch SoundIDChange="+legato.staccato +custom2">
+        <KeySwitch Key="85"/>
+        <KeySwitch Key="103"/>
+      </Switch>
+      <Switch SoundIDChange="+legato.vibrato +custom2">
+        <KeySwitch Key="85"/>
+        <KeySwitch Key="103"/>
+      </Switch>
+      <Switch SoundIDChange="+marcato +custom2">
+        <KeySwitch Key="85"/>
+        <KeySwitch Key="103"/>
+      </Switch>
+      <Switch SoundIDChange="+custom3">
+        <KeySwitch Key="85"/>
+        <KeySwitch Key="104"/>
+      </Switch>
+      <Switch SoundIDChange="+vibrato +custom3">
+        <KeySwitch Key="85"/>
+        <KeySwitch Key="104"/>
+      </Switch>
+      <Switch SoundIDChange="+legato +custom3">
+        <KeySwitch Key="85"/>
+        <KeySwitch Key="104"/>
+      </Switch>
+      <Switch SoundIDChange="+non vibrato +custom3">
+        <KeySwitch Key="85"/>
+        <KeySwitch Key="104"/>
+      </Switch>
+      <Switch SoundIDChange="+staccato +custom3">
+        <KeySwitch Key="85"/>
+        <KeySwitch Key="104"/>
+      </Switch>
+      <Switch SoundIDChange="+legato.staccato +custom3">
+        <KeySwitch Key="85"/>
+        <KeySwitch Key="104"/>
+      </Switch>
+      <Switch SoundIDChange="+legato.vibrato +custom3">
+        <KeySwitch Key="85"/>
+        <KeySwitch Key="104"/>
+      </Switch>
+      <Switch SoundIDChange="+marcato +custom3">
+        <KeySwitch Key="85"/>
+        <KeySwitch Key="104"/>
+      </Switch>
+      <Switch SoundIDChange="+custom4">
+        <KeySwitch Key="13"/>
+        <KeySwitch Key="105"/>
+      </Switch>
+      <Switch SoundIDChange="+vibrato +custom4">
+        <KeySwitch Key="13"/>
+        <KeySwitch Key="105"/>
+      </Switch>
+      <Switch SoundIDChange="+legato +custom4">
+        <KeySwitch Key="13"/>
+        <KeySwitch Key="105"/>
+      </Switch>
+      <Switch SoundIDChange="+non vibrato +custom4">
+        <KeySwitch Key="13"/>
+        <KeySwitch Key="105"/>
+      </Switch>
+      <Switch SoundIDChange="+staccato +custom4">
+        <KeySwitch Key="13"/>
+        <KeySwitch Key="105"/>
+      </Switch>
+      <Switch SoundIDChange="+legato.staccato +custom4">
+        <KeySwitch Key="13"/>
+        <KeySwitch Key="105"/>
+      </Switch>
+      <Switch SoundIDChange="+legato.vibrato +custom4">
+        <KeySwitch Key="13"/>
+        <KeySwitch Key="105"/>
+      </Switch>
+      <Switch SoundIDChange="+marcato +custom4">
+        <KeySwitch Key="13"/>
+        <KeySwitch Key="105"/>
+      </Switch>
+      <Switch SoundIDChange="+custom5">
+        <KeySwitch Key="13"/>
+        <KeySwitch Key="106"/>
+      </Switch>
+      <Switch SoundIDChange="+vibrato +custom5">
+        <KeySwitch Key="13"/>
+        <KeySwitch Key="106"/>
+      </Switch>
+      <Switch SoundIDChange="+legato +custom5">
+        <KeySwitch Key="13"/>
+        <KeySwitch Key="106"/>
+      </Switch>
+      <Switch SoundIDChange="+non vibrato +custom5">
+        <KeySwitch Key="13"/>
+        <KeySwitch Key="106"/>
+      </Switch>
+      <Switch SoundIDChange="+staccato +custom5">
+        <KeySwitch Key="13"/>
+        <KeySwitch Key="106"/>
+      </Switch>
+      <Switch SoundIDChange="+legato.staccato +custom5">
+        <KeySwitch Key="13"/>
+        <KeySwitch Key="106"/>
+      </Switch>
+      <Switch SoundIDChange="+legato.vibrato +custom5">
+        <KeySwitch Key="13"/>
+        <KeySwitch Key="106"/>
+      </Switch>
+      <Switch SoundIDChange="+marcato +custom5">
+        <KeySwitch Key="13"/>
+        <KeySwitch Key="106"/>
+      </Switch>
+      <Switch SoundIDChange="+custom6">
+        <KeySwitch Key="13"/>
+        <KeySwitch Key="107"/>
+      </Switch>
+      <Switch SoundIDChange="+vibrato +custom6">
+        <KeySwitch Key="13"/>
+        <KeySwitch Key="107"/>
+      </Switch>
+      <Switch SoundIDChange="+legato +custom6">
+        <KeySwitch Key="13"/>
+        <KeySwitch Key="107"/>
+      </Switch>
+      <Switch SoundIDChange="+non vibrato +custom6">
+        <KeySwitch Key="13"/>
+        <KeySwitch Key="107"/>
+      </Switch>
+      <Switch SoundIDChange="+staccato +custom6">
+        <KeySwitch Key="13"/>
+        <KeySwitch Key="107"/>
+      </Switch>
+      <Switch SoundIDChange="+legato.staccato +custom6">
+        <KeySwitch Key="13"/>
+        <KeySwitch Key="107"/>
+      </Switch>
+      <Switch SoundIDChange="+legato.vibrato +custom6">
+        <KeySwitch Key="13"/>
+        <KeySwitch Key="107"/>
+      </Switch>
+      <Switch SoundIDChange="+marcato +custom6">
+        <KeySwitch Key="13"/>
+        <KeySwitch Key="107"/>
+      </Switch>
+    </SwitchTypeDefinition>
+    <SwitchTypeDefinition Name="Winds Low notrill">
+      <Switch SoundIDChange="[reset]">
+        <KeySwitch Key="84"/>
+        <KeySwitch Key="98"/>
+      </Switch>
+      <Switch SoundIDChange="+staccatissimo">
+        <KeySwitch Key="84"/>
+        <KeySwitch Key="96"/>
+      </Switch>
+      <Switch SoundIDChange="+staccato">
+        <KeySwitch Key="84"/>
+        <KeySwitch Key="96"/>
+      </Switch>
+      <Switch SoundIDChange="+legato.staccato">
+        <KeySwitch Key="84"/>
+        <KeySwitch Key="97"/>
+      </Switch>
+      <Switch SoundIDChange="+legato.staccato.vibrato">
+        <KeySwitch Key="84"/>
+        <KeySwitch Key="99"/>
+      </Switch>
+      <Switch SoundIDChange="+sustain">
+        <KeySwitch Key="84"/>
+        <KeySwitch Key="98"/>
+      </Switch>
+      <Switch SoundIDChange="+long">
+        <KeySwitch Key="84"/>
+        <KeySwitch Key="98"/>
+      </Switch>
+      <Switch SoundIDChange="+slow">
+        <KeySwitch Key="84"/>
+        <KeySwitch Key="98"/>
+      </Switch>
+      <Switch SoundIDChange="+non vibrato">
+        <KeySwitch Key="84"/>
+        <KeySwitch Key="98"/>
+      </Switch>
+      <Switch SoundIDChange="+vibrato">
+        <KeySwitch Key="84"/>
+        <KeySwitch Key="99"/>
+      </Switch>
+      <Switch SoundIDChange="+vibrato.heavy">
+        <KeySwitch Key="84"/>
+        <KeySwitch Key="100"/>
+      </Switch>
+      <Switch SoundIDChange="+vibrato.progressive">
+        <KeySwitch Key="84"/>
+        <KeySwitch Key="101"/>
+      </Switch>
+      <Switch SoundIDChange="+legato">
+        <KeySwitch Key="84"/>
+        <KeySwitch Key="104"/>
+      </Switch>
+      <Switch SoundIDChange="+legato.non vibrato">
+        <KeySwitch Key="84"/>
+        <KeySwitch Key="104"/>
+      </Switch>
+      <Switch SoundIDChange="+legato.vibrato">
+        <KeySwitch Key="84"/>
+        <KeySwitch Key="105"/>
+      </Switch>
+      <Switch SoundIDChange="+marcato">
+        <KeySwitch Key="84"/>
+        <KeySwitch Key="102"/>
+      </Switch>
+      <Switch SoundIDChange="+marcato +staccato">
+        <KeySwitch Key="84"/>
+        <KeySwitch Key="96"/>
+      </Switch>
+      <Switch SoundIDChange="+marcato +staccatissimo">
+        <KeySwitch Key="84"/>
+        <KeySwitch Key="96"/>
+      </Switch>
+      <Switch SoundIDChange="+marcato +vibrato">
+        <KeySwitch Key="84"/>
+        <KeySwitch Key="103"/>
+      </Switch>
+      <Switch SoundIDChange="+portamento">
+        <KeySwitch Key="85"/>
+        <KeySwitch Key="99"/>
+      </Switch>
+      <Switch SoundIDChange="+fp">
+        <KeySwitch Key="84"/>
+        <KeySwitch Key="106"/>
+      </Switch>
+      <Switch SoundIDChange="+sforzato">
+        <KeySwitch Key="84"/>
+        <KeySwitch Key="107"/>
+      </Switch>
+      <Switch SoundIDChange="+tremolo.unmeasured" IsMultipleNoteSample="true">
+        <KeySwitch Key="85"/>
+        <KeySwitch Key="98"/>
+      </Switch>
+      <Switch SoundIDChange="+flutter-tongue" IsMultipleNoteSample="true">
+        <KeySwitch Key="85"/>
+        <KeySwitch Key="98"/>
+      </Switch>
+      <Switch SoundIDChange="+tongue-ram">
+        <KeySwitch Key="85"/>
+        <KeySwitch Key="101"/>
+      </Switch>
+      <Switch SoundIDChange="+slap">
+        <KeySwitch Key="85"/>
+        <KeySwitch Key="101"/>
+      </Switch>
+      <Switch SoundIDChange="+trill.half">
+        <KeySwitch Key="85"/>
+        <KeySwitch Key="96"/>
+      </Switch>
+      <Switch SoundIDChange="+glissando">
+        <KeySwitch Key="85"/>
+        <KeySwitch Key="100"/>
+      </Switch>
+      <Switch SoundIDChange="+trill.whole">
+        <KeySwitch Key="85"/>
+        <KeySwitch Key="97"/>
+      </Switch>
+      <Switch SoundIDChange="+blare">
+        <KeySwitch Key="84"/>
+        <KeySwitch Key="101"/>
+      </Switch>
+      <Switch SoundIDChange="+vibrato +portamento">
+        <KeySwitch Key="85"/>
+        <KeySwitch Key="99"/>
+      </Switch>
+      <Switch SoundIDChange="+custom1">
+        <KeySwitch Key="85"/>
+        <KeySwitch Key="102"/>
+      </Switch>
+      <Switch SoundIDChange="+vibrato +custom1">
+        <KeySwitch Key="85"/>
+        <KeySwitch Key="102"/>
+      </Switch>
+      <Switch SoundIDChange="+legato +custom1">
+        <KeySwitch Key="85"/>
+        <KeySwitch Key="102"/>
+      </Switch>
+      <Switch SoundIDChange="+non vibrato +custom1">
+        <KeySwitch Key="85"/>
+        <KeySwitch Key="102"/>
+      </Switch>
+      <Switch SoundIDChange="+staccato +custom1">
+        <KeySwitch Key="85"/>
+        <KeySwitch Key="102"/>
+      </Switch>
+      <Switch SoundIDChange="+legato.staccato +custom1">
+        <KeySwitch Key="85"/>
+        <KeySwitch Key="102"/>
+      </Switch>
+      <Switch SoundIDChange="+legato.vibrato +custom1">
+        <KeySwitch Key="85"/>
+        <KeySwitch Key="102"/>
+      </Switch>
+      <Switch SoundIDChange="+marcato +custom1">
+        <KeySwitch Key="85"/>
+        <KeySwitch Key="102"/>
+      </Switch>
+      <Switch SoundIDChange="+custom2">
+        <KeySwitch Key="85"/>
+        <KeySwitch Key="103"/>
+      </Switch>
+      <Switch SoundIDChange="+vibrato +custom2">
+        <KeySwitch Key="85"/>
+        <KeySwitch Key="103"/>
+      </Switch>
+      <Switch SoundIDChange="+legato +custom2">
+        <KeySwitch Key="85"/>
+        <KeySwitch Key="103"/>
+      </Switch>
+      <Switch SoundIDChange="+non vibrato +custom2">
+        <KeySwitch Key="85"/>
+        <KeySwitch Key="103"/>
+      </Switch>
+      <Switch SoundIDChange="+staccato +custom2">
+        <KeySwitch Key="85"/>
+        <KeySwitch Key="103"/>
+      </Switch>
+      <Switch SoundIDChange="+legato.staccato +custom2">
+        <KeySwitch Key="85"/>
+        <KeySwitch Key="103"/>
+      </Switch>
+      <Switch SoundIDChange="+legato.vibrato +custom2">
+        <KeySwitch Key="85"/>
+        <KeySwitch Key="103"/>
+      </Switch>
+      <Switch SoundIDChange="+marcato +custom2">
+        <KeySwitch Key="85"/>
+        <KeySwitch Key="103"/>
+      </Switch>
+      <Switch SoundIDChange="+custom3">
+        <KeySwitch Key="85"/>
+        <KeySwitch Key="104"/>
+      </Switch>
+      <Switch SoundIDChange="+vibrato +custom3">
+        <KeySwitch Key="85"/>
+        <KeySwitch Key="104"/>
+      </Switch>
+      <Switch SoundIDChange="+legato +custom3">
+        <KeySwitch Key="85"/>
+        <KeySwitch Key="104"/>
+      </Switch>
+      <Switch SoundIDChange="+non vibrato +custom3">
+        <KeySwitch Key="85"/>
+        <KeySwitch Key="104"/>
+      </Switch>
+      <Switch SoundIDChange="+staccato +custom3">
+        <KeySwitch Key="85"/>
+        <KeySwitch Key="104"/>
+      </Switch>
+      <Switch SoundIDChange="+legato.staccato +custom3">
+        <KeySwitch Key="85"/>
+        <KeySwitch Key="104"/>
+      </Switch>
+      <Switch SoundIDChange="+legato.vibrato +custom3">
+        <KeySwitch Key="85"/>
+        <KeySwitch Key="104"/>
+      </Switch>
+      <Switch SoundIDChange="+marcato +custom3">
+        <KeySwitch Key="85"/>
+        <KeySwitch Key="104"/>
+      </Switch>
+      <Switch SoundIDChange="+custom4">
+        <KeySwitch Key="13"/>
+        <KeySwitch Key="105"/>
+      </Switch>
+      <Switch SoundIDChange="+vibrato +custom4">
+        <KeySwitch Key="13"/>
+        <KeySwitch Key="105"/>
+      </Switch>
+      <Switch SoundIDChange="+legato +custom4">
+        <KeySwitch Key="13"/>
+        <KeySwitch Key="105"/>
+      </Switch>
+      <Switch SoundIDChange="+non vibrato +custom4">
+        <KeySwitch Key="13"/>
+        <KeySwitch Key="105"/>
+      </Switch>
+      <Switch SoundIDChange="+staccato +custom4">
+        <KeySwitch Key="13"/>
+        <KeySwitch Key="105"/>
+      </Switch>
+      <Switch SoundIDChange="+legato.staccato +custom4">
+        <KeySwitch Key="13"/>
+        <KeySwitch Key="105"/>
+      </Switch>
+      <Switch SoundIDChange="+legato.vibrato +custom4">
+        <KeySwitch Key="13"/>
+        <KeySwitch Key="105"/>
+      </Switch>
+      <Switch SoundIDChange="+marcato +custom4">
+        <KeySwitch Key="13"/>
+        <KeySwitch Key="105"/>
+      </Switch>
+      <Switch SoundIDChange="+custom5">
+        <KeySwitch Key="13"/>
+        <KeySwitch Key="106"/>
+      </Switch>
+      <Switch SoundIDChange="+vibrato +custom5">
+        <KeySwitch Key="13"/>
+        <KeySwitch Key="106"/>
+      </Switch>
+      <Switch SoundIDChange="+legato +custom5">
+        <KeySwitch Key="13"/>
+        <KeySwitch Key="106"/>
+      </Switch>
+      <Switch SoundIDChange="+non vibrato +custom5">
+        <KeySwitch Key="13"/>
+        <KeySwitch Key="106"/>
+      </Switch>
+      <Switch SoundIDChange="+staccato +custom5">
+        <KeySwitch Key="13"/>
+        <KeySwitch Key="106"/>
+      </Switch>
+      <Switch SoundIDChange="+legato.staccato +custom5">
+        <KeySwitch Key="13"/>
+        <KeySwitch Key="106"/>
+      </Switch>
+      <Switch SoundIDChange="+legato.vibrato +custom5">
+        <KeySwitch Key="13"/>
+        <KeySwitch Key="106"/>
+      </Switch>
+      <Switch SoundIDChange="+marcato +custom5">
+        <KeySwitch Key="13"/>
+        <KeySwitch Key="106"/>
+      </Switch>
+      <Switch SoundIDChange="+custom6">
+        <KeySwitch Key="13"/>
+        <KeySwitch Key="107"/>
+      </Switch>
+      <Switch SoundIDChange="+vibrato +custom6">
+        <KeySwitch Key="13"/>
+        <KeySwitch Key="107"/>
+      </Switch>
+      <Switch SoundIDChange="+legato +custom6">
+        <KeySwitch Key="13"/>
+        <KeySwitch Key="107"/>
+      </Switch>
+      <Switch SoundIDChange="+non vibrato +custom6">
+        <KeySwitch Key="13"/>
+        <KeySwitch Key="107"/>
+      </Switch>
+      <Switch SoundIDChange="+staccato +custom6">
+        <KeySwitch Key="13"/>
+        <KeySwitch Key="107"/>
+      </Switch>
+      <Switch SoundIDChange="+legato.staccato +custom6">
+        <KeySwitch Key="13"/>
+        <KeySwitch Key="107"/>
+      </Switch>
+      <Switch SoundIDChange="+legato.vibrato +custom6">
+        <KeySwitch Key="13"/>
+        <KeySwitch Key="107"/>
+      </Switch>
+      <Switch SoundIDChange="+marcato +custom6">
+        <KeySwitch Key="13"/>
+        <KeySwitch Key="107"/>
+      </Switch>
+    </SwitchTypeDefinition>
+    <SwitchTypeDefinition Name="Dimension Brass">
+      <Switch SoundIDChange="[reset]">
+        <KeySwitch Key="98"/>
+      </Switch>
+      <Switch SoundIDChange="+staccatissimo">
+        <KeySwitch Key="96"/>
+      </Switch>
+      <Switch SoundIDChange="+staccato">
+        <KeySwitch Key="96"/>
+      </Switch>
+      <Switch SoundIDChange="+legato.staccato">
+        <KeySwitch Key="97"/>
+      </Switch>
+      <Switch SoundIDChange="+sustain">
+        <KeySwitch Key="98"/>
+      </Switch>
+      <Switch SoundIDChange="+legato">
+        <KeySwitch Key="99"/>
+      </Switch>
+      <Switch SoundIDChange="+trill.half" IsMultipleNoteSample="false">
+        <KeySwitch Key="99"/>
+      </Switch>
+      <Switch SoundIDChange="+trill.whole" IsMultipleNoteSample="false">
+        <KeySwitch Key="99"/>
+      </Switch>
+      <Switch SoundIDChange="+fp">
+        <KeySwitch Key="100"/>
+      </Switch>
+      <Switch SoundIDChange="+sforzato">
+        <KeySwitch Key="101"/>
+      </Switch>
+      <Switch SoundIDChange="+sforzato.aggressive">
+        <KeySwitch Key="102"/>
+      </Switch>
+      <Switch SoundIDChange="+blare">
+        <KeySwitch Key="103"/>
+      </Switch>
+      <Switch SoundIDChange="+rep">
+        <KeySwitch Key="104"/>
+      </Switch>
+      <Switch SoundIDChange="+tremolo.unmeasured" IsMultipleNoteSample="true">
+        <KeySwitch Key="105"/>
+      </Switch>
+      <Switch SoundIDChange="+flutter-tongue" IsMultipleNoteSample="true">
+        <KeySwitch Key="105"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble">
+        <KeySwitch Key="24"/>
+        <KeySwitch Key="98"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble.staccatissimo">
+        <KeySwitch Key="24"/>
+        <KeySwitch Key="96"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble.staccato">
+        <KeySwitch Key="24"/>
+        <KeySwitch Key="96"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble.legato.staccato">
+        <KeySwitch Key="24"/>
+        <KeySwitch Key="97"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble.sustain">
+        <KeySwitch Key="24"/>
+        <KeySwitch Key="98"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble.legato">
+        <KeySwitch Key="24"/>
+        <KeySwitch Key="99"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble.trill.half" IsMultipleNoteSample="false">
+        <KeySwitch Key="24"/>
+        <KeySwitch Key="99"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble.trill.whole" IsMultipleNoteSample="false">
+        <KeySwitch Key="24"/>
+        <KeySwitch Key="99"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble.fp">
+        <KeySwitch Key="24"/>
+        <KeySwitch Key="100"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble.sforzato">
+        <KeySwitch Key="24"/>
+        <KeySwitch Key="101"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble.sforzato.aggressive">
+        <KeySwitch Key="24"/>
+        <KeySwitch Key="102"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble.blare">
+        <KeySwitch Key="24"/>
+        <KeySwitch Key="103"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble.rep">
+        <KeySwitch Key="24"/>
+        <KeySwitch Key="104"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble.tremolo.unmeasured" IsMultipleNoteSample="true">
+        <KeySwitch Key="24"/>
+        <KeySwitch Key="105"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble.flutter-tongue" IsMultipleNoteSample="true">
+        <KeySwitch Key="24"/>
+        <KeySwitch Key="105"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +4 players">
+        <KeySwitch Key="24"/>
+        <KeySwitch Key="98"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +staccatissimo +4 players">
+        <KeySwitch Key="24"/>
+        <KeySwitch Key="96"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +staccato +4 players">
+        <KeySwitch Key="24"/>
+        <KeySwitch Key="96"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +legato.staccato +4 players">
+        <KeySwitch Key="24"/>
+        <KeySwitch Key="97"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +4 players +sustain">
+        <KeySwitch Key="24"/>
+        <KeySwitch Key="98"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +legato +4 players">
+        <KeySwitch Key="24"/>
+        <KeySwitch Key="99"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +trill.half +4 players" IsMultipleNoteSample="false">
+        <KeySwitch Key="24"/>
+        <KeySwitch Key="99"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +trill.whole +4 players" IsMultipleNoteSample="false">
+        <KeySwitch Key="24"/>
+        <KeySwitch Key="99"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +fp +4 players">
+        <KeySwitch Key="24"/>
+        <KeySwitch Key="100"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +sforzato +4 players">
+        <KeySwitch Key="24"/>
+        <KeySwitch Key="101"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +sforzato.aggressive +4 players">
+        <KeySwitch Key="24"/>
+        <KeySwitch Key="102"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +4 players +blare">
+        <KeySwitch Key="24"/>
+        <KeySwitch Key="103"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +4 players +rep">
+        <KeySwitch Key="24"/>
+        <KeySwitch Key="104"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +tremolo.unmeasured +4 players" IsMultipleNoteSample="true">
+        <KeySwitch Key="24"/>
+        <KeySwitch Key="105"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +flutter-tongue +4 players" IsMultipleNoteSample="true">
+        <KeySwitch Key="24"/>
+        <KeySwitch Key="105"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +3 players">
+        <KeySwitch Key="25"/>
+        <KeySwitch Key="98"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +staccatissimo +3 players">
+        <KeySwitch Key="25"/>
+        <KeySwitch Key="96"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +staccato +3 players">
+        <KeySwitch Key="25"/>
+        <KeySwitch Key="96"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +legato.staccato +3 players">
+        <KeySwitch Key="25"/>
+        <KeySwitch Key="97"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +3 players +sustain">
+        <KeySwitch Key="25"/>
+        <KeySwitch Key="98"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +legato +3 players">
+        <KeySwitch Key="25"/>
+        <KeySwitch Key="99"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +trill.half +3 players" IsMultipleNoteSample="false">
+        <KeySwitch Key="25"/>
+        <KeySwitch Key="99"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +trill.whole +3 players" IsMultipleNoteSample="false">
+        <KeySwitch Key="25"/>
+        <KeySwitch Key="99"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +fp +3 players">
+        <KeySwitch Key="25"/>
+        <KeySwitch Key="100"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +sforzato +3 players">
+        <KeySwitch Key="25"/>
+        <KeySwitch Key="101"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +sforzato.aggressive +3 players">
+        <KeySwitch Key="25"/>
+        <KeySwitch Key="102"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +3 players +blare">
+        <KeySwitch Key="25"/>
+        <KeySwitch Key="103"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +3 players +rep">
+        <KeySwitch Key="25"/>
+        <KeySwitch Key="104"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +tremolo.unmeasured +3 players" IsMultipleNoteSample="true">
+        <KeySwitch Key="25"/>
+        <KeySwitch Key="105"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +flutter-tongue +3 players" IsMultipleNoteSample="true">
+        <KeySwitch Key="25"/>
+        <KeySwitch Key="105"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +2 players">
+        <KeySwitch Key="26"/>
+        <KeySwitch Key="98"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +staccatissimo +2 players">
+        <KeySwitch Key="26"/>
+        <KeySwitch Key="96"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +staccato +2 players">
+        <KeySwitch Key="26"/>
+        <KeySwitch Key="96"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +legato.staccato +2 players">
+        <KeySwitch Key="26"/>
+        <KeySwitch Key="97"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +2 players +sustain">
+        <KeySwitch Key="26"/>
+        <KeySwitch Key="98"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +legato +2 players">
+        <KeySwitch Key="26"/>
+        <KeySwitch Key="99"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +trill.half +2 players" IsMultipleNoteSample="false">
+        <KeySwitch Key="26"/>
+        <KeySwitch Key="99"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +trill.whole +2 players" IsMultipleNoteSample="false">
+        <KeySwitch Key="26"/>
+        <KeySwitch Key="99"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +fp +2 players">
+        <KeySwitch Key="26"/>
+        <KeySwitch Key="100"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +sforzato +2 players">
+        <KeySwitch Key="26"/>
+        <KeySwitch Key="101"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +sforzato.aggressive +2 players">
+        <KeySwitch Key="26"/>
+        <KeySwitch Key="102"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +2 players +blare">
+        <KeySwitch Key="26"/>
+        <KeySwitch Key="103"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +2 players +rep">
+        <KeySwitch Key="26"/>
+        <KeySwitch Key="104"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +tremolo.unmeasured +2 players" IsMultipleNoteSample="true">
+        <KeySwitch Key="26"/>
+        <KeySwitch Key="105"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +flutter-tongue +2 players" IsMultipleNoteSample="true">
+        <KeySwitch Key="26"/>
+        <KeySwitch Key="105"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +2 players +player2-3">
+        <KeySwitch Key="27"/>
+        <KeySwitch Key="98"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +staccatissimo +2 players +player2-3">
+        <KeySwitch Key="27"/>
+        <KeySwitch Key="96"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +staccato +2 players +player2-3">
+        <KeySwitch Key="27"/>
+        <KeySwitch Key="96"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +legato.staccato +2 players +player2-3">
+        <KeySwitch Key="27"/>
+        <KeySwitch Key="97"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +legato +2 players +player2-3">
+        <KeySwitch Key="27"/>
+        <KeySwitch Key="99"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +trill.half +2 players +player2-3" IsMultipleNoteSample="false">
+        <KeySwitch Key="27"/>
+        <KeySwitch Key="99"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +trill.whole +2 players +player2-3" IsMultipleNoteSample="false">
+        <KeySwitch Key="27"/>
+        <KeySwitch Key="99"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +fp +2 players +player2-3">
+        <KeySwitch Key="27"/>
+        <KeySwitch Key="100"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +sforzato +2 players +player2-3">
+        <KeySwitch Key="27"/>
+        <KeySwitch Key="101"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +sforzato.aggressive +2 players +player2-3">
+        <KeySwitch Key="27"/>
+        <KeySwitch Key="102"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +2 players +player2-3 +blare">
+        <KeySwitch Key="27"/>
+        <KeySwitch Key="103"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +2 players +player2-3 +rep">
+        <KeySwitch Key="27"/>
+        <KeySwitch Key="104"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +tremolo.unmeasured +2 players +player2-3" IsMultipleNoteSample="true">
+        <KeySwitch Key="27"/>
+        <KeySwitch Key="105"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +flutter-tongue +2 players +player2-3" IsMultipleNoteSample="true">
+        <KeySwitch Key="27"/>
+        <KeySwitch Key="105"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +2 players +player3-4">
+        <KeySwitch Key="27"/>
+        <KeySwitch Key="98"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +staccatissimo +2 players +player3-4">
+        <KeySwitch Key="27"/>
+        <KeySwitch Key="96"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +staccato +2 players +player3-4">
+        <KeySwitch Key="27"/>
+        <KeySwitch Key="96"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +legato.staccato +2 players +player3-4">
+        <KeySwitch Key="27"/>
+        <KeySwitch Key="97"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +legato +2 players +player3-4">
+        <KeySwitch Key="27"/>
+        <KeySwitch Key="99"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +trill.half +2 players +player3-4" IsMultipleNoteSample="false">
+        <KeySwitch Key="27"/>
+        <KeySwitch Key="99"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +trill.whole +2 players +player3-4" IsMultipleNoteSample="false">
+        <KeySwitch Key="27"/>
+        <KeySwitch Key="99"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +fp +2 players +player3-4">
+        <KeySwitch Key="27"/>
+        <KeySwitch Key="100"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +sforzato +2 players +player3-4">
+        <KeySwitch Key="27"/>
+        <KeySwitch Key="101"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +sforzato.aggressive +2 players +player3-4">
+        <KeySwitch Key="27"/>
+        <KeySwitch Key="102"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +2 players +player3-4 +blare">
+        <KeySwitch Key="27"/>
+        <KeySwitch Key="103"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +2 players +player3-4 +rep">
+        <KeySwitch Key="27"/>
+        <KeySwitch Key="104"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +tremolo.unmeasured +2 players +player3-4" IsMultipleNoteSample="true">
+        <KeySwitch Key="27"/>
+        <KeySwitch Key="105"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +flutter-tongue +2 players +player3-4" IsMultipleNoteSample="true">
+        <KeySwitch Key="27"/>
+        <KeySwitch Key="105"/>
+      </Switch>
+      <Switch SoundIDChange="+player1">
+        <KeySwitch Key="28"/>
+        <KeySwitch Key="98"/>
+      </Switch>
+      <Switch SoundIDChange="+staccatissimo +player1">
+        <KeySwitch Key="28"/>
+        <KeySwitch Key="96"/>
+      </Switch>
+      <Switch SoundIDChange="+staccato +player1">
+        <KeySwitch Key="28"/>
+        <KeySwitch Key="96"/>
+      </Switch>
+      <Switch SoundIDChange="+legato.staccato +player1">
+        <KeySwitch Key="28"/>
+        <KeySwitch Key="97"/>
+      </Switch>
+      <Switch SoundIDChange="+legato +player1">
+        <KeySwitch Key="28"/>
+        <KeySwitch Key="99"/>
+      </Switch>
+      <Switch SoundIDChange="+trill.half +player1" IsMultipleNoteSample="false">
+        <KeySwitch Key="28"/>
+        <KeySwitch Key="99"/>
+      </Switch>
+      <Switch SoundIDChange="+trill.whole +player1" IsMultipleNoteSample="false">
+        <KeySwitch Key="28"/>
+        <KeySwitch Key="99"/>
+      </Switch>
+      <Switch SoundIDChange="+fp +player1">
+        <KeySwitch Key="28"/>
+        <KeySwitch Key="100"/>
+      </Switch>
+      <Switch SoundIDChange="+sforzato +player1">
+        <KeySwitch Key="28"/>
+        <KeySwitch Key="101"/>
+      </Switch>
+      <Switch SoundIDChange="+sforzato.aggressive +player1">
+        <KeySwitch Key="28"/>
+        <KeySwitch Key="102"/>
+      </Switch>
+      <Switch SoundIDChange="+player1 +blare">
+        <KeySwitch Key="28"/>
+        <KeySwitch Key="103"/>
+      </Switch>
+      <Switch SoundIDChange="+player1 +rep">
+        <KeySwitch Key="28"/>
+        <KeySwitch Key="104"/>
+      </Switch>
+      <Switch SoundIDChange="+tremolo.unmeasured +player1" IsMultipleNoteSample="true">
+        <KeySwitch Key="28"/>
+        <KeySwitch Key="105"/>
+      </Switch>
+      <Switch SoundIDChange="+flutter-tongue +player1" IsMultipleNoteSample="true">
+        <KeySwitch Key="28"/>
+        <KeySwitch Key="105"/>
+      </Switch>
+      <Switch SoundIDChange="+player2">
+        <KeySwitch Key="29"/>
+        <KeySwitch Key="98"/>
+      </Switch>
+      <Switch SoundIDChange="+staccatissimo +player2">
+        <KeySwitch Key="29"/>
+        <KeySwitch Key="96"/>
+      </Switch>
+      <Switch SoundIDChange="+staccato +player2">
+        <KeySwitch Key="29"/>
+        <KeySwitch Key="96"/>
+      </Switch>
+      <Switch SoundIDChange="+legato.staccato +player2">
+        <KeySwitch Key="29"/>
+        <KeySwitch Key="97"/>
+      </Switch>
+      <Switch SoundIDChange="+legato +player2">
+        <KeySwitch Key="29"/>
+        <KeySwitch Key="99"/>
+      </Switch>
+      <Switch SoundIDChange="+trill.half +player2" IsMultipleNoteSample="false">
+        <KeySwitch Key="29"/>
+        <KeySwitch Key="99"/>
+      </Switch>
+      <Switch SoundIDChange="+trill.whole +player2" IsMultipleNoteSample="false">
+        <KeySwitch Key="29"/>
+        <KeySwitch Key="99"/>
+      </Switch>
+      <Switch SoundIDChange="+fp +player2">
+        <KeySwitch Key="29"/>
+        <KeySwitch Key="100"/>
+      </Switch>
+      <Switch SoundIDChange="+sforzato +player2">
+        <KeySwitch Key="29"/>
+        <KeySwitch Key="101"/>
+      </Switch>
+      <Switch SoundIDChange="+sforzato.aggressive +player2">
+        <KeySwitch Key="29"/>
+        <KeySwitch Key="102"/>
+      </Switch>
+      <Switch SoundIDChange="+player2 +blare">
+        <KeySwitch Key="29"/>
+        <KeySwitch Key="103"/>
+      </Switch>
+      <Switch SoundIDChange="+player2 +rep">
+        <KeySwitch Key="29"/>
+        <KeySwitch Key="104"/>
+      </Switch>
+      <Switch SoundIDChange="+tremolo.unmeasured +player2" IsMultipleNoteSample="true">
+        <KeySwitch Key="29"/>
+        <KeySwitch Key="105"/>
+      </Switch>
+      <Switch SoundIDChange="+flutter-tongue +player2" IsMultipleNoteSample="true">
+        <KeySwitch Key="29"/>
+        <KeySwitch Key="105"/>
+      </Switch>
+      <Switch SoundIDChange="+player3">
+        <KeySwitch Key="30"/>
+        <KeySwitch Key="98"/>
+      </Switch>
+      <Switch SoundIDChange="+staccatissimo +player3">
+        <KeySwitch Key="30"/>
+        <KeySwitch Key="96"/>
+      </Switch>
+      <Switch SoundIDChange="+staccato +player3">
+        <KeySwitch Key="30"/>
+        <KeySwitch Key="96"/>
+      </Switch>
+      <Switch SoundIDChange="+legato.staccato +player3">
+        <KeySwitch Key="30"/>
+        <KeySwitch Key="97"/>
+      </Switch>
+      <Switch SoundIDChange="+legato +player3">
+        <KeySwitch Key="30"/>
+        <KeySwitch Key="99"/>
+      </Switch>
+      <Switch SoundIDChange="+trill.half +player3" IsMultipleNoteSample="false">
+        <KeySwitch Key="30"/>
+        <KeySwitch Key="99"/>
+      </Switch>
+      <Switch SoundIDChange="+trill.whole +player3" IsMultipleNoteSample="false">
+        <KeySwitch Key="30"/>
+        <KeySwitch Key="99"/>
+      </Switch>
+      <Switch SoundIDChange="+fp +player3">
+        <KeySwitch Key="30"/>
+        <KeySwitch Key="100"/>
+      </Switch>
+      <Switch SoundIDChange="+sforzato +player3">
+        <KeySwitch Key="30"/>
+        <KeySwitch Key="101"/>
+      </Switch>
+      <Switch SoundIDChange="+sforzato.aggressive +player3">
+        <KeySwitch Key="30"/>
+        <KeySwitch Key="102"/>
+      </Switch>
+      <Switch SoundIDChange="+player3 +blare">
+        <KeySwitch Key="30"/>
+        <KeySwitch Key="103"/>
+      </Switch>
+      <Switch SoundIDChange="+player3 +rep">
+        <KeySwitch Key="30"/>
+        <KeySwitch Key="104"/>
+      </Switch>
+      <Switch SoundIDChange="+tremolo.unmeasured +player3" IsMultipleNoteSample="true">
+        <KeySwitch Key="30"/>
+        <KeySwitch Key="105"/>
+      </Switch>
+      <Switch SoundIDChange="+flutter-tongue +player3" IsMultipleNoteSample="true">
+        <KeySwitch Key="30"/>
+        <KeySwitch Key="105"/>
+      </Switch>
+      <Switch SoundIDChange="+player4">
+        <KeySwitch Key="31"/>
+        <KeySwitch Key="98"/>
+      </Switch>
+      <Switch SoundIDChange="+staccatissimo +player4">
+        <KeySwitch Key="31"/>
+        <KeySwitch Key="96"/>
+      </Switch>
+      <Switch SoundIDChange="+staccato +player4">
+        <KeySwitch Key="31"/>
+        <KeySwitch Key="96"/>
+      </Switch>
+      <Switch SoundIDChange="+legato.staccato +player4">
+        <KeySwitch Key="31"/>
+        <KeySwitch Key="97"/>
+      </Switch>
+      <Switch SoundIDChange="+legato +player4">
+        <KeySwitch Key="31"/>
+        <KeySwitch Key="99"/>
+      </Switch>
+      <Switch SoundIDChange="+trill.half +player4" IsMultipleNoteSample="false">
+        <KeySwitch Key="31"/>
+        <KeySwitch Key="99"/>
+      </Switch>
+      <Switch SoundIDChange="+trill.whole +player4" IsMultipleNoteSample="false">
+        <KeySwitch Key="31"/>
+        <KeySwitch Key="99"/>
+      </Switch>
+      <Switch SoundIDChange="+fp +player4">
+        <KeySwitch Key="31"/>
+        <KeySwitch Key="100"/>
+      </Switch>
+      <Switch SoundIDChange="+sforzato +player4">
+        <KeySwitch Key="31"/>
+        <KeySwitch Key="101"/>
+      </Switch>
+      <Switch SoundIDChange="+sforzato.aggressive +player4">
+        <KeySwitch Key="31"/>
+        <KeySwitch Key="102"/>
+      </Switch>
+      <Switch SoundIDChange="+player4 +blare">
+        <KeySwitch Key="31"/>
+        <KeySwitch Key="103"/>
+      </Switch>
+      <Switch SoundIDChange="+player4 +rep">
+        <KeySwitch Key="31"/>
+        <KeySwitch Key="104"/>
+      </Switch>
+      <Switch SoundIDChange="+tremolo.unmeasured +player4" IsMultipleNoteSample="true">
+        <KeySwitch Key="31"/>
+        <KeySwitch Key="105"/>
+      </Switch>
+      <Switch SoundIDChange="+flutter-tongue +player4" IsMultipleNoteSample="true">
+        <KeySwitch Key="31"/>
+        <KeySwitch Key="105"/>
+      </Switch>
+      <Switch SoundIDChange="+divisi">
+        <KeySwitch Key="32"/>
+        <KeySwitch Key="98"/>
+      </Switch>
+      <Switch SoundIDChange="+staccatissimo +divisi">
+        <KeySwitch Key="32"/>
+        <KeySwitch Key="96"/>
+      </Switch>
+      <Switch SoundIDChange="+staccato +divisi">
+        <KeySwitch Key="32"/>
+        <KeySwitch Key="96"/>
+      </Switch>
+      <Switch SoundIDChange="+legato.staccato +divisi">
+        <KeySwitch Key="32"/>
+        <KeySwitch Key="97"/>
+      </Switch>
+      <Switch SoundIDChange="+legato +divisi">
+        <KeySwitch Key="32"/>
+        <KeySwitch Key="99"/>
+      </Switch>
+      <Switch SoundIDChange="+trill.half +divisi" IsMultipleNoteSample="false">
+        <KeySwitch Key="32"/>
+        <KeySwitch Key="99"/>
+      </Switch>
+      <Switch SoundIDChange="+trill.whole +divisi" IsMultipleNoteSample="false">
+        <KeySwitch Key="32"/>
+        <KeySwitch Key="99"/>
+      </Switch>
+      <Switch SoundIDChange="+fp +divisi">
+        <KeySwitch Key="32"/>
+        <KeySwitch Key="100"/>
+      </Switch>
+      <Switch SoundIDChange="+sforzato +divisi">
+        <KeySwitch Key="32"/>
+        <KeySwitch Key="101"/>
+      </Switch>
+      <Switch SoundIDChange="+sforzato.aggressive +divisi">
+        <KeySwitch Key="32"/>
+        <KeySwitch Key="102"/>
+      </Switch>
+      <Switch SoundIDChange="+divisi +blare">
+        <KeySwitch Key="32"/>
+        <KeySwitch Key="103"/>
+      </Switch>
+      <Switch SoundIDChange="+divisi +rep">
+        <KeySwitch Key="32"/>
+        <KeySwitch Key="104"/>
+      </Switch>
+      <Switch SoundIDChange="+tremolo.unmeasured +divisi" IsMultipleNoteSample="true">
+        <KeySwitch Key="32"/>
+        <KeySwitch Key="105"/>
+      </Switch>
+      <Switch SoundIDChange="+flutter-tongue +divisi" IsMultipleNoteSample="true">
+        <KeySwitch Key="32"/>
+        <KeySwitch Key="105"/>
+      </Switch>
+      <Switch SoundIDChange="+divisi.2">
+        <KeySwitch Key="33"/>
+        <KeySwitch Key="98"/>
+      </Switch>
+      <Switch SoundIDChange="+staccatissimo +divisi.2">
+        <KeySwitch Key="33"/>
+        <KeySwitch Key="96"/>
+      </Switch>
+      <Switch SoundIDChange="+staccato +divisi.2">
+        <KeySwitch Key="33"/>
+        <KeySwitch Key="96"/>
+      </Switch>
+      <Switch SoundIDChange="+legato.staccato +divisi.2">
+        <KeySwitch Key="33"/>
+        <KeySwitch Key="97"/>
+      </Switch>
+      <Switch SoundIDChange="+legato +divisi.2">
+        <KeySwitch Key="33"/>
+        <KeySwitch Key="99"/>
+      </Switch>
+      <Switch SoundIDChange="+trill.half +divisi.2" IsMultipleNoteSample="false">
+        <KeySwitch Key="33"/>
+        <KeySwitch Key="99"/>
+      </Switch>
+      <Switch SoundIDChange="+trill.whole +divisi.2" IsMultipleNoteSample="false">
+        <KeySwitch Key="33"/>
+        <KeySwitch Key="99"/>
+      </Switch>
+      <Switch SoundIDChange="+fp +divisi.2">
+        <KeySwitch Key="33"/>
+        <KeySwitch Key="100"/>
+      </Switch>
+      <Switch SoundIDChange="+sforzato +divisi.2">
+        <KeySwitch Key="33"/>
+        <KeySwitch Key="101"/>
+      </Switch>
+      <Switch SoundIDChange="+sforzato.aggressive +divisi.2">
+        <KeySwitch Key="33"/>
+        <KeySwitch Key="102"/>
+      </Switch>
+      <Switch SoundIDChange="+divisi.2 +blare">
+        <KeySwitch Key="33"/>
+        <KeySwitch Key="103"/>
+      </Switch>
+      <Switch SoundIDChange="+divisi.2 +rep">
+        <KeySwitch Key="33"/>
+        <KeySwitch Key="104"/>
+      </Switch>
+      <Switch SoundIDChange="+tremolo.unmeasured +divisi.2" IsMultipleNoteSample="true">
+        <KeySwitch Key="33"/>
+        <KeySwitch Key="105"/>
+      </Switch>
+      <Switch SoundIDChange="+flutter-tongue +divisi.2" IsMultipleNoteSample="true">
+        <KeySwitch Key="33"/>
+        <KeySwitch Key="105"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +divisi">
+        <KeySwitch Key="32"/>
+        <KeySwitch Key="98"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +staccatissimo +divisi">
+        <KeySwitch Key="32"/>
+        <KeySwitch Key="96"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +staccato +divisi">
+        <KeySwitch Key="32"/>
+        <KeySwitch Key="96"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +legato.staccato +divisi">
+        <KeySwitch Key="32"/>
+        <KeySwitch Key="97"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +legato +divisi">
+        <KeySwitch Key="32"/>
+        <KeySwitch Key="99"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble.trill.half +divisi" IsMultipleNoteSample="false">
+        <KeySwitch Key="32"/>
+        <KeySwitch Key="99"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble.trill.whole +divisi" IsMultipleNoteSample="false">
+        <KeySwitch Key="32"/>
+        <KeySwitch Key="99"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +fp +divisi">
+        <KeySwitch Key="32"/>
+        <KeySwitch Key="100"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +sforzato +divisi">
+        <KeySwitch Key="32"/>
+        <KeySwitch Key="101"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +sforzato.aggressive +divisi">
+        <KeySwitch Key="32"/>
+        <KeySwitch Key="102"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +divisi +blare">
+        <KeySwitch Key="32"/>
+        <KeySwitch Key="103"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +divisi +rep">
+        <KeySwitch Key="32"/>
+        <KeySwitch Key="104"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble.tremolo.unmeasured +divisi" IsMultipleNoteSample="true">
+        <KeySwitch Key="32"/>
+        <KeySwitch Key="105"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble.flutter-tongue +divisi" IsMultipleNoteSample="true">
+        <KeySwitch Key="32"/>
+        <KeySwitch Key="105"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +divisi.2">
+        <KeySwitch Key="33"/>
+        <KeySwitch Key="98"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +staccatissimo +divisi.2">
+        <KeySwitch Key="33"/>
+        <KeySwitch Key="96"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +staccato +divisi.2">
+        <KeySwitch Key="33"/>
+        <KeySwitch Key="96"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +legato.staccato +divisi.2">
+        <KeySwitch Key="33"/>
+        <KeySwitch Key="97"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +legato +divisi.2">
+        <KeySwitch Key="33"/>
+        <KeySwitch Key="99"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble.trill.half +divisi.2" IsMultipleNoteSample="false">
+        <KeySwitch Key="33"/>
+        <KeySwitch Key="99"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble.trill.whole +divisi.2" IsMultipleNoteSample="false">
+        <KeySwitch Key="33"/>
+        <KeySwitch Key="99"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +fp +divisi.2">
+        <KeySwitch Key="33"/>
+        <KeySwitch Key="100"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +sforzato +divisi.2">
+        <KeySwitch Key="33"/>
+        <KeySwitch Key="101"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +sforzato.aggressive +divisi.2">
+        <KeySwitch Key="33"/>
+        <KeySwitch Key="102"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +divisi.2 +blare">
+        <KeySwitch Key="33"/>
+        <KeySwitch Key="103"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +divisi.2 +rep">
+        <KeySwitch Key="33"/>
+        <KeySwitch Key="104"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble.tremolo.unmeasured +divisi.2" IsMultipleNoteSample="true">
+        <KeySwitch Key="33"/>
+        <KeySwitch Key="105"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble.flutter-tongue +divisi.2" IsMultipleNoteSample="true">
+        <KeySwitch Key="33"/>
+        <KeySwitch Key="105"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +4 players +divisi">
+        <KeySwitch Key="32"/>
+        <KeySwitch Key="98"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +4 players +staccatissimo +divisi">
+        <KeySwitch Key="32"/>
+        <KeySwitch Key="96"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +staccato +4 players +divisi">
+        <KeySwitch Key="32"/>
+        <KeySwitch Key="96"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +legato.staccato +4 players +divisi">
+        <KeySwitch Key="32"/>
+        <KeySwitch Key="97"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +legato +4 players +divisi">
+        <KeySwitch Key="32"/>
+        <KeySwitch Key="99"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble.trill.half +4 players +divisi" IsMultipleNoteSample="false">
+        <KeySwitch Key="32"/>
+        <KeySwitch Key="99"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble.trill.whole +4 players +divisi" IsMultipleNoteSample="false">
+        <KeySwitch Key="32"/>
+        <KeySwitch Key="99"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +fp +4 players +divisi">
+        <KeySwitch Key="32"/>
+        <KeySwitch Key="100"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +sforzato +4 players +divisi">
+        <KeySwitch Key="32"/>
+        <KeySwitch Key="101"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +sforzato.aggressive +4 players +divisi">
+        <KeySwitch Key="32"/>
+        <KeySwitch Key="102"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +4 players +divisi +blare">
+        <KeySwitch Key="32"/>
+        <KeySwitch Key="103"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +4 players +divisi +rep">
+        <KeySwitch Key="32"/>
+        <KeySwitch Key="104"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble.tremolo.unmeasured +4 players +divisi" IsMultipleNoteSample="true">
+        <KeySwitch Key="32"/>
+        <KeySwitch Key="105"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble.flutter-tongue +4 players +divisi" IsMultipleNoteSample="true">
+        <KeySwitch Key="32"/>
+        <KeySwitch Key="105"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +4 players +divisi.2">
+        <KeySwitch Key="33"/>
+        <KeySwitch Key="98"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +staccatissimo +4 players +divisi.2">
+        <KeySwitch Key="33"/>
+        <KeySwitch Key="96"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +staccato +4 players +divisi.2">
+        <KeySwitch Key="33"/>
+        <KeySwitch Key="96"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +legato.staccato +4 players +divisi.2">
+        <KeySwitch Key="33"/>
+        <KeySwitch Key="97"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +legato +4 players +divisi.2">
+        <KeySwitch Key="33"/>
+        <KeySwitch Key="99"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble.trill.half +4 players +divisi.2" IsMultipleNoteSample="false">
+        <KeySwitch Key="33"/>
+        <KeySwitch Key="99"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble.trill.whole +4 players +divisi.2" IsMultipleNoteSample="false">
+        <KeySwitch Key="33"/>
+        <KeySwitch Key="99"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +fp +4 players +divisi.2">
+        <KeySwitch Key="33"/>
+        <KeySwitch Key="100"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +sforzato +4 players +divisi.2">
+        <KeySwitch Key="33"/>
+        <KeySwitch Key="101"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +sforzato.aggressive +4 players +divisi.2">
+        <KeySwitch Key="33"/>
+        <KeySwitch Key="102"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +4 players +divisi.2 +blare">
+        <KeySwitch Key="33"/>
+        <KeySwitch Key="103"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +4 players +divisi.2 +rep">
+        <KeySwitch Key="33"/>
+        <KeySwitch Key="104"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble.tremolo.unmeasured +4 players +divisi.2" IsMultipleNoteSample="true">
+        <KeySwitch Key="33"/>
+        <KeySwitch Key="105"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble.flutter-tongue +4 players +divisi.2" IsMultipleNoteSample="true">
+        <KeySwitch Key="33"/>
+        <KeySwitch Key="105"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +3 players +divisi">
+        <KeySwitch Key="32"/>
+        <KeySwitch Key="98"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +staccatissimo +3 players +divisi">
+        <KeySwitch Key="32"/>
+        <KeySwitch Key="96"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +staccato +3 players +divisi">
+        <KeySwitch Key="32"/>
+        <KeySwitch Key="96"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +legato.staccato +3 players +divisi">
+        <KeySwitch Key="32"/>
+        <KeySwitch Key="97"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +legato +3 players +divisi">
+        <KeySwitch Key="32"/>
+        <KeySwitch Key="99"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +trill.half +3 players +divisi" IsMultipleNoteSample="false">
+        <KeySwitch Key="32"/>
+        <KeySwitch Key="99"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble.trill.whole +3 players +divisi" IsMultipleNoteSample="false">
+        <KeySwitch Key="32"/>
+        <KeySwitch Key="99"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +fp +3 players +divisi">
+        <KeySwitch Key="32"/>
+        <KeySwitch Key="100"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +sforzato +3 players +divisi">
+        <KeySwitch Key="32"/>
+        <KeySwitch Key="101"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +sforzato.aggressive +3 players +divisi">
+        <KeySwitch Key="32"/>
+        <KeySwitch Key="102"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +3 players +divisi +blare">
+        <KeySwitch Key="32"/>
+        <KeySwitch Key="103"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +3 players +divisi +rep">
+        <KeySwitch Key="32"/>
+        <KeySwitch Key="104"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +tremolo.unmeasured +3 players +divisi" IsMultipleNoteSample="true">
+        <KeySwitch Key="32"/>
+        <KeySwitch Key="105"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +flutter-tongue +3 players +divisi" IsMultipleNoteSample="true">
+        <KeySwitch Key="32"/>
+        <KeySwitch Key="105"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +3 players +divisi.2">
+        <KeySwitch Key="33"/>
+        <KeySwitch Key="98"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +staccatissimo +3 players +divisi.2">
+        <KeySwitch Key="33"/>
+        <KeySwitch Key="96"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +staccato +3 players +divisi.2">
+        <KeySwitch Key="33"/>
+        <KeySwitch Key="96"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +legato.staccato +3 players +divisi.2">
+        <KeySwitch Key="33"/>
+        <KeySwitch Key="97"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +legato +3 players +divisi.2">
+        <KeySwitch Key="33"/>
+        <KeySwitch Key="99"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +trill.half +3 players +divisi.2" IsMultipleNoteSample="false">
+        <KeySwitch Key="33"/>
+        <KeySwitch Key="99"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +trill.whole +3 players +divisi.2" IsMultipleNoteSample="false">
+        <KeySwitch Key="33"/>
+        <KeySwitch Key="99"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +fp +3 players +divisi.2">
+        <KeySwitch Key="33"/>
+        <KeySwitch Key="100"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +sforzato +3 players +divisi.2">
+        <KeySwitch Key="33"/>
+        <KeySwitch Key="101"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +sforzato.aggressive +3 players +divisi.2">
+        <KeySwitch Key="33"/>
+        <KeySwitch Key="102"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +3 players +divisi.2 +blare">
+        <KeySwitch Key="33"/>
+        <KeySwitch Key="103"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +3 players +divisi.2 +rep">
+        <KeySwitch Key="33"/>
+        <KeySwitch Key="104"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +tremolo.unmeasured +3 players +divisi.2" IsMultipleNoteSample="true">
+        <KeySwitch Key="33"/>
+        <KeySwitch Key="105"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +flutter-tongue +3 players +divisi.2" IsMultipleNoteSample="true">
+        <KeySwitch Key="33"/>
+        <KeySwitch Key="105"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +2 players +divisi">
+        <KeySwitch Key="32"/>
+        <KeySwitch Key="98"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +staccatissimo +2 players +divisi">
+        <KeySwitch Key="32"/>
+        <KeySwitch Key="96"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +staccato +2 players +divisi">
+        <KeySwitch Key="32"/>
+        <KeySwitch Key="96"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +legato.staccato +2 players +divisi">
+        <KeySwitch Key="32"/>
+        <KeySwitch Key="97"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +legato +2 players +divisi">
+        <KeySwitch Key="32"/>
+        <KeySwitch Key="99"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +trill.half +divisi +2 players" IsMultipleNoteSample="false">
+        <KeySwitch Key="32"/>
+        <KeySwitch Key="99"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +trill.whole +2 players +divisi" IsMultipleNoteSample="false">
+        <KeySwitch Key="32"/>
+        <KeySwitch Key="99"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +fp +2 players +divisi">
+        <KeySwitch Key="32"/>
+        <KeySwitch Key="100"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +sforzato +2 players +divisi">
+        <KeySwitch Key="32"/>
+        <KeySwitch Key="101"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +sforzato.aggressive +2 players +divisi">
+        <KeySwitch Key="32"/>
+        <KeySwitch Key="102"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +2 players +divisi +blare">
+        <KeySwitch Key="32"/>
+        <KeySwitch Key="103"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +2 players +divisi +rep">
+        <KeySwitch Key="32"/>
+        <KeySwitch Key="104"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +tremolo.unmeasured +2 players +divisi" IsMultipleNoteSample="true">
+        <KeySwitch Key="32"/>
+        <KeySwitch Key="105"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +flutter-tongue +2 players +divisi" IsMultipleNoteSample="true">
+        <KeySwitch Key="32"/>
+        <KeySwitch Key="105"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +2 players +divisi.2">
+        <KeySwitch Key="33"/>
+        <KeySwitch Key="98"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +staccatissimo +2 players +divisi.2">
+        <KeySwitch Key="33"/>
+        <KeySwitch Key="96"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +staccato +2 players +divisi.2">
+        <KeySwitch Key="33"/>
+        <KeySwitch Key="96"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +legato.staccato +2 players +divisi.2">
+        <KeySwitch Key="33"/>
+        <KeySwitch Key="97"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +legato +2 players +divisi.2">
+        <KeySwitch Key="33"/>
+        <KeySwitch Key="99"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +trill.half +2 players +divisi.2" IsMultipleNoteSample="false">
+        <KeySwitch Key="33"/>
+        <KeySwitch Key="99"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +trill.whole +2 players +divisi.2" IsMultipleNoteSample="false">
+        <KeySwitch Key="33"/>
+        <KeySwitch Key="99"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +fp +2 players +divisi.2">
+        <KeySwitch Key="33"/>
+        <KeySwitch Key="100"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +sforzato +2 players +divisi.2">
+        <KeySwitch Key="33"/>
+        <KeySwitch Key="101"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +sforzato.aggressive +2 players +divisi.2">
+        <KeySwitch Key="33"/>
+        <KeySwitch Key="102"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +2 players +divisi.2 +blare">
+        <KeySwitch Key="33"/>
+        <KeySwitch Key="103"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +2 players +divisi.2 +rep">
+        <KeySwitch Key="33"/>
+        <KeySwitch Key="104"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +tremolo.unmeasured +2 players +divisi.2" IsMultipleNoteSample="true">
+        <KeySwitch Key="33"/>
+        <KeySwitch Key="105"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +flutter-tongue +2 players +divisi.2" IsMultipleNoteSample="true">
+        <KeySwitch Key="33"/>
+        <KeySwitch Key="105"/>
+      </Switch>
+      <Switch SoundIDChange="+custom1">
+        <KeySwitch Key="106"/>
+      </Switch>
+      <Switch SoundIDChange="+staccato +custom1">
+        <KeySwitch Key="106"/>
+      </Switch>
+      <Switch SoundIDChange="+legato +custom1">
+        <KeySwitch Key="106"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +custom1">
+        <KeySwitch Key="24"/>
+        <KeySwitch Key="106"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble.staccato +custom1">
+        <KeySwitch Key="24"/>
+        <KeySwitch Key="106"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble.legato +custom1">
+        <KeySwitch Key="24"/>
+        <KeySwitch Key="106"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +4 players +custom1">
+        <KeySwitch Key="24"/>
+        <KeySwitch Key="106"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +staccato +4 players +custom1">
+        <KeySwitch Key="24"/>
+        <KeySwitch Key="106"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +legato +4 players +custom1">
+        <KeySwitch Key="24"/>
+        <KeySwitch Key="106"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +3 players +custom1">
+        <KeySwitch Key="25"/>
+        <KeySwitch Key="106"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +staccato +3 players +custom1">
+        <KeySwitch Key="25"/>
+        <KeySwitch Key="106"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +legato +3 players +custom1">
+        <KeySwitch Key="25"/>
+        <KeySwitch Key="106"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +2 players +custom1">
+        <KeySwitch Key="26"/>
+        <KeySwitch Key="106"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +staccato +2 players +custom1">
+        <KeySwitch Key="26"/>
+        <KeySwitch Key="106"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +legato +2 players +custom1">
+        <KeySwitch Key="26"/>
+        <KeySwitch Key="106"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +2 players +player2-3 +custom1">
+        <KeySwitch Key="27"/>
+        <KeySwitch Key="106"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +2 players +player3-4 +custom1">
+        <KeySwitch Key="27"/>
+        <KeySwitch Key="106"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +staccato +2 players +player3-4 +custom1">
+        <KeySwitch Key="27"/>
+        <KeySwitch Key="106"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +legato +2 players +player3-4 +custom1">
+        <KeySwitch Key="27"/>
+        <KeySwitch Key="106"/>
+      </Switch>
+      <Switch SoundIDChange="+player1 +custom1">
+        <KeySwitch Key="28"/>
+        <KeySwitch Key="106"/>
+      </Switch>
+      <Switch SoundIDChange="+staccato +player1 +custom1">
+        <KeySwitch Key="28"/>
+        <KeySwitch Key="106"/>
+      </Switch>
+      <Switch SoundIDChange="+legato +player1 +custom1">
+        <KeySwitch Key="28"/>
+        <KeySwitch Key="106"/>
+      </Switch>
+      <Switch SoundIDChange="+player2 +custom1">
+        <KeySwitch Key="29"/>
+        <KeySwitch Key="106"/>
+      </Switch>
+      <Switch SoundIDChange="+staccato +player2 +custom1">
+        <KeySwitch Key="29"/>
+        <KeySwitch Key="106"/>
+      </Switch>
+      <Switch SoundIDChange="+legato +player2 +custom1">
+        <KeySwitch Key="29"/>
+        <KeySwitch Key="106"/>
+      </Switch>
+      <Switch SoundIDChange="+player3 +custom1">
+        <KeySwitch Key="30"/>
+        <KeySwitch Key="106"/>
+      </Switch>
+      <Switch SoundIDChange="+staccato +player3 +custom1">
+        <KeySwitch Key="30"/>
+        <KeySwitch Key="106"/>
+      </Switch>
+      <Switch SoundIDChange="+legato +player3 +custom1">
+        <KeySwitch Key="30"/>
+        <KeySwitch Key="106"/>
+      </Switch>
+      <Switch SoundIDChange="+player4 +custom1">
+        <KeySwitch Key="31"/>
+        <KeySwitch Key="106"/>
+      </Switch>
+      <Switch SoundIDChange="+staccato +player4 +custom1">
+        <KeySwitch Key="31"/>
+        <KeySwitch Key="106"/>
+      </Switch>
+      <Switch SoundIDChange="+legato +player4 +custom1">
+        <KeySwitch Key="31"/>
+        <KeySwitch Key="106"/>
+      </Switch>
+      <Switch SoundIDChange="+divisi +custom1">
+        <KeySwitch Key="32"/>
+        <KeySwitch Key="106"/>
+      </Switch>
+      <Switch SoundIDChange="+staccato +divisi +custom1">
+        <KeySwitch Key="32"/>
+        <KeySwitch Key="106"/>
+      </Switch>
+      <Switch SoundIDChange="+legato +divisi +custom1">
+        <KeySwitch Key="32"/>
+        <KeySwitch Key="106"/>
+      </Switch>
+      <Switch SoundIDChange="+divisi.2 +custom1">
+        <KeySwitch Key="33"/>
+        <KeySwitch Key="106"/>
+      </Switch>
+      <Switch SoundIDChange="+staccato +divisi.2 +custom1">
+        <KeySwitch Key="33"/>
+        <KeySwitch Key="106"/>
+      </Switch>
+      <Switch SoundIDChange="+legato +divisi.2 +custom1">
+        <KeySwitch Key="33"/>
+        <KeySwitch Key="106"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +staccato +divisi +custom1">
+        <KeySwitch Key="32"/>
+        <KeySwitch Key="106"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +legato +divisi +custom1">
+        <KeySwitch Key="32"/>
+        <KeySwitch Key="106"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +divisi.2 +custom1">
+        <KeySwitch Key="33"/>
+        <KeySwitch Key="106"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +staccato +divisi.2 +custom1">
+        <KeySwitch Key="33"/>
+        <KeySwitch Key="106"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +legato +divisi.2 +custom1">
+        <KeySwitch Key="33"/>
+        <KeySwitch Key="106"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +4 players +divisi +custom1">
+        <KeySwitch Key="32"/>
+        <KeySwitch Key="106"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +4 players +divisi.2 +custom1">
+        <KeySwitch Key="33"/>
+        <KeySwitch Key="106"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +3 players +divisi +custom1">
+        <KeySwitch Key="32"/>
+        <KeySwitch Key="106"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +3 players +divisi.2 +custom1">
+        <KeySwitch Key="33"/>
+        <KeySwitch Key="106"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +2 players +divisi +custom1">
+        <KeySwitch Key="32"/>
+        <KeySwitch Key="106"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +2 players +divisi.2 +custom1">
+        <KeySwitch Key="33"/>
+        <KeySwitch Key="106"/>
+      </Switch>
+      <Switch SoundIDChange="+custom2">
+        <KeySwitch Key="107"/>
+      </Switch>
+      <Switch SoundIDChange="+staccato +custom2">
+        <KeySwitch Key="107"/>
+      </Switch>
+      <Switch SoundIDChange="+legato +custom2">
+        <KeySwitch Key="107"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +custom2">
+        <KeySwitch Key="24"/>
+        <KeySwitch Key="107"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble.staccato +custom2">
+        <KeySwitch Key="24"/>
+        <KeySwitch Key="107"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble.legato +custom2">
+        <KeySwitch Key="24"/>
+        <KeySwitch Key="107"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +4 players +custom2">
+        <KeySwitch Key="24"/>
+        <KeySwitch Key="107"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +staccato +4 players +custom2">
+        <KeySwitch Key="24"/>
+        <KeySwitch Key="107"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +legato +4 players +custom2">
+        <KeySwitch Key="24"/>
+        <KeySwitch Key="107"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +3 players +custom2">
+        <KeySwitch Key="25"/>
+        <KeySwitch Key="107"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +staccato +3 players +custom2">
+        <KeySwitch Key="25"/>
+        <KeySwitch Key="107"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +legato +3 players +custom2">
+        <KeySwitch Key="25"/>
+        <KeySwitch Key="107"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +2 players +custom2">
+        <KeySwitch Key="26"/>
+        <KeySwitch Key="107"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +staccato +2 players +custom2">
+        <KeySwitch Key="26"/>
+        <KeySwitch Key="107"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +legato +2 players +custom2">
+        <KeySwitch Key="26"/>
+        <KeySwitch Key="107"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +2 players +player2-3 +custom2">
+        <KeySwitch Key="27"/>
+        <KeySwitch Key="107"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +2 players +player3-4 +custom2">
+        <KeySwitch Key="27"/>
+        <KeySwitch Key="107"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +staccato +2 players +player3-4 +custom2">
+        <KeySwitch Key="27"/>
+        <KeySwitch Key="107"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +legato +2 players +player3-4 +custom2">
+        <KeySwitch Key="27"/>
+        <KeySwitch Key="107"/>
+      </Switch>
+      <Switch SoundIDChange="+player1 +custom2">
+        <KeySwitch Key="28"/>
+        <KeySwitch Key="107"/>
+      </Switch>
+      <Switch SoundIDChange="+staccato +player1 +custom2">
+        <KeySwitch Key="28"/>
+        <KeySwitch Key="107"/>
+      </Switch>
+      <Switch SoundIDChange="+legato +player1 +custom2">
+        <KeySwitch Key="28"/>
+        <KeySwitch Key="107"/>
+      </Switch>
+      <Switch SoundIDChange="+player2 +custom2">
+        <KeySwitch Key="29"/>
+        <KeySwitch Key="107"/>
+      </Switch>
+      <Switch SoundIDChange="+staccato +player2 +custom2">
+        <KeySwitch Key="29"/>
+        <KeySwitch Key="107"/>
+      </Switch>
+      <Switch SoundIDChange="+legato +player2 +custom2">
+        <KeySwitch Key="29"/>
+        <KeySwitch Key="107"/>
+      </Switch>
+      <Switch SoundIDChange="+player3 +custom2">
+        <KeySwitch Key="30"/>
+        <KeySwitch Key="107"/>
+      </Switch>
+      <Switch SoundIDChange="+staccato +player3 +custom2">
+        <KeySwitch Key="30"/>
+        <KeySwitch Key="107"/>
+      </Switch>
+      <Switch SoundIDChange="+legato +player3 +custom2">
+        <KeySwitch Key="30"/>
+        <KeySwitch Key="107"/>
+      </Switch>
+      <Switch SoundIDChange="+player4 +custom2">
+        <KeySwitch Key="31"/>
+        <KeySwitch Key="107"/>
+      </Switch>
+      <Switch SoundIDChange="+staccato +player4 +custom2">
+        <KeySwitch Key="31"/>
+        <KeySwitch Key="107"/>
+      </Switch>
+      <Switch SoundIDChange="+legato +player4 +custom2">
+        <KeySwitch Key="31"/>
+        <KeySwitch Key="107"/>
+      </Switch>
+      <Switch SoundIDChange="+divisi +custom2">
+        <KeySwitch Key="32"/>
+        <KeySwitch Key="107"/>
+      </Switch>
+      <Switch SoundIDChange="+staccato +divisi +custom2">
+        <KeySwitch Key="32"/>
+        <KeySwitch Key="107"/>
+      </Switch>
+      <Switch SoundIDChange="+legato +divisi +custom2">
+        <KeySwitch Key="32"/>
+        <KeySwitch Key="107"/>
+      </Switch>
+      <Switch SoundIDChange="+divisi.2 +custom2">
+        <KeySwitch Key="33"/>
+        <KeySwitch Key="107"/>
+      </Switch>
+      <Switch SoundIDChange="+staccato +divisi.2 +custom2">
+        <KeySwitch Key="33"/>
+        <KeySwitch Key="107"/>
+      </Switch>
+      <Switch SoundIDChange="+legato +divisi.2 +custom2">
+        <KeySwitch Key="33"/>
+        <KeySwitch Key="107"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +staccato +divisi +custom2">
+        <KeySwitch Key="32"/>
+        <KeySwitch Key="107"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +legato +divisi +custom2">
+        <KeySwitch Key="32"/>
+        <KeySwitch Key="107"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +divisi.2 +custom2">
+        <KeySwitch Key="33"/>
+        <KeySwitch Key="107"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +staccato +divisi.2 +custom2">
+        <KeySwitch Key="33"/>
+        <KeySwitch Key="107"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +legato +divisi.2 +custom2">
+        <KeySwitch Key="33"/>
+        <KeySwitch Key="107"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +4 players +divisi +custom2">
+        <KeySwitch Key="32"/>
+        <KeySwitch Key="107"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +4 players +divisi.2 +custom2">
+        <KeySwitch Key="33"/>
+        <KeySwitch Key="107"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +3 players +divisi +custom2">
+        <KeySwitch Key="32"/>
+        <KeySwitch Key="107"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +3 players +divisi.2 +custom2">
+        <KeySwitch Key="33"/>
+        <KeySwitch Key="107"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +2 players +divisi +custom2">
+        <KeySwitch Key="32"/>
+        <KeySwitch Key="107"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +2 players +divisi.2 +custom2">
+        <KeySwitch Key="33"/>
+        <KeySwitch Key="107"/>
+      </Switch>
+    </SwitchTypeDefinition>
+    <SwitchTypeDefinition Name="Dimension Wagnertuba">
+      <Switch SoundIDChange="[reset]">
+        <KeySwitch Key="98"/>
+      </Switch>
+      <Switch SoundIDChange="+staccatissimo">
+        <KeySwitch Key="96"/>
+      </Switch>
+      <Switch SoundIDChange="+staccato">
+        <KeySwitch Key="96"/>
+      </Switch>
+      <Switch SoundIDChange="+legato.staccato">
+        <KeySwitch Key="97"/>
+      </Switch>
+      <Switch SoundIDChange="+sustain">
+        <KeySwitch Key="98"/>
+      </Switch>
+      <Switch SoundIDChange="+legato">
+        <KeySwitch Key="99"/>
+      </Switch>
+      <Switch SoundIDChange="+trill.half" IsMultipleNoteSample="false">
+        <KeySwitch Key="99"/>
+      </Switch>
+      <Switch SoundIDChange="+trill.whole" IsMultipleNoteSample="false">
+        <KeySwitch Key="99"/>
+      </Switch>
+      <Switch SoundIDChange="+fp">
+        <KeySwitch Key="100"/>
+      </Switch>
+      <Switch SoundIDChange="+sforzato">
+        <KeySwitch Key="101"/>
+      </Switch>
+      <Switch SoundIDChange="+sforzato.aggressive">
+        <KeySwitch Key="102"/>
+      </Switch>
+      <Switch SoundIDChange="+blare">
+        <KeySwitch Key="103"/>
+      </Switch>
+      <Switch SoundIDChange="+rep">
+        <KeySwitch Key="104"/>
+      </Switch>
+      <Switch SoundIDChange="+tremolo.unmeasured" IsMultipleNoteSample="true">
+        <KeySwitch Key="105"/>
+      </Switch>
+      <Switch SoundIDChange="+flutter-tongue" IsMultipleNoteSample="true">
+        <KeySwitch Key="105"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble">
+        <KeySwitch Key="84"/>
+        <KeySwitch Key="98"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble.staccatissimo">
+        <KeySwitch Key="84"/>
+        <KeySwitch Key="96"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble.staccato">
+        <KeySwitch Key="84"/>
+        <KeySwitch Key="96"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble.legato.staccato">
+        <KeySwitch Key="84"/>
+        <KeySwitch Key="97"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble.sustain">
+        <KeySwitch Key="84"/>
+        <KeySwitch Key="98"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble.legato">
+        <KeySwitch Key="84"/>
+        <KeySwitch Key="99"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble.trill.half" IsMultipleNoteSample="false">
+        <KeySwitch Key="84"/>
+        <KeySwitch Key="99"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble.trill.whole" IsMultipleNoteSample="false">
+        <KeySwitch Key="84"/>
+        <KeySwitch Key="99"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble.fp">
+        <KeySwitch Key="84"/>
+        <KeySwitch Key="100"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble.sforzato">
+        <KeySwitch Key="84"/>
+        <KeySwitch Key="101"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble.sforzato.aggressive">
+        <KeySwitch Key="84"/>
+        <KeySwitch Key="102"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble.blare">
+        <KeySwitch Key="84"/>
+        <KeySwitch Key="103"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble.rep">
+        <KeySwitch Key="84"/>
+        <KeySwitch Key="104"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble.tremolo.unmeasured" IsMultipleNoteSample="true">
+        <KeySwitch Key="84"/>
+        <KeySwitch Key="105"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble.flutter-tongue" IsMultipleNoteSample="true">
+        <KeySwitch Key="84"/>
+        <KeySwitch Key="105"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +4 players">
+        <KeySwitch Key="84"/>
+        <KeySwitch Key="98"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +staccatissimo +4 players">
+        <KeySwitch Key="84"/>
+        <KeySwitch Key="96"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +staccato +4 players">
+        <KeySwitch Key="84"/>
+        <KeySwitch Key="96"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +legato.staccato +4 players">
+        <KeySwitch Key="84"/>
+        <KeySwitch Key="97"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +4 players +sustain">
+        <KeySwitch Key="84"/>
+        <KeySwitch Key="98"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +legato +4 players">
+        <KeySwitch Key="84"/>
+        <KeySwitch Key="99"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +trill.half +4 players" IsMultipleNoteSample="false">
+        <KeySwitch Key="84"/>
+        <KeySwitch Key="99"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +trill.whole +4 players" IsMultipleNoteSample="false">
+        <KeySwitch Key="84"/>
+        <KeySwitch Key="99"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +fp +4 players">
+        <KeySwitch Key="84"/>
+        <KeySwitch Key="100"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +sforzato +4 players">
+        <KeySwitch Key="84"/>
+        <KeySwitch Key="101"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +sforzato.aggressive +4 players">
+        <KeySwitch Key="84"/>
+        <KeySwitch Key="102"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +4 players +blare">
+        <KeySwitch Key="84"/>
+        <KeySwitch Key="103"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +4 players +rep">
+        <KeySwitch Key="84"/>
+        <KeySwitch Key="104"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +tremolo.unmeasured +4 players" IsMultipleNoteSample="true">
+        <KeySwitch Key="84"/>
+        <KeySwitch Key="105"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +flutter-tongue +4 players" IsMultipleNoteSample="true">
+        <KeySwitch Key="84"/>
+        <KeySwitch Key="105"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +3 players">
+        <KeySwitch Key="85"/>
+        <KeySwitch Key="98"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +staccatissimo +3 players">
+        <KeySwitch Key="85"/>
+        <KeySwitch Key="96"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +staccato +3 players">
+        <KeySwitch Key="85"/>
+        <KeySwitch Key="96"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +legato.staccato +3 players">
+        <KeySwitch Key="85"/>
+        <KeySwitch Key="97"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +3 players +sustain">
+        <KeySwitch Key="85"/>
+        <KeySwitch Key="98"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +legato +3 players">
+        <KeySwitch Key="85"/>
+        <KeySwitch Key="99"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +trill.half +3 players" IsMultipleNoteSample="false">
+        <KeySwitch Key="85"/>
+        <KeySwitch Key="99"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +trill.whole +3 players" IsMultipleNoteSample="false">
+        <KeySwitch Key="85"/>
+        <KeySwitch Key="99"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +fp +3 players">
+        <KeySwitch Key="85"/>
+        <KeySwitch Key="100"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +sforzato +3 players">
+        <KeySwitch Key="85"/>
+        <KeySwitch Key="101"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +sforzato.aggressive +3 players">
+        <KeySwitch Key="85"/>
+        <KeySwitch Key="102"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +3 players +blare">
+        <KeySwitch Key="85"/>
+        <KeySwitch Key="103"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +3 players +rep">
+        <KeySwitch Key="85"/>
+        <KeySwitch Key="104"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +tremolo.unmeasured +3 players" IsMultipleNoteSample="true">
+        <KeySwitch Key="85"/>
+        <KeySwitch Key="105"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +flutter-tongue +3 players" IsMultipleNoteSample="true">
+        <KeySwitch Key="85"/>
+        <KeySwitch Key="105"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +2 players">
+        <KeySwitch Key="86"/>
+        <KeySwitch Key="98"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +staccatissimo +2 players">
+        <KeySwitch Key="86"/>
+        <KeySwitch Key="96"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +staccato +2 players">
+        <KeySwitch Key="86"/>
+        <KeySwitch Key="96"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +legato.staccato +2 players">
+        <KeySwitch Key="86"/>
+        <KeySwitch Key="97"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +2 players +sustain">
+        <KeySwitch Key="86"/>
+        <KeySwitch Key="98"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +legato +2 players">
+        <KeySwitch Key="86"/>
+        <KeySwitch Key="99"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +trill.half +2 players" IsMultipleNoteSample="false">
+        <KeySwitch Key="86"/>
+        <KeySwitch Key="99"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +trill.whole +2 players" IsMultipleNoteSample="false">
+        <KeySwitch Key="86"/>
+        <KeySwitch Key="99"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +fp +2 players">
+        <KeySwitch Key="86"/>
+        <KeySwitch Key="100"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +sforzato +2 players">
+        <KeySwitch Key="86"/>
+        <KeySwitch Key="101"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +sforzato.aggressive +2 players">
+        <KeySwitch Key="86"/>
+        <KeySwitch Key="102"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +2 players +blare">
+        <KeySwitch Key="86"/>
+        <KeySwitch Key="103"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +2 players +rep">
+        <KeySwitch Key="86"/>
+        <KeySwitch Key="104"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +tremolo.unmeasured +2 players" IsMultipleNoteSample="true">
+        <KeySwitch Key="86"/>
+        <KeySwitch Key="105"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +flutter-tongue +2 players" IsMultipleNoteSample="true">
+        <KeySwitch Key="86"/>
+        <KeySwitch Key="105"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +2 players +player2-3">
+        <KeySwitch Key="87"/>
+        <KeySwitch Key="98"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +staccatissimo +2 players +player2-3">
+        <KeySwitch Key="87"/>
+        <KeySwitch Key="96"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +staccato +2 players +player2-3">
+        <KeySwitch Key="87"/>
+        <KeySwitch Key="96"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +legato.staccato +2 players +player2-3">
+        <KeySwitch Key="87"/>
+        <KeySwitch Key="97"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +legato +2 players +player2-3">
+        <KeySwitch Key="87"/>
+        <KeySwitch Key="99"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +trill.half +2 players +player2-3" IsMultipleNoteSample="false">
+        <KeySwitch Key="87"/>
+        <KeySwitch Key="99"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +trill.whole +2 players +player2-3" IsMultipleNoteSample="false">
+        <KeySwitch Key="87"/>
+        <KeySwitch Key="99"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +fp +2 players +player2-3">
+        <KeySwitch Key="87"/>
+        <KeySwitch Key="100"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +sforzato +2 players +player2-3">
+        <KeySwitch Key="87"/>
+        <KeySwitch Key="101"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +sforzato.aggressive +2 players +player2-3">
+        <KeySwitch Key="87"/>
+        <KeySwitch Key="102"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +2 players +player2-3 +blare">
+        <KeySwitch Key="87"/>
+        <KeySwitch Key="103"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +2 players +player2-3 +rep">
+        <KeySwitch Key="87"/>
+        <KeySwitch Key="104"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +tremolo.unmeasured +2 players +player2-3" IsMultipleNoteSample="true">
+        <KeySwitch Key="87"/>
+        <KeySwitch Key="105"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +flutter-tongue +2 players +player2-3" IsMultipleNoteSample="true">
+        <KeySwitch Key="87"/>
+        <KeySwitch Key="105"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +2 players +player3-4">
+        <KeySwitch Key="87"/>
+        <KeySwitch Key="98"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +staccatissimo +2 players +player3-4">
+        <KeySwitch Key="87"/>
+        <KeySwitch Key="96"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +staccato +2 players +player3-4">
+        <KeySwitch Key="87"/>
+        <KeySwitch Key="96"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +legato.staccato +2 players +player3-4">
+        <KeySwitch Key="87"/>
+        <KeySwitch Key="97"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +legato +2 players +player3-4">
+        <KeySwitch Key="87"/>
+        <KeySwitch Key="99"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +trill.half +2 players +player3-4" IsMultipleNoteSample="false">
+        <KeySwitch Key="87"/>
+        <KeySwitch Key="99"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +trill.whole +2 players +player3-4" IsMultipleNoteSample="false">
+        <KeySwitch Key="87"/>
+        <KeySwitch Key="99"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +fp +2 players +player3-4">
+        <KeySwitch Key="87"/>
+        <KeySwitch Key="100"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +sforzato +2 players +player3-4">
+        <KeySwitch Key="87"/>
+        <KeySwitch Key="101"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +sforzato.aggressive +2 players +player3-4">
+        <KeySwitch Key="87"/>
+        <KeySwitch Key="102"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +2 players +player3-4 +blare">
+        <KeySwitch Key="87"/>
+        <KeySwitch Key="103"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +2 players +player3-4 +rep">
+        <KeySwitch Key="87"/>
+        <KeySwitch Key="104"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +tremolo.unmeasured +2 players +player3-4" IsMultipleNoteSample="true">
+        <KeySwitch Key="87"/>
+        <KeySwitch Key="105"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +flutter-tongue +2 players +player3-4" IsMultipleNoteSample="true">
+        <KeySwitch Key="87"/>
+        <KeySwitch Key="105"/>
+      </Switch>
+      <Switch SoundIDChange="+player1">
+        <KeySwitch Key="88"/>
+        <KeySwitch Key="98"/>
+      </Switch>
+      <Switch SoundIDChange="+staccatissimo +player1">
+        <KeySwitch Key="88"/>
+        <KeySwitch Key="96"/>
+      </Switch>
+      <Switch SoundIDChange="+staccato +player1">
+        <KeySwitch Key="88"/>
+        <KeySwitch Key="96"/>
+      </Switch>
+      <Switch SoundIDChange="+legato.staccato +player1">
+        <KeySwitch Key="88"/>
+        <KeySwitch Key="97"/>
+      </Switch>
+      <Switch SoundIDChange="+legato +player1">
+        <KeySwitch Key="88"/>
+        <KeySwitch Key="99"/>
+      </Switch>
+      <Switch SoundIDChange="+trill.half +player1" IsMultipleNoteSample="false">
+        <KeySwitch Key="88"/>
+        <KeySwitch Key="99"/>
+      </Switch>
+      <Switch SoundIDChange="+trill.whole +player1" IsMultipleNoteSample="false">
+        <KeySwitch Key="88"/>
+        <KeySwitch Key="99"/>
+      </Switch>
+      <Switch SoundIDChange="+fp +player1">
+        <KeySwitch Key="88"/>
+        <KeySwitch Key="100"/>
+      </Switch>
+      <Switch SoundIDChange="+sforzato +player1">
+        <KeySwitch Key="88"/>
+        <KeySwitch Key="101"/>
+      </Switch>
+      <Switch SoundIDChange="+sforzato.aggressive +player1">
+        <KeySwitch Key="88"/>
+        <KeySwitch Key="102"/>
+      </Switch>
+      <Switch SoundIDChange="+player1 +blare">
+        <KeySwitch Key="88"/>
+        <KeySwitch Key="103"/>
+      </Switch>
+      <Switch SoundIDChange="+player1 +rep">
+        <KeySwitch Key="88"/>
+        <KeySwitch Key="104"/>
+      </Switch>
+      <Switch SoundIDChange="+tremolo.unmeasured +player1" IsMultipleNoteSample="true">
+        <KeySwitch Key="88"/>
+        <KeySwitch Key="105"/>
+      </Switch>
+      <Switch SoundIDChange="+flutter-tongue +player1" IsMultipleNoteSample="true">
+        <KeySwitch Key="88"/>
+        <KeySwitch Key="105"/>
+      </Switch>
+      <Switch SoundIDChange="+player2">
+        <KeySwitch Key="89"/>
+        <KeySwitch Key="98"/>
+      </Switch>
+      <Switch SoundIDChange="+staccatissimo +player2">
+        <KeySwitch Key="89"/>
+        <KeySwitch Key="96"/>
+      </Switch>
+      <Switch SoundIDChange="+staccato +player2">
+        <KeySwitch Key="89"/>
+        <KeySwitch Key="96"/>
+      </Switch>
+      <Switch SoundIDChange="+legato.staccato +player2">
+        <KeySwitch Key="89"/>
+        <KeySwitch Key="97"/>
+      </Switch>
+      <Switch SoundIDChange="+legato +player2">
+        <KeySwitch Key="89"/>
+        <KeySwitch Key="99"/>
+      </Switch>
+      <Switch SoundIDChange="+trill.half +player2" IsMultipleNoteSample="false">
+        <KeySwitch Key="89"/>
+        <KeySwitch Key="99"/>
+      </Switch>
+      <Switch SoundIDChange="+trill.whole +player2" IsMultipleNoteSample="false">
+        <KeySwitch Key="89"/>
+        <KeySwitch Key="99"/>
+      </Switch>
+      <Switch SoundIDChange="+fp +player2">
+        <KeySwitch Key="89"/>
+        <KeySwitch Key="100"/>
+      </Switch>
+      <Switch SoundIDChange="+sforzato +player2">
+        <KeySwitch Key="89"/>
+        <KeySwitch Key="101"/>
+      </Switch>
+      <Switch SoundIDChange="+sforzato.aggressive +player2">
+        <KeySwitch Key="89"/>
+        <KeySwitch Key="102"/>
+      </Switch>
+      <Switch SoundIDChange="+player2 +blare">
+        <KeySwitch Key="89"/>
+        <KeySwitch Key="103"/>
+      </Switch>
+      <Switch SoundIDChange="+player2 +rep">
+        <KeySwitch Key="89"/>
+        <KeySwitch Key="104"/>
+      </Switch>
+      <Switch SoundIDChange="+tremolo.unmeasured +player2" IsMultipleNoteSample="true">
+        <KeySwitch Key="89"/>
+        <KeySwitch Key="105"/>
+      </Switch>
+      <Switch SoundIDChange="+flutter-tongue +player2" IsMultipleNoteSample="true">
+        <KeySwitch Key="89"/>
+        <KeySwitch Key="105"/>
+      </Switch>
+      <Switch SoundIDChange="+player3">
+        <KeySwitch Key="90"/>
+        <KeySwitch Key="98"/>
+      </Switch>
+      <Switch SoundIDChange="+staccatissimo +player3">
+        <KeySwitch Key="90"/>
+        <KeySwitch Key="96"/>
+      </Switch>
+      <Switch SoundIDChange="+staccato +player3">
+        <KeySwitch Key="90"/>
+        <KeySwitch Key="96"/>
+      </Switch>
+      <Switch SoundIDChange="+legato.staccato +player3">
+        <KeySwitch Key="90"/>
+        <KeySwitch Key="97"/>
+      </Switch>
+      <Switch SoundIDChange="+legato +player3">
+        <KeySwitch Key="90"/>
+        <KeySwitch Key="99"/>
+      </Switch>
+      <Switch SoundIDChange="+trill.half +player3" IsMultipleNoteSample="false">
+        <KeySwitch Key="90"/>
+        <KeySwitch Key="99"/>
+      </Switch>
+      <Switch SoundIDChange="+trill.whole +player3" IsMultipleNoteSample="false">
+        <KeySwitch Key="90"/>
+        <KeySwitch Key="99"/>
+      </Switch>
+      <Switch SoundIDChange="+fp +player3">
+        <KeySwitch Key="90"/>
+        <KeySwitch Key="100"/>
+      </Switch>
+      <Switch SoundIDChange="+sforzato +player3">
+        <KeySwitch Key="90"/>
+        <KeySwitch Key="101"/>
+      </Switch>
+      <Switch SoundIDChange="+sforzato.aggressive +player3">
+        <KeySwitch Key="90"/>
+        <KeySwitch Key="102"/>
+      </Switch>
+      <Switch SoundIDChange="+player3 +blare">
+        <KeySwitch Key="90"/>
+        <KeySwitch Key="103"/>
+      </Switch>
+      <Switch SoundIDChange="+player3 +rep">
+        <KeySwitch Key="90"/>
+        <KeySwitch Key="104"/>
+      </Switch>
+      <Switch SoundIDChange="+tremolo.unmeasured +player3" IsMultipleNoteSample="true">
+        <KeySwitch Key="90"/>
+        <KeySwitch Key="105"/>
+      </Switch>
+      <Switch SoundIDChange="+flutter-tongue +player3" IsMultipleNoteSample="true">
+        <KeySwitch Key="90"/>
+        <KeySwitch Key="105"/>
+      </Switch>
+      <Switch SoundIDChange="+player4">
+        <KeySwitch Key="91"/>
+        <KeySwitch Key="98"/>
+      </Switch>
+      <Switch SoundIDChange="+staccatissimo +player4">
+        <KeySwitch Key="91"/>
+        <KeySwitch Key="96"/>
+      </Switch>
+      <Switch SoundIDChange="+staccato +player4">
+        <KeySwitch Key="91"/>
+        <KeySwitch Key="96"/>
+      </Switch>
+      <Switch SoundIDChange="+legato.staccato +player4">
+        <KeySwitch Key="91"/>
+        <KeySwitch Key="97"/>
+      </Switch>
+      <Switch SoundIDChange="+legato +player4">
+        <KeySwitch Key="91"/>
+        <KeySwitch Key="99"/>
+      </Switch>
+      <Switch SoundIDChange="+trill.half +player4" IsMultipleNoteSample="false">
+        <KeySwitch Key="91"/>
+        <KeySwitch Key="99"/>
+      </Switch>
+      <Switch SoundIDChange="+trill.whole +player4" IsMultipleNoteSample="false">
+        <KeySwitch Key="91"/>
+        <KeySwitch Key="99"/>
+      </Switch>
+      <Switch SoundIDChange="+fp +player4">
+        <KeySwitch Key="91"/>
+        <KeySwitch Key="100"/>
+      </Switch>
+      <Switch SoundIDChange="+sforzato +player4">
+        <KeySwitch Key="91"/>
+        <KeySwitch Key="101"/>
+      </Switch>
+      <Switch SoundIDChange="+sforzato.aggressive +player4">
+        <KeySwitch Key="91"/>
+        <KeySwitch Key="102"/>
+      </Switch>
+      <Switch SoundIDChange="+player4 +blare">
+        <KeySwitch Key="91"/>
+        <KeySwitch Key="103"/>
+      </Switch>
+      <Switch SoundIDChange="+player4 +rep">
+        <KeySwitch Key="91"/>
+        <KeySwitch Key="104"/>
+      </Switch>
+      <Switch SoundIDChange="+tremolo.unmeasured +player4" IsMultipleNoteSample="true">
+        <KeySwitch Key="91"/>
+        <KeySwitch Key="105"/>
+      </Switch>
+      <Switch SoundIDChange="+flutter-tongue +player4" IsMultipleNoteSample="true">
+        <KeySwitch Key="91"/>
+        <KeySwitch Key="105"/>
+      </Switch>
+      <Switch SoundIDChange="+divisi">
+        <KeySwitch Key="92"/>
+        <KeySwitch Key="98"/>
+      </Switch>
+      <Switch SoundIDChange="+staccatissimo +divisi">
+        <KeySwitch Key="92"/>
+        <KeySwitch Key="96"/>
+      </Switch>
+      <Switch SoundIDChange="+staccato +divisi">
+        <KeySwitch Key="92"/>
+        <KeySwitch Key="96"/>
+      </Switch>
+      <Switch SoundIDChange="+legato.staccato +divisi">
+        <KeySwitch Key="92"/>
+        <KeySwitch Key="97"/>
+      </Switch>
+      <Switch SoundIDChange="+legato +divisi">
+        <KeySwitch Key="92"/>
+        <KeySwitch Key="99"/>
+      </Switch>
+      <Switch SoundIDChange="+trill.half +divisi" IsMultipleNoteSample="false">
+        <KeySwitch Key="92"/>
+        <KeySwitch Key="99"/>
+      </Switch>
+      <Switch SoundIDChange="+trill.whole +divisi" IsMultipleNoteSample="false">
+        <KeySwitch Key="92"/>
+        <KeySwitch Key="99"/>
+      </Switch>
+      <Switch SoundIDChange="+fp +divisi">
+        <KeySwitch Key="92"/>
+        <KeySwitch Key="100"/>
+      </Switch>
+      <Switch SoundIDChange="+sforzato +divisi">
+        <KeySwitch Key="92"/>
+        <KeySwitch Key="101"/>
+      </Switch>
+      <Switch SoundIDChange="+sforzato.aggressive +divisi">
+        <KeySwitch Key="92"/>
+        <KeySwitch Key="102"/>
+      </Switch>
+      <Switch SoundIDChange="+divisi +blare">
+        <KeySwitch Key="92"/>
+        <KeySwitch Key="103"/>
+      </Switch>
+      <Switch SoundIDChange="+divisi +rep">
+        <KeySwitch Key="92"/>
+        <KeySwitch Key="104"/>
+      </Switch>
+      <Switch SoundIDChange="+tremolo.unmeasured +divisi" IsMultipleNoteSample="true">
+        <KeySwitch Key="92"/>
+        <KeySwitch Key="105"/>
+      </Switch>
+      <Switch SoundIDChange="+flutter-tongue +divisi" IsMultipleNoteSample="true">
+        <KeySwitch Key="92"/>
+        <KeySwitch Key="105"/>
+      </Switch>
+      <Switch SoundIDChange="+divisi.2">
+        <KeySwitch Key="93"/>
+        <KeySwitch Key="98"/>
+      </Switch>
+      <Switch SoundIDChange="+staccatissimo +divisi.2">
+        <KeySwitch Key="93"/>
+        <KeySwitch Key="96"/>
+      </Switch>
+      <Switch SoundIDChange="+staccato +divisi.2">
+        <KeySwitch Key="93"/>
+        <KeySwitch Key="96"/>
+      </Switch>
+      <Switch SoundIDChange="+legato.staccato +divisi.2">
+        <KeySwitch Key="93"/>
+        <KeySwitch Key="97"/>
+      </Switch>
+      <Switch SoundIDChange="+legato +divisi.2">
+        <KeySwitch Key="93"/>
+        <KeySwitch Key="99"/>
+      </Switch>
+      <Switch SoundIDChange="+trill.half +divisi.2" IsMultipleNoteSample="false">
+        <KeySwitch Key="93"/>
+        <KeySwitch Key="99"/>
+      </Switch>
+      <Switch SoundIDChange="+trill.whole +divisi.2" IsMultipleNoteSample="false">
+        <KeySwitch Key="93"/>
+        <KeySwitch Key="99"/>
+      </Switch>
+      <Switch SoundIDChange="+fp +divisi.2">
+        <KeySwitch Key="93"/>
+        <KeySwitch Key="100"/>
+      </Switch>
+      <Switch SoundIDChange="+sforzato +divisi.2">
+        <KeySwitch Key="93"/>
+        <KeySwitch Key="101"/>
+      </Switch>
+      <Switch SoundIDChange="+sforzato.aggressive +divisi.2">
+        <KeySwitch Key="93"/>
+        <KeySwitch Key="102"/>
+      </Switch>
+      <Switch SoundIDChange="+divisi.2 +blare">
+        <KeySwitch Key="93"/>
+        <KeySwitch Key="103"/>
+      </Switch>
+      <Switch SoundIDChange="+divisi.2 +rep">
+        <KeySwitch Key="93"/>
+        <KeySwitch Key="104"/>
+      </Switch>
+      <Switch SoundIDChange="+tremolo.unmeasured +divisi.2" IsMultipleNoteSample="true">
+        <KeySwitch Key="93"/>
+        <KeySwitch Key="105"/>
+      </Switch>
+      <Switch SoundIDChange="+flutter-tongue +divisi.2" IsMultipleNoteSample="true">
+        <KeySwitch Key="93"/>
+        <KeySwitch Key="105"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +divisi">
+        <KeySwitch Key="92"/>
+        <KeySwitch Key="98"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +staccatissimo +divisi">
+        <KeySwitch Key="92"/>
+        <KeySwitch Key="96"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +staccato +divisi">
+        <KeySwitch Key="92"/>
+        <KeySwitch Key="96"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +legato.staccato +divisi">
+        <KeySwitch Key="92"/>
+        <KeySwitch Key="97"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +legato +divisi">
+        <KeySwitch Key="92"/>
+        <KeySwitch Key="99"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble.trill.half +divisi" IsMultipleNoteSample="false">
+        <KeySwitch Key="92"/>
+        <KeySwitch Key="99"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble.trill.whole +divisi" IsMultipleNoteSample="false">
+        <KeySwitch Key="92"/>
+        <KeySwitch Key="99"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +fp +divisi">
+        <KeySwitch Key="92"/>
+        <KeySwitch Key="100"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +sforzato +divisi">
+        <KeySwitch Key="92"/>
+        <KeySwitch Key="101"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +sforzato.aggressive +divisi">
+        <KeySwitch Key="92"/>
+        <KeySwitch Key="102"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +divisi +blare">
+        <KeySwitch Key="92"/>
+        <KeySwitch Key="103"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +divisi +rep">
+        <KeySwitch Key="92"/>
+        <KeySwitch Key="104"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble.tremolo.unmeasured +divisi" IsMultipleNoteSample="true">
+        <KeySwitch Key="92"/>
+        <KeySwitch Key="105"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble.flutter-tongue +divisi" IsMultipleNoteSample="true">
+        <KeySwitch Key="92"/>
+        <KeySwitch Key="105"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +divisi.2">
+        <KeySwitch Key="93"/>
+        <KeySwitch Key="98"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +staccatissimo +divisi.2">
+        <KeySwitch Key="93"/>
+        <KeySwitch Key="96"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +staccato +divisi.2">
+        <KeySwitch Key="93"/>
+        <KeySwitch Key="96"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +legato.staccato +divisi.2">
+        <KeySwitch Key="93"/>
+        <KeySwitch Key="97"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +legato +divisi.2">
+        <KeySwitch Key="93"/>
+        <KeySwitch Key="99"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble.trill.half +divisi.2" IsMultipleNoteSample="false">
+        <KeySwitch Key="93"/>
+        <KeySwitch Key="99"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble.trill.whole +divisi.2" IsMultipleNoteSample="false">
+        <KeySwitch Key="93"/>
+        <KeySwitch Key="99"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +fp +divisi.2">
+        <KeySwitch Key="93"/>
+        <KeySwitch Key="100"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +sforzato +divisi.2">
+        <KeySwitch Key="93"/>
+        <KeySwitch Key="101"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +sforzato.aggressive +divisi.2">
+        <KeySwitch Key="93"/>
+        <KeySwitch Key="102"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +divisi.2 +blare">
+        <KeySwitch Key="93"/>
+        <KeySwitch Key="103"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +divisi.2 +rep">
+        <KeySwitch Key="93"/>
+        <KeySwitch Key="104"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble.tremolo.unmeasured +divisi.2" IsMultipleNoteSample="true">
+        <KeySwitch Key="93"/>
+        <KeySwitch Key="105"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble.flutter-tongue +divisi.2" IsMultipleNoteSample="true">
+        <KeySwitch Key="93"/>
+        <KeySwitch Key="105"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +4 players +divisi">
+        <KeySwitch Key="92"/>
+        <KeySwitch Key="98"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +4 players +staccatissimo +divisi">
+        <KeySwitch Key="92"/>
+        <KeySwitch Key="96"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +staccato +4 players +divisi">
+        <KeySwitch Key="92"/>
+        <KeySwitch Key="96"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +legato.staccato +4 players +divisi">
+        <KeySwitch Key="92"/>
+        <KeySwitch Key="97"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +legato +4 players +divisi">
+        <KeySwitch Key="92"/>
+        <KeySwitch Key="99"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble.trill.half +4 players +divisi" IsMultipleNoteSample="false">
+        <KeySwitch Key="92"/>
+        <KeySwitch Key="99"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble.trill.whole +4 players +divisi" IsMultipleNoteSample="false">
+        <KeySwitch Key="92"/>
+        <KeySwitch Key="99"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +fp +4 players +divisi">
+        <KeySwitch Key="92"/>
+        <KeySwitch Key="100"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +sforzato +4 players +divisi">
+        <KeySwitch Key="92"/>
+        <KeySwitch Key="101"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +sforzato.aggressive +4 players +divisi">
+        <KeySwitch Key="92"/>
+        <KeySwitch Key="102"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +4 players +divisi +blare">
+        <KeySwitch Key="92"/>
+        <KeySwitch Key="103"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +4 players +divisi +rep">
+        <KeySwitch Key="92"/>
+        <KeySwitch Key="104"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble.tremolo.unmeasured +4 players +divisi" IsMultipleNoteSample="true">
+        <KeySwitch Key="92"/>
+        <KeySwitch Key="105"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble.flutter-tongue +4 players +divisi" IsMultipleNoteSample="true">
+        <KeySwitch Key="92"/>
+        <KeySwitch Key="105"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +4 players +divisi.2">
+        <KeySwitch Key="93"/>
+        <KeySwitch Key="98"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +staccatissimo +4 players +divisi.2">
+        <KeySwitch Key="93"/>
+        <KeySwitch Key="96"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +staccato +4 players +divisi.2">
+        <KeySwitch Key="93"/>
+        <KeySwitch Key="96"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +legato.staccato +4 players +divisi.2">
+        <KeySwitch Key="93"/>
+        <KeySwitch Key="97"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +legato +4 players +divisi.2">
+        <KeySwitch Key="93"/>
+        <KeySwitch Key="99"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble.trill.half +4 players +divisi.2" IsMultipleNoteSample="false">
+        <KeySwitch Key="93"/>
+        <KeySwitch Key="99"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble.trill.whole +4 players +divisi.2" IsMultipleNoteSample="false">
+        <KeySwitch Key="93"/>
+        <KeySwitch Key="99"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +fp +4 players +divisi.2">
+        <KeySwitch Key="93"/>
+        <KeySwitch Key="100"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +sforzato +4 players +divisi.2">
+        <KeySwitch Key="93"/>
+        <KeySwitch Key="101"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +sforzato.aggressive +4 players +divisi.2">
+        <KeySwitch Key="93"/>
+        <KeySwitch Key="102"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +4 players +divisi.2 +blare">
+        <KeySwitch Key="93"/>
+        <KeySwitch Key="103"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +4 players +divisi.2 +rep">
+        <KeySwitch Key="93"/>
+        <KeySwitch Key="104"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble.tremolo.unmeasured +4 players +divisi.2" IsMultipleNoteSample="true">
+        <KeySwitch Key="93"/>
+        <KeySwitch Key="105"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble.flutter-tongue +4 players +divisi.2" IsMultipleNoteSample="true">
+        <KeySwitch Key="93"/>
+        <KeySwitch Key="105"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +3 players +divisi">
+        <KeySwitch Key="92"/>
+        <KeySwitch Key="98"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +staccatissimo +3 players +divisi">
+        <KeySwitch Key="92"/>
+        <KeySwitch Key="96"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +staccato +3 players +divisi">
+        <KeySwitch Key="92"/>
+        <KeySwitch Key="96"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +legato.staccato +3 players +divisi">
+        <KeySwitch Key="92"/>
+        <KeySwitch Key="97"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +legato +3 players +divisi">
+        <KeySwitch Key="92"/>
+        <KeySwitch Key="99"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +trill.half +3 players +divisi" IsMultipleNoteSample="false">
+        <KeySwitch Key="92"/>
+        <KeySwitch Key="99"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble.trill.whole +3 players +divisi" IsMultipleNoteSample="false">
+        <KeySwitch Key="92"/>
+        <KeySwitch Key="99"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +fp +3 players +divisi">
+        <KeySwitch Key="92"/>
+        <KeySwitch Key="100"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +sforzato +3 players +divisi">
+        <KeySwitch Key="92"/>
+        <KeySwitch Key="101"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +sforzato.aggressive +3 players +divisi">
+        <KeySwitch Key="92"/>
+        <KeySwitch Key="102"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +3 players +divisi +blare">
+        <KeySwitch Key="92"/>
+        <KeySwitch Key="103"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +3 players +divisi +rep">
+        <KeySwitch Key="92"/>
+        <KeySwitch Key="104"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +tremolo.unmeasured +3 players +divisi" IsMultipleNoteSample="true">
+        <KeySwitch Key="92"/>
+        <KeySwitch Key="105"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +flutter-tongue +3 players +divisi" IsMultipleNoteSample="true">
+        <KeySwitch Key="92"/>
+        <KeySwitch Key="105"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +3 players +divisi.2">
+        <KeySwitch Key="93"/>
+        <KeySwitch Key="98"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +staccatissimo +3 players +divisi.2">
+        <KeySwitch Key="93"/>
+        <KeySwitch Key="96"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +staccato +3 players +divisi.2">
+        <KeySwitch Key="93"/>
+        <KeySwitch Key="96"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +legato.staccato +3 players +divisi.2">
+        <KeySwitch Key="93"/>
+        <KeySwitch Key="97"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +legato +3 players +divisi.2">
+        <KeySwitch Key="93"/>
+        <KeySwitch Key="99"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +trill.half +3 players +divisi.2" IsMultipleNoteSample="false">
+        <KeySwitch Key="93"/>
+        <KeySwitch Key="99"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +trill.whole +3 players +divisi.2" IsMultipleNoteSample="false">
+        <KeySwitch Key="93"/>
+        <KeySwitch Key="99"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +fp +3 players +divisi.2">
+        <KeySwitch Key="93"/>
+        <KeySwitch Key="100"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +sforzato +3 players +divisi.2">
+        <KeySwitch Key="93"/>
+        <KeySwitch Key="101"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +sforzato.aggressive +3 players +divisi.2">
+        <KeySwitch Key="93"/>
+        <KeySwitch Key="102"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +3 players +divisi.2 +blare">
+        <KeySwitch Key="93"/>
+        <KeySwitch Key="103"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +3 players +divisi.2 +rep">
+        <KeySwitch Key="93"/>
+        <KeySwitch Key="104"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +tremolo.unmeasured +3 players +divisi.2" IsMultipleNoteSample="true">
+        <KeySwitch Key="93"/>
+        <KeySwitch Key="105"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +flutter-tongue +3 players +divisi.2" IsMultipleNoteSample="true">
+        <KeySwitch Key="93"/>
+        <KeySwitch Key="105"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +2 players +divisi">
+        <KeySwitch Key="92"/>
+        <KeySwitch Key="98"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +staccatissimo +2 players +divisi">
+        <KeySwitch Key="92"/>
+        <KeySwitch Key="96"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +staccato +2 players +divisi">
+        <KeySwitch Key="92"/>
+        <KeySwitch Key="96"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +legato.staccato +2 players +divisi">
+        <KeySwitch Key="92"/>
+        <KeySwitch Key="97"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +legato +2 players +divisi">
+        <KeySwitch Key="92"/>
+        <KeySwitch Key="99"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +trill.half +divisi +2 players" IsMultipleNoteSample="false">
+        <KeySwitch Key="92"/>
+        <KeySwitch Key="99"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +trill.whole +2 players +divisi" IsMultipleNoteSample="false">
+        <KeySwitch Key="92"/>
+        <KeySwitch Key="99"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +fp +2 players +divisi">
+        <KeySwitch Key="92"/>
+        <KeySwitch Key="100"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +sforzato +2 players +divisi">
+        <KeySwitch Key="92"/>
+        <KeySwitch Key="101"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +sforzato.aggressive +2 players +divisi">
+        <KeySwitch Key="92"/>
+        <KeySwitch Key="102"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +2 players +divisi +blare">
+        <KeySwitch Key="92"/>
+        <KeySwitch Key="103"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +2 players +divisi +rep">
+        <KeySwitch Key="92"/>
+        <KeySwitch Key="104"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +tremolo.unmeasured +2 players +divisi" IsMultipleNoteSample="true">
+        <KeySwitch Key="92"/>
+        <KeySwitch Key="105"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +flutter-tongue +2 players +divisi" IsMultipleNoteSample="true">
+        <KeySwitch Key="92"/>
+        <KeySwitch Key="105"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +2 players +divisi.2">
+        <KeySwitch Key="93"/>
+        <KeySwitch Key="98"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +staccatissimo +2 players +divisi.2">
+        <KeySwitch Key="93"/>
+        <KeySwitch Key="96"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +staccato +2 players +divisi.2">
+        <KeySwitch Key="93"/>
+        <KeySwitch Key="96"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +legato.staccato +2 players +divisi.2">
+        <KeySwitch Key="93"/>
+        <KeySwitch Key="97"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +legato +2 players +divisi.2">
+        <KeySwitch Key="93"/>
+        <KeySwitch Key="99"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +trill.half +2 players +divisi.2" IsMultipleNoteSample="false">
+        <KeySwitch Key="93"/>
+        <KeySwitch Key="99"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +trill.whole +2 players +divisi.2" IsMultipleNoteSample="false">
+        <KeySwitch Key="93"/>
+        <KeySwitch Key="99"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +fp +2 players +divisi.2">
+        <KeySwitch Key="93"/>
+        <KeySwitch Key="100"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +sforzato +2 players +divisi.2">
+        <KeySwitch Key="93"/>
+        <KeySwitch Key="101"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +sforzato.aggressive +2 players +divisi.2">
+        <KeySwitch Key="93"/>
+        <KeySwitch Key="102"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +2 players +divisi.2 +blare">
+        <KeySwitch Key="93"/>
+        <KeySwitch Key="103"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +2 players +divisi.2 +rep">
+        <KeySwitch Key="93"/>
+        <KeySwitch Key="104"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +tremolo.unmeasured +2 players +divisi.2" IsMultipleNoteSample="true">
+        <KeySwitch Key="93"/>
+        <KeySwitch Key="105"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +flutter-tongue +2 players +divisi.2" IsMultipleNoteSample="true">
+        <KeySwitch Key="93"/>
+        <KeySwitch Key="105"/>
+      </Switch>
+      <Switch SoundIDChange="+custom1">
+        <KeySwitch Key="106"/>
+      </Switch>
+      <Switch SoundIDChange="+staccato +custom1">
+        <KeySwitch Key="106"/>
+      </Switch>
+      <Switch SoundIDChange="+legato +custom1">
+        <KeySwitch Key="106"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +custom1">
+        <KeySwitch Key="84"/>
+        <KeySwitch Key="106"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble.staccato +custom1">
+        <KeySwitch Key="84"/>
+        <KeySwitch Key="106"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble.legato +custom1">
+        <KeySwitch Key="84"/>
+        <KeySwitch Key="106"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +4 players +custom1">
+        <KeySwitch Key="84"/>
+        <KeySwitch Key="106"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +staccato +4 players +custom1">
+        <KeySwitch Key="84"/>
+        <KeySwitch Key="106"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +legato +4 players +custom1">
+        <KeySwitch Key="84"/>
+        <KeySwitch Key="106"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +3 players +custom1">
+        <KeySwitch Key="85"/>
+        <KeySwitch Key="106"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +staccato +3 players +custom1">
+        <KeySwitch Key="85"/>
+        <KeySwitch Key="106"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +legato +3 players +custom1">
+        <KeySwitch Key="85"/>
+        <KeySwitch Key="106"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +2 players +custom1">
+        <KeySwitch Key="86"/>
+        <KeySwitch Key="106"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +staccato +2 players +custom1">
+        <KeySwitch Key="86"/>
+        <KeySwitch Key="106"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +legato +2 players +custom1">
+        <KeySwitch Key="86"/>
+        <KeySwitch Key="106"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +2 players +player2-3 +custom1">
+        <KeySwitch Key="87"/>
+        <KeySwitch Key="106"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +2 players +player3-4 +custom1">
+        <KeySwitch Key="87"/>
+        <KeySwitch Key="106"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +staccato +2 players +player3-4 +custom1">
+        <KeySwitch Key="87"/>
+        <KeySwitch Key="106"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +legato +2 players +player3-4 +custom1">
+        <KeySwitch Key="87"/>
+        <KeySwitch Key="106"/>
+      </Switch>
+      <Switch SoundIDChange="+player1 +custom1">
+        <KeySwitch Key="88"/>
+        <KeySwitch Key="106"/>
+      </Switch>
+      <Switch SoundIDChange="+staccato +player1 +custom1">
+        <KeySwitch Key="88"/>
+        <KeySwitch Key="106"/>
+      </Switch>
+      <Switch SoundIDChange="+legato +player1 +custom1">
+        <KeySwitch Key="88"/>
+        <KeySwitch Key="106"/>
+      </Switch>
+      <Switch SoundIDChange="+player2 +custom1">
+        <KeySwitch Key="89"/>
+        <KeySwitch Key="106"/>
+      </Switch>
+      <Switch SoundIDChange="+staccato +player2 +custom1">
+        <KeySwitch Key="89"/>
+        <KeySwitch Key="106"/>
+      </Switch>
+      <Switch SoundIDChange="+legato +player2 +custom1">
+        <KeySwitch Key="89"/>
+        <KeySwitch Key="106"/>
+      </Switch>
+      <Switch SoundIDChange="+player3 +custom1">
+        <KeySwitch Key="90"/>
+        <KeySwitch Key="106"/>
+      </Switch>
+      <Switch SoundIDChange="+staccato +player3 +custom1">
+        <KeySwitch Key="90"/>
+        <KeySwitch Key="106"/>
+      </Switch>
+      <Switch SoundIDChange="+legato +player3 +custom1">
+        <KeySwitch Key="90"/>
+        <KeySwitch Key="106"/>
+      </Switch>
+      <Switch SoundIDChange="+player4 +custom1">
+        <KeySwitch Key="91"/>
+        <KeySwitch Key="106"/>
+      </Switch>
+      <Switch SoundIDChange="+staccato +player4 +custom1">
+        <KeySwitch Key="91"/>
+        <KeySwitch Key="106"/>
+      </Switch>
+      <Switch SoundIDChange="+legato +player4 +custom1">
+        <KeySwitch Key="91"/>
+        <KeySwitch Key="106"/>
+      </Switch>
+      <Switch SoundIDChange="+divisi +custom1">
+        <KeySwitch Key="92"/>
+        <KeySwitch Key="106"/>
+      </Switch>
+      <Switch SoundIDChange="+staccato +divisi +custom1">
+        <KeySwitch Key="92"/>
+        <KeySwitch Key="106"/>
+      </Switch>
+      <Switch SoundIDChange="+legato +divisi +custom1">
+        <KeySwitch Key="92"/>
+        <KeySwitch Key="106"/>
+      </Switch>
+      <Switch SoundIDChange="+divisi.2 +custom1">
+        <KeySwitch Key="93"/>
+        <KeySwitch Key="106"/>
+      </Switch>
+      <Switch SoundIDChange="+staccato +divisi.2 +custom1">
+        <KeySwitch Key="93"/>
+        <KeySwitch Key="106"/>
+      </Switch>
+      <Switch SoundIDChange="+legato +divisi.2 +custom1">
+        <KeySwitch Key="93"/>
+        <KeySwitch Key="106"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +staccato +divisi +custom1">
+        <KeySwitch Key="92"/>
+        <KeySwitch Key="106"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +legato +divisi +custom1">
+        <KeySwitch Key="92"/>
+        <KeySwitch Key="106"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +divisi.2 +custom1">
+        <KeySwitch Key="93"/>
+        <KeySwitch Key="106"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +staccato +divisi.2 +custom1">
+        <KeySwitch Key="93"/>
+        <KeySwitch Key="106"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +legato +divisi.2 +custom1">
+        <KeySwitch Key="93"/>
+        <KeySwitch Key="106"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +4 players +divisi +custom1">
+        <KeySwitch Key="92"/>
+        <KeySwitch Key="106"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +4 players +divisi.2 +custom1">
+        <KeySwitch Key="93"/>
+        <KeySwitch Key="106"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +3 players +divisi +custom1">
+        <KeySwitch Key="92"/>
+        <KeySwitch Key="106"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +3 players +divisi.2 +custom1">
+        <KeySwitch Key="93"/>
+        <KeySwitch Key="106"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +2 players +divisi +custom1">
+        <KeySwitch Key="92"/>
+        <KeySwitch Key="106"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +2 players +divisi.2 +custom1">
+        <KeySwitch Key="93"/>
+        <KeySwitch Key="106"/>
+      </Switch>
+      <Switch SoundIDChange="+custom2">
+        <KeySwitch Key="107"/>
+      </Switch>
+      <Switch SoundIDChange="+staccato +custom2">
+        <KeySwitch Key="107"/>
+      </Switch>
+      <Switch SoundIDChange="+legato +custom2">
+        <KeySwitch Key="107"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +custom2">
+        <KeySwitch Key="84"/>
+        <KeySwitch Key="107"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble.staccato +custom2">
+        <KeySwitch Key="84"/>
+        <KeySwitch Key="107"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble.legato +custom2">
+        <KeySwitch Key="84"/>
+        <KeySwitch Key="107"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +4 players +custom2">
+        <KeySwitch Key="84"/>
+        <KeySwitch Key="107"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +staccato +4 players +custom2">
+        <KeySwitch Key="84"/>
+        <KeySwitch Key="107"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +legato +4 players +custom2">
+        <KeySwitch Key="84"/>
+        <KeySwitch Key="107"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +3 players +custom2">
+        <KeySwitch Key="85"/>
+        <KeySwitch Key="107"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +staccato +3 players +custom2">
+        <KeySwitch Key="85"/>
+        <KeySwitch Key="107"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +legato +3 players +custom2">
+        <KeySwitch Key="85"/>
+        <KeySwitch Key="107"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +2 players +custom2">
+        <KeySwitch Key="86"/>
+        <KeySwitch Key="107"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +staccato +2 players +custom2">
+        <KeySwitch Key="86"/>
+        <KeySwitch Key="107"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +legato +2 players +custom2">
+        <KeySwitch Key="86"/>
+        <KeySwitch Key="107"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +2 players +player2-3 +custom2">
+        <KeySwitch Key="87"/>
+        <KeySwitch Key="107"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +2 players +player3-4 +custom2">
+        <KeySwitch Key="87"/>
+        <KeySwitch Key="107"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +staccato +2 players +player3-4 +custom2">
+        <KeySwitch Key="87"/>
+        <KeySwitch Key="107"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +legato +2 players +player3-4 +custom2">
+        <KeySwitch Key="87"/>
+        <KeySwitch Key="107"/>
+      </Switch>
+      <Switch SoundIDChange="+player1 +custom2">
+        <KeySwitch Key="88"/>
+        <KeySwitch Key="107"/>
+      </Switch>
+      <Switch SoundIDChange="+staccato +player1 +custom2">
+        <KeySwitch Key="88"/>
+        <KeySwitch Key="107"/>
+      </Switch>
+      <Switch SoundIDChange="+legato +player1 +custom2">
+        <KeySwitch Key="88"/>
+        <KeySwitch Key="107"/>
+      </Switch>
+      <Switch SoundIDChange="+player2 +custom2">
+        <KeySwitch Key="89"/>
+        <KeySwitch Key="107"/>
+      </Switch>
+      <Switch SoundIDChange="+staccato +player2 +custom2">
+        <KeySwitch Key="89"/>
+        <KeySwitch Key="107"/>
+      </Switch>
+      <Switch SoundIDChange="+legato +player2 +custom2">
+        <KeySwitch Key="89"/>
+        <KeySwitch Key="107"/>
+      </Switch>
+      <Switch SoundIDChange="+player3 +custom2">
+        <KeySwitch Key="90"/>
+        <KeySwitch Key="107"/>
+      </Switch>
+      <Switch SoundIDChange="+staccato +player3 +custom2">
+        <KeySwitch Key="90"/>
+        <KeySwitch Key="107"/>
+      </Switch>
+      <Switch SoundIDChange="+legato +player3 +custom2">
+        <KeySwitch Key="90"/>
+        <KeySwitch Key="107"/>
+      </Switch>
+      <Switch SoundIDChange="+player4 +custom2">
+        <KeySwitch Key="91"/>
+        <KeySwitch Key="107"/>
+      </Switch>
+      <Switch SoundIDChange="+staccato +player4 +custom2">
+        <KeySwitch Key="91"/>
+        <KeySwitch Key="107"/>
+      </Switch>
+      <Switch SoundIDChange="+legato +player4 +custom2">
+        <KeySwitch Key="91"/>
+        <KeySwitch Key="107"/>
+      </Switch>
+      <Switch SoundIDChange="+divisi +custom2">
+        <KeySwitch Key="92"/>
+        <KeySwitch Key="107"/>
+      </Switch>
+      <Switch SoundIDChange="+staccato +divisi +custom2">
+        <KeySwitch Key="92"/>
+        <KeySwitch Key="107"/>
+      </Switch>
+      <Switch SoundIDChange="+legato +divisi +custom2">
+        <KeySwitch Key="92"/>
+        <KeySwitch Key="107"/>
+      </Switch>
+      <Switch SoundIDChange="+divisi.2 +custom2">
+        <KeySwitch Key="93"/>
+        <KeySwitch Key="107"/>
+      </Switch>
+      <Switch SoundIDChange="+staccato +divisi.2 +custom2">
+        <KeySwitch Key="93"/>
+        <KeySwitch Key="107"/>
+      </Switch>
+      <Switch SoundIDChange="+legato +divisi.2 +custom2">
+        <KeySwitch Key="93"/>
+        <KeySwitch Key="107"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +staccato +divisi +custom2">
+        <KeySwitch Key="92"/>
+        <KeySwitch Key="107"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +legato +divisi +custom2">
+        <KeySwitch Key="92"/>
+        <KeySwitch Key="107"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +divisi.2 +custom2">
+        <KeySwitch Key="93"/>
+        <KeySwitch Key="107"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +staccato +divisi.2 +custom2">
+        <KeySwitch Key="93"/>
+        <KeySwitch Key="107"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +legato +divisi.2 +custom2">
+        <KeySwitch Key="93"/>
+        <KeySwitch Key="107"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +4 players +divisi +custom2">
+        <KeySwitch Key="92"/>
+        <KeySwitch Key="107"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +4 players +divisi.2 +custom2">
+        <KeySwitch Key="93"/>
+        <KeySwitch Key="107"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +3 players +divisi +custom2">
+        <KeySwitch Key="92"/>
+        <KeySwitch Key="107"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +3 players +divisi.2 +custom2">
+        <KeySwitch Key="93"/>
+        <KeySwitch Key="107"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +2 players +divisi +custom2">
+        <KeySwitch Key="92"/>
+        <KeySwitch Key="107"/>
+      </Switch>
+      <Switch SoundIDChange="+ensemble +2 players +divisi.2 +custom2">
+        <KeySwitch Key="93"/>
+        <KeySwitch Key="107"/>
+      </Switch>
+    </SwitchTypeDefinition>
+  </SwitchTypeList>
+  <PatchList>
+    <Patch Name="Piccolo">
+      <SoundID>wind.flutes.flute.piccolo</SoundID>
+      <VolumeType>Expression</VolumeType>
+      <AttackType>NoteOnVelocity</AttackType>
+      <SwitchType>Winds High</SwitchType>
+      <PitchBendRange>2</PitchBendRange>
+    </Patch>
+    <Patch Name="Flute">
+      <SoundID>wind.flutes.flute</SoundID>
+      <VolumeType>Expression</VolumeType>
+      <AttackType>NoteOnVelocity</AttackType>
+      <SwitchType>Winds High</SwitchType>
+      <PitchBendRange>2</PitchBendRange>
+    </Patch>
+    <Patch Name="Flute Ensemble">
+      <SoundID>wind.flutes.flute.ensemble</SoundID>
+      <VolumeType>Expression</VolumeType>
+      <AttackType>NoteOnVelocity</AttackType>
+      <SwitchType>Winds High</SwitchType>
+      <PitchBendRange>2</PitchBendRange>
+    </Patch>
+    <Patch Name="Alto Flute">
+      <SoundID>wind.flutes.flute.alto</SoundID>
+      <VolumeType>Expression</VolumeType>
+      <AttackType>NoteOnVelocity</AttackType>
+      <SwitchType>Winds High</SwitchType>
+      <PitchBendRange>2</PitchBendRange>
+    </Patch>
+    <Patch Name="Bass Flute">
+      <SoundID>wind.flutes.flute.bass</SoundID>
+      <VolumeType>Expression</VolumeType>
+      <AttackType>NoteOnVelocity</AttackType>
+      <SwitchType>Winds High notrill</SwitchType>
+      <PitchBendRange>2</PitchBendRange>
+    </Patch>
+    <Patch Name="Oboe">
+      <SoundID>wind.oboes.oboe</SoundID>
+      <VolumeType>Expression</VolumeType>
+      <AttackType>NoteOnVelocity</AttackType>
+      <SwitchType>Winds High</SwitchType>
+      <PitchBendRange>2</PitchBendRange>
+    </Patch>
+    <Patch Name="Oboe Ensemble">
+      <SoundID>wind.oboes.oboe.ensemble</SoundID>
+      <VolumeType>Expression</VolumeType>
+      <AttackType>NoteOnVelocity</AttackType>
+      <SwitchType>Winds High</SwitchType>
+      <PitchBendRange>2</PitchBendRange>
+    </Patch>
+    <Patch Name="Oboe d'Amore">
+      <SoundID>wind.oboes.oboe d'amore</SoundID>
+      <VolumeType>Expression</VolumeType>
+      <AttackType>NoteOnVelocity</AttackType>
+      <SwitchType>Winds High notrill</SwitchType>
+      <PitchBendRange>2</PitchBendRange>
+    </Patch>
+    <Patch Name="English Horn">
+      <SoundID>wind.oboes.english horn</SoundID>
+      <VolumeType>Expression</VolumeType>
+      <AttackType>NoteOnVelocity</AttackType>
+      <SwitchType>Winds High</SwitchType>
+      <PitchBendRange>2</PitchBendRange>
+    </Patch>
+    <Patch Name="Heckelphone">
+      <SoundID>wind.oboes.heckelphone</SoundID>
+      <VolumeType>Expression</VolumeType>
+      <AttackType>NoteOnVelocity</AttackType>
+      <SwitchType>Winds High notrill</SwitchType>
+      <PitchBendRange>2</PitchBendRange>
+    </Patch>
+    <Patch Name="Clarinet">
+      <SoundID>wind.clarinets.clarinet</SoundID>
+      <VolumeType>Expression</VolumeType>
+      <AttackType>NoteOnVelocity</AttackType>
+      <SwitchType>Winds High</SwitchType>
+      <PitchBendRange>2</PitchBendRange>
+    </Patch>
+    <Patch Name="Clarinet Bb 2 (Single Instrument)">
+      <SoundID>wind.clarinets.clarinet.2</SoundID>
+      <VolumeType>Expression</VolumeType>
+      <AttackType>NoteOnVelocity</AttackType>
+      <SwitchType>Winds High notrill</SwitchType>
+      <PitchBendRange>2</PitchBendRange>
+    </Patch>
+	<Patch Name="Clarinet Eb">
+      <SoundID>wind.clarinets.eb</SoundID>
+      <VolumeType>Expression</VolumeType>
+      <AttackType>NoteOnVelocity</AttackType>
+      <SwitchType>Winds High</SwitchType>
+      <PitchBendRange>2</PitchBendRange>
+    </Patch>
+    <Patch Name="Clarinet Ensemble">
+      <SoundID>wind.clarinets.clarinet.ensemble</SoundID>
+      <VolumeType>Expression</VolumeType>
+      <AttackType>NoteOnVelocity</AttackType>
+      <SwitchType>Winds High</SwitchType>
+      <PitchBendRange>2</PitchBendRange>
+    </Patch>
+    <Patch Name="Bassset Horn">
+      <SoundID>wind.clarinets.basset-horn</SoundID>
+      <VolumeType>Expression</VolumeType>
+      <AttackType>NoteOnVelocity</AttackType>
+      <SwitchType>Winds High notrill</SwitchType>
+      <PitchBendRange>2</PitchBendRange>
+    </Patch>
+    <Patch Name="Bass Clarinet">
+      <SoundID>wind.clarinets.bass</SoundID>
+      <VolumeType>Expression</VolumeType>
+      <AttackType>NoteOnVelocity</AttackType>
+      <SwitchType>Winds Low</SwitchType>
+      <PitchBendRange>2</PitchBendRange>
+    </Patch>
+    <Patch Name="Contrabass Clarinet">
+      <SoundID>wind.clarinets.contrabass</SoundID>
+      <VolumeType>Expression</VolumeType>
+      <AttackType>NoteOnVelocity</AttackType>
+      <SwitchType>Winds Low notrill</SwitchType>
+      <PitchBendRange>2</PitchBendRange>
+    </Patch>
+    <Patch Name="Bassoon">
+      <SoundID>wind.bassoons.bassoon</SoundID>
+      <VolumeType>Expression</VolumeType>
+      <AttackType>NoteOnVelocity</AttackType>
+      <SwitchType>Winds Low</SwitchType>
+      <PitchBendRange>2</PitchBendRange>
+    </Patch>
+    <Patch Name="Bassoon 2 (Single Instrument)">
+      <SoundID>wind.bassoons.bassoon.2</SoundID>
+      <VolumeType>Expression</VolumeType>
+      <AttackType>NoteOnVelocity</AttackType>
+      <SwitchType>Winds Low notrill</SwitchType>
+      <PitchBendRange>2</PitchBendRange>
+    </Patch>
+    <Patch Name="Bassoon Ensemble">
+      <SoundID>wind.bassoons.bassoon.ensemble</SoundID>
+      <VolumeType>Expression</VolumeType>
+      <AttackType>NoteOnVelocity</AttackType>
+      <SwitchType>Winds Low</SwitchType>
+      <PitchBendRange>2</PitchBendRange>
+    </Patch>
+    <Patch Name="Contrabassoon">
+      <SoundID>wind.bassoons.contrabassoon</SoundID>
+      <VolumeType>Expression</VolumeType>
+      <AttackType>NoteOnVelocity</AttackType>
+      <SwitchType>Winds Low notrill</SwitchType>
+      <PitchBendRange>2</PitchBendRange>
+    </Patch>
+    <Patch Name="Soprano Sax">
+      <SoundID>wind.saxophones.soprano</SoundID>
+      <VolumeType>Expression</VolumeType>
+      <AttackType>NoteOnVelocity</AttackType>
+      <SwitchType>Winds High</SwitchType>
+      <PitchBendRange>2</PitchBendRange>
+    </Patch>
+    <Patch Name="Alto Sax">
+      <SoundID>wind.saxophones.alto</SoundID>
+      <VolumeType>Expression</VolumeType>
+      <AttackType>NoteOnVelocity</AttackType>
+      <SwitchType>Winds High</SwitchType>
+      <PitchBendRange>2</PitchBendRange>
+    </Patch>
+    <Patch Name="Tenor Sax">
+      <SoundID>wind.saxophones.tenor</SoundID>
+      <VolumeType>Expression</VolumeType>
+      <AttackType>NoteOnVelocity</AttackType>
+      <SwitchType>Winds High</SwitchType>
+      <PitchBendRange>2</PitchBendRange>
+    </Patch>
+    <Patch Name="Baritone Sax">
+      <SoundID>wind.saxophones.baritone</SoundID>
+      <VolumeType>Expression</VolumeType>
+      <AttackType>NoteOnVelocity</AttackType>
+      <SwitchType>Winds High</SwitchType>
+      <PitchBendRange>2</PitchBendRange>
+    </Patch>
+    <Patch Name="Bass Sax">
+      <SoundID>wind.saxophones.bass</SoundID>
+      <VolumeType>Expression</VolumeType>
+      <AttackType>NoteOnVelocity</AttackType>
+      <SwitchType>Winds Low</SwitchType>
+      <PitchBendRange>2</PitchBendRange>
+    </Patch>
+    <Patch Name="Soprano Recorder">
+      <SoundID>wind.flutes.recorder.soprano</SoundID>
+      <VolumeType>Expression</VolumeType>
+      <AttackType>NoteOnVelocity</AttackType>
+      <SwitchType>Winds High notrill</SwitchType>
+      <PitchBendRange>0</PitchBendRange>
+    </Patch>
+    <Patch Name="Alto Recorder">
+      <SoundID>wind.flutes.recorder.alto</SoundID>
+      <VolumeType>Expression</VolumeType>
+      <AttackType>NoteOnVelocity</AttackType>
+      <SwitchType>Winds High notrill</SwitchType>
+      <PitchBendRange>0</PitchBendRange>
+    </Patch>
+    <Patch Name="Tenor Recorder">
+      <SoundID>wind.flutes.recorder.tenor</SoundID>
+      <VolumeType>Expression</VolumeType>
+      <AttackType>NoteOnVelocity</AttackType>
+      <SwitchType>Winds High notrill</SwitchType>
+      <PitchBendRange>0</PitchBendRange>
+    </Patch>
+    <Patch Name="Bass Recorder">
+      <SoundID>wind.flutes.recorder.bass</SoundID>
+      <VolumeType>Expression</VolumeType>
+      <AttackType>NoteOnVelocity</AttackType>
+      <SwitchType>Winds High notrill</SwitchType>
+      <PitchBendRange>0</PitchBendRange>
+    </Patch>
+    <Patch Name="Great Bass Recorder">
+      <SoundID>wind.flutes.recorder.great bass</SoundID>
+      <VolumeType>Expression</VolumeType>
+      <AttackType>NoteOnVelocity</AttackType>
+      <SwitchType>Winds High notrill</SwitchType>
+      <PitchBendRange>0</PitchBendRange>
+    </Patch>
+    <Patch Name="Horn Vienna">
+      <SoundID>brass.horns.french horn</SoundID>
+      <VolumeType>Expression</VolumeType>
+      <AttackType>NoteOnVelocity</AttackType>
+      <SwitchType>Winds Low</SwitchType>
+      <PitchBendRange>2</PitchBendRange>
+    </Patch>
+    <Patch Name="Horn Vienna stopped">
+      <SoundID>brass.horns.french horn.mute</SoundID>
+      <VolumeType>Expression</VolumeType>
+      <AttackType>NoteOnVelocity</AttackType>
+      <SwitchType>Winds Low notrill</SwitchType>
+      <PitchBendRange>2</PitchBendRange>
+    </Patch>
+    <Patch Name="Triple Horn">
+      <SoundID>brass.horns.french horn</SoundID>
+      <VolumeType>Expression</VolumeType>
+      <AttackType>NoteOnVelocity</AttackType>
+      <SwitchType>Winds Low notrill</SwitchType>
+      <PitchBendRange>2</PitchBendRange>
+    </Patch>
+    <Patch Name="Horns a4">
+      <SoundID>brass.horns.french horn.ensemble.4 players</SoundID>
+      <VolumeType>Expression</VolumeType>
+      <AttackType>NoteOnVelocity</AttackType>
+      <SwitchType>Winds Low notrill</SwitchType>
+      <PitchBendRange>2</PitchBendRange>
+    </Patch>
+    <Patch Name="Horns a4 stopped">
+      <SoundID>brass.horns.french horn.ensemble.mute.4 players</SoundID>
+      <VolumeType>Expression</VolumeType>
+      <AttackType>NoteOnVelocity</AttackType>
+      <SwitchType>Winds Low notrill</SwitchType>
+      <PitchBendRange>2</PitchBendRange>
+    </Patch>
+    <Patch Name="Horns a8">
+      <SoundID>brass.horns.french horn.ensemble.8 players</SoundID>
+      <VolumeType>Expression</VolumeType>
+      <AttackType>NoteOnVelocity</AttackType>
+      <SwitchType>Winds Low</SwitchType>
+      <PitchBendRange>2</PitchBendRange>
+    </Patch>
+    <Patch Name="Wagner Tuba">
+      <SoundID>brass.horns.wagner tuba</SoundID>
+      <VolumeType>Expression</VolumeType>
+      <AttackType>NoteOnVelocity</AttackType>
+      <SwitchType>Winds Low notrill</SwitchType>
+      <PitchBendRange>2</PitchBendRange>
+    </Patch>
+    <Patch Name="Piccolo Trumpet">
+      <SoundID>brass.trumpets.piccolo</SoundID>
+      <VolumeType>Expression</VolumeType>
+      <AttackType>NoteOnVelocity</AttackType>
+      <SwitchType>Winds High</SwitchType>
+      <PitchBendRange>2</PitchBendRange>
+    </Patch>
+    <Patch Name="Trumpet">
+      <SoundID>brass.trumpets.trumpet</SoundID>
+      <VolumeType>Expression</VolumeType>
+      <AttackType>NoteOnVelocity</AttackType>
+      <SwitchType>Winds High</SwitchType>
+      <PitchBendRange>2</PitchBendRange>
+    </Patch>
+    <Patch Name="Trumpet Mute">
+      <SoundID>brass.trumpets.trumpet.mute</SoundID>
+      <VolumeType>Expression</VolumeType>
+      <AttackType>NoteOnVelocity</AttackType>
+      <SwitchType>Winds High</SwitchType>
+      <PitchBendRange>2</PitchBendRange>
+    </Patch>
+    <Patch Name="Trumpet Bb (Single Instrument)">
+      <SoundID>brass.trumpets.trumpet</SoundID>
+      <VolumeType>Expression</VolumeType>
+      <AttackType>NoteOnVelocity</AttackType>
+      <SwitchType>Winds High notrill</SwitchType>
+      <PitchBendRange>2</PitchBendRange>
+    </Patch>
+    <Patch Name="Trumpet Bb Mute (Single Instrument)">
+      <SoundID>brass.trumpets.trumpet.mute</SoundID>
+      <VolumeType>Expression</VolumeType>
+      <AttackType>NoteOnVelocity</AttackType>
+      <SwitchType>Winds High notrill</SwitchType>
+      <PitchBendRange>2</PitchBendRange>
+    </Patch>
+    <Patch Name="Flugelhorn (Single Instrument)">
+      <SoundID>brass.trumpets.flugelhorn</SoundID>
+      <VolumeType>Expression</VolumeType>
+      <AttackType>NoteOnVelocity</AttackType>
+      <SwitchType>Winds High notrill</SwitchType>
+      <PitchBendRange>2</PitchBendRange>
+    </Patch>
+    <Patch Name="Trumpet Ensemble a3">
+      <SoundID>brass.trumpets.trumpet.ensemble.3 players</SoundID>
+      <VolumeType>Expression</VolumeType>
+      <AttackType>NoteOnVelocity</AttackType>
+      <SwitchType>Winds High</SwitchType>
+      <PitchBendRange>2</PitchBendRange>
+    </Patch>
+    <Patch Name="Trumpet Ensemble Mute">
+      <SoundID>brass.trumpets.trumpet.ensemble.mute.3 players</SoundID>
+      <VolumeType>Expression</VolumeType>
+      <AttackType>NoteOnVelocity</AttackType>
+      <SwitchType>Winds High notrill</SwitchType>
+      <PitchBendRange>2</PitchBendRange>
+    </Patch>
+    <Patch Name="Trumpet Ensemble a6">
+      <SoundID>brass.trumpets.trumpet.ensemble.6 players</SoundID>
+      <VolumeType>Expression</VolumeType>
+      <AttackType>NoteOnVelocity</AttackType>
+      <SwitchType>Winds High notrill</SwitchType>
+      <PitchBendRange>2</PitchBendRange>
+    </Patch>
+    <Patch Name="Cornet">
+      <SoundID>brass.trumpets.cornet</SoundID>
+      <VolumeType>Expression</VolumeType>
+      <AttackType>NoteOnVelocity</AttackType>
+      <SwitchType>Winds High notrill</SwitchType>
+      <PitchBendRange>2</PitchBendRange>
+    </Patch>
+    <Patch Name="Bass Trumpet">
+      <SoundID>brass.trumpets.bass</SoundID>
+      <VolumeType>Expression</VolumeType>
+      <AttackType>NoteOnVelocity</AttackType>
+      <SwitchType>Winds High</SwitchType>
+      <PitchBendRange>2</PitchBendRange>
+    </Patch>
+    <Patch Name="Alto Trombone">
+      <SoundID>brass.trombones.alto</SoundID>
+      <VolumeType>Expression</VolumeType>
+      <AttackType>NoteOnVelocity</AttackType>
+      <SwitchType>Winds High notrill</SwitchType>
+      <PitchBendRange>2</PitchBendRange>
+    </Patch>
+    <Patch Name="Tenor Trombone">
+      <SoundID>brass.trombones.tenor</SoundID>
+      <VolumeType>Expression</VolumeType>
+      <AttackType>NoteOnVelocity</AttackType>
+      <SwitchType>Winds High notrill</SwitchType>
+      <PitchBendRange>2</PitchBendRange>
+    </Patch>
+    <Patch Name="Tenor Trombone Mute">
+      <SoundID>brass.trombones.tenor.mute</SoundID>
+      <VolumeType>Expression</VolumeType>
+      <AttackType>NoteOnVelocity</AttackType>
+      <SwitchType>Winds High notrill</SwitchType>
+      <PitchBendRange>2</PitchBendRange>
+    </Patch>
+    <Patch Name="Tenor Trombone Ensemble">
+      <SoundID>brass.trombones.tenor.ensemble</SoundID>
+      <VolumeType>Expression</VolumeType>
+      <AttackType>NoteOnVelocity</AttackType>
+      <SwitchType>Winds High notrill</SwitchType>
+      <PitchBendRange>2</PitchBendRange>
+    </Patch>
+    <Patch Name="Tenor Trombone Ensemble Mute">
+      <SoundID>brass.trombones.tenor.ensemble.mute</SoundID>
+      <VolumeType>Expression</VolumeType>
+      <AttackType>NoteOnVelocity</AttackType>
+      <SwitchType>Winds High notrill</SwitchType>
+      <PitchBendRange>2</PitchBendRange>
+    </Patch>
+    <Patch Name="Bass Trombone">
+      <SoundID>brass.trombones.bass</SoundID>
+      <VolumeType>Expression</VolumeType>
+      <AttackType>NoteOnVelocity</AttackType>
+      <SwitchType>Winds Low notrill</SwitchType>
+      <PitchBendRange>2</PitchBendRange>
+    </Patch>
+    <Patch Name="Contrabass Trombone">
+      <SoundID>brass.trombones.contrabass</SoundID>
+      <VolumeType>Expression</VolumeType>
+      <AttackType>NoteOnVelocity</AttackType>
+      <SwitchType>Winds Low notrill</SwitchType>
+      <PitchBendRange>2</PitchBendRange>
+    </Patch>
+    <Patch Name="Cimbasso">
+      <SoundID>brass.trombones.cimbasso</SoundID>
+      <VolumeType>Expression</VolumeType>
+      <AttackType>NoteOnVelocity</AttackType>
+      <SwitchType>Winds Low notrill</SwitchType>
+      <PitchBendRange>2</PitchBendRange>
+    </Patch>
+    <Patch Name="Tuba, Contrabass Tuba">
+      <SoundID>brass.tubas.tuba</SoundID>
+      <VolumeType>Expression</VolumeType>
+      <AttackType>NoteOnVelocity</AttackType>
+      <SwitchType>Winds Low</SwitchType>
+      <PitchBendRange>2</PitchBendRange>
+    </Patch>
+    <Patch Name="Tuba, Contrabass Tuba Mute">
+      <SoundID>brass.tubas.tuba.mute</SoundID>
+      <VolumeType>Expression</VolumeType>
+      <AttackType>NoteOnVelocity</AttackType>
+      <SwitchType>Winds Low notrill</SwitchType>
+      <PitchBendRange>2</PitchBendRange>
+    </Patch>
+    <Patch Name="Euphonium">
+      <SoundID>brass.tubas.euphonium</SoundID>
+      <VolumeType>Expression</VolumeType>
+      <AttackType>NoteOnVelocity</AttackType>
+      <SwitchType>Winds Low notrill</SwitchType>
+      <PitchBendRange>2</PitchBendRange>
+    </Patch>
+    <Patch Name="Dimension Horns">
+      <SoundID>brass.horns.french horn.dimension</SoundID>
+      <VolumeType>Expression</VolumeType>
+      <AttackType>NoteOnVelocity</AttackType>
+      <PitchBendRange>2</PitchBendRange>
+      <SwitchType>Dimension Brass</SwitchType>
+    </Patch>
+    <Patch Name="Dimension Horns Mute">
+      <SoundID>brass.horns.french horn.dimension.mute</SoundID>
+      <VolumeType>Expression</VolumeType>
+      <AttackType>NoteOnVelocity</AttackType>
+      <PitchBendRange>2</PitchBendRange>
+      <SwitchType>Dimension Brass</SwitchType>
+    </Patch>
+    <Patch Name="Dimension Trumpets">
+      <SoundID>brass.trumpets.trumpet.dimension</SoundID>
+      <VolumeType>Expression</VolumeType>
+      <AttackType>NoteOnVelocity</AttackType>
+      <PitchBendRange>2</PitchBendRange>
+      <SwitchType>Dimension Brass</SwitchType>
+    </Patch>
+    <Patch Name="Dimension Trumpets Mute">
+      <SoundID>brass.trumpets.trumpet.dimension.mute</SoundID>
+      <VolumeType>Expression</VolumeType>
+      <AttackType>NoteOnVelocity</AttackType>
+      <PitchBendRange>2</PitchBendRange>
+      <SwitchType>Dimension Brass</SwitchType>
+    </Patch>
+    <Patch Name="Dimension Trombones">
+      <SoundID>brass.trombones.tenor.dimension</SoundID>
+      <VolumeType>Expression</VolumeType>
+      <AttackType>NoteOnVelocity</AttackType>
+      <PitchBendRange>2</PitchBendRange>
+      <SwitchType>Dimension Brass</SwitchType>
+    </Patch>
+    <Patch Name="Dimension Trombones Mute">
+      <SoundID>brass.trombones.tenor.dimension.mute</SoundID>
+      <VolumeType>Expression</VolumeType>
+      <AttackType>NoteOnVelocity</AttackType>
+      <PitchBendRange>2</PitchBendRange>
+      <SwitchType>Dimension Brass</SwitchType>
+    </Patch>
+    <Patch Name="Dimension Low Brass">
+      <SoundID>brass.brass group.dimension</SoundID>
+      <VolumeType>Expression</VolumeType>
+      <AttackType>NoteOnVelocity</AttackType>
+      <PitchBendRange>2</PitchBendRange>
+      <SwitchType>Dimension Brass</SwitchType>
+    </Patch>
+    <Patch Name="Dimension Bass Trombone (Low Brass P3)">
+      <SoundID>brass.trombones.bass.dimension</SoundID>
+      <VolumeType>Expression</VolumeType>
+      <AttackType>NoteOnVelocity</AttackType>
+      <PitchBendRange>2</PitchBendRange>
+      <SwitchType>Dimension Brass</SwitchType>
+    </Patch>
+    <Patch Name="Dimension Tuba (Low Brass P4)">
+      <SoundID>brass.tubas.tuba.dimension</SoundID>
+      <VolumeType>Expression</VolumeType>
+      <AttackType>NoteOnVelocity</AttackType>
+      <PitchBendRange>2</PitchBendRange>
+      <SwitchType>Dimension Brass</SwitchType>
+    </Patch>
+    <Patch Name="Dimension Wagner tuba">
+      <SoundID>brass.horns.wagner tuba.dimension</SoundID>
+      <VolumeType>Expression</VolumeType>
+      <AttackType>NoteOnVelocity</AttackType>
+      <PitchBendRange>2</PitchBendRange>
+      <SwitchType>Dimension Wagnertuba</SwitchType>
+    </Patch>
+  </PatchList>
+  <DrumMapList/>
+</SoundSet>
